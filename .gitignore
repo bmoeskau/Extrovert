@@ -1,0 +1,11 @@
+# The Ext JS framework is not included. To build the project
+# yourself you must download and deploy Ext JS to this path:
+lib/extjs/
+
+# General file types to ignore
+.sass*
+.idea
+.DS_Store
+*.komodoproject
+.project
+.tmp*
