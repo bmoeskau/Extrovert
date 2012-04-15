@@ -3,8 +3,6 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>Extrovert Tester</title>
         <link rel="stylesheet" type="text/css" href="../../resources/css/extrovert.css" />
-        <script type="text/javascript" src="http://cdn.sencha.io/ext-4.0.7-gpl/ext-all-debug.js"></script>
-        <script type="text/javascript" src="themes.js"></script>
         <style>
             .add16 {
                background-image: url(images/add.png);
@@ -26,31 +24,55 @@
             }
             div#header h1 {
                 font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-                font-size: 24px;
+                font-size: 40px;
                 font-weight: 600;
+                color: #fff !important;
+                text-shadow: 0 2px 0 #333;
             }
             body {
                 padding-bottom:10px;
+                background: #797a84 url(images/bg-light-hatch.jpg);
             }
-            div#header h1 span {
-                color: inherit;
+            div#header h1 .tagline {
                 font-family: Helvetica, Arial, sans-serif;
-                font-size: 13px;
+                font-size: 18px;
                 font-weight: normal;
                 line-height: 30px;
                 padding-left: 25px;
+                color: #fff !important;
+            }
+            div#header h1 .ext {
+                color: #98D4FF;
             }
             .x-abs-layout-item {
                 position: absolute !important;
+            }
+            #page-loading {
+                position: absolute;
+                left: 45%;
+                top: 40%;
+                color: #fff;
+                font-size: 20px;
+                text-shadow: 0 2px 0 #333;
+                font-style: italic;
             }
         </style>
     </head>
     <body>
         <div id="header">
             <h1>
-                Extrovert
-                <span>A modern Ext theme with personality</span>
+                <span class="ext">Ext</span>rovert
+                <span class="tagline">A modern Ext theme with personality</span>
             </h1>
         </div>
+        <div id="page-loading">Loading...</div>
     </body>
+    
+    <script type="text/javascript" src="../../lib/extjs/4.1.0-rc3/ext-all-debug.js"></script>
+    <script type="text/javascript" src="themes.js"></script>
+    <script>
+        Ext.onReady(function() {
+            Ext.get('page-loading').remove();
+        });
+    </script>
 </html>

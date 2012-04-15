@@ -9,18 +9,22 @@ $include-default: true;
 // or a string, of where the path is
 //$relative-image-path-for-uis: true; // defaults to "../images/" when true
 
-$theme-name: 'extrovert';
-$base-color: #ddd;
-$font-family: helvetica,tahoma,arial,verdana,sans-serif !default;
+//$theme-name: 'extrovert';
+$base-color: #6086A1;
+$font-family: "Helvetica Neue", Helvetica, Tahoma, Arial, sans-serif !default;
 $font-size  : 12px !default;
+
+$extro-main-color: #324654;
+$extro-main-light: #4C6A7F;
 
 
 //panel
-$panel-header-background-gradient: color-stops(#F0F0F0, #D7D7D7);
-$panel-border-color: #D0D0D0;
-$panel-header-color: #333;
+$panel-header-background-gradient: color-stops($extro-main-light, $extro-main-color);
+$panel-border-color: $extro-main-color;
+$panel-header-color: #fff;
 $panel-header-padding: 8px 5px 5px 8px !important;
 $panel-header-font-size: ceil($font-size * 1.1);
+$panel-header-font-weight: 400;
 
 $panel-frame-background-color: #f1f1f1;
 
@@ -29,6 +33,7 @@ $window-background-color: #e8e8e8;
 $window-header-color: #333;
 $window-header-padding: 8px 5px 5px 8px !important;
 $window-header-font-size: ceil($font-size * 1.1);
+$window-header-font-weight: 400;
 
 //menu
 $menu-item-active-background-color: darken(#f3f3f3, 5);
@@ -73,16 +78,12 @@ $accordion-header-background-color: #e5e5e5;
 
 //tabs
 $tab-base-color: #eaeaea;
-$tab-color-active: #333333;
+$tab-color-active: #fff;
 
 $tab-background-gradient: color-stops(#dcdcdc, #eaeaea);
 $tab-background-gradient-over: 'tab-over' !default;
-$tab-background-gradient-active: color-stops(#ffffff, #eaeaea);
+$tab-background-gradient-active: color-stops($extro-main-light, $extro-main-color);
 $tab-background-gradient-disabled: 'tab-disabled' !default;
-
-//.x-tab em {
-//  padding: 5px !important;
-//}
 
 //buttons
 $button-default-base-color: #f8f8f8;
@@ -136,5 +137,27 @@ $button-toolbar-background-gradient-color-stops-focus: null;
 $button-toolbar-background-gradient-color-stops-pressed: null;
 $button-toolbar-background-gradient-color-stops-disabled: null;
 
+//load mask
+$loadmask-opacity: 1;
+
 @import 'compass';
 @import 'ext4/default/all';
+
+.x-mask {
+  background: -moz-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%, rgba(37,37,37,0.2) 39%, rgba(85,85,85,0.75) 90%, rgba(94,94,94,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(0,0,0,0)), color-stop(39%,rgba(37,37,37,0.2)), color-stop(90%,rgba(85,85,85,0.75)), color-stop(100%,rgba(94,94,94,1))); /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%,rgba(37,37,37,0.2) 39%,rgba(85,85,85,0.75) 90%,rgba(94,94,94,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%,rgba(37,37,37,0.2) 39%,rgba(85,85,85,0.75) 90%,rgba(94,94,94,1) 100%); /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%,rgba(37,37,37,0.2) 39%,rgba(85,85,85,0.75) 90%,rgba(94,94,94,1) 100%); /* IE10+ */
+  background: radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%,rgba(37,37,37,0.2) 39%,rgba(85,85,85,0.75) 90%,rgba(94,94,94,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#5e5e5e',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.x-tab button {
+  padding: 5px !important;
+  font-size: 12px;
+}
+
+.x-panel-header-text-default {
+  text-shadow: 0px 2px 0 #000;
+}
