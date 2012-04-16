@@ -660,7 +660,7 @@ function getTabs (config) {
                 html : 'Free-standing tab panel'
             },
             {
-                title   : 'Tab 2',
+                title   : 'A Longer Tab Name',
                 closable: true
             },
             {
@@ -683,7 +683,7 @@ function getScrollingTabs () {
                 html : 'Tab panel 1 content'
             },
             {
-                title: 'Tab 2',
+                title: 'A Longer Tab Name',
                 html : 'Tab panel 2 content',
                 closable: true
             },

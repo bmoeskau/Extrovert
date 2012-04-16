@@ -82,8 +82,15 @@ $tab-color-active: #fff;
 
 $tab-background-gradient: color-stops(#dcdcdc, #eaeaea);
 $tab-background-gradient-over: 'tab-over' !default;
-$tab-background-gradient-active: color-stops($extro-main-light, $extro-main-color);
+$tab-background-gradient-active: color-stops($base-color, $extro-main-color, $extro-main-light);
 $tab-background-gradient-disabled: 'tab-disabled' !default;
+
+$tabbar-strip-background-color: $extro-main-light;
+$tabbar-strip-border-color: $extro-main-color;
+
+$tab-border-color: $extro-main-color;
+$tab-height: 30px;
+$tab-font-weight: 400;
 
 //buttons
 $button-default-base-color: #f8f8f8;
@@ -147,6 +154,7 @@ $button-large-font-size : 16px;
 $button-medium-font-weight: 200;
 $button-large-font-weight : 200;
 
+
 @import 'compass';
 @import 'ext4/default/all';
 
@@ -160,13 +168,22 @@ $button-large-font-weight : 200;
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#5e5e5e',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
+// The SASS doesn't provide a variable that allows overriding this inner shadow
+// ONLY for active tabs so we have to default to a CSS override:
+.x-tab-default-top-active {
+  -webkit-box-shadow: rgba(255,255,255,0.6) 0 1px 0px 0 inset, $base-color -1px 0 0px 0 inset, $base-color 1px 0 0px 0 inset;
+  -moz-box-shadow: rgba(255,255,255,0.6) 0 1px 0px 0 inset, $base-color -1px 0 0px 0 inset, $base-color 1px 0 0px 0 inset;
+  box-shadow: rgba(255,255,255,0.6) 0 1px 0px 0 inset, $base-color -1px 0 0px 0 inset, $base-color 1px 0 0px 0 inset;
+  border-bottom: 1px solid $extro-main-light !important;
+}
 .x-tab button {
-  padding: 5px !important;
+  padding: 2px;
   font-size: 12px;
 }
 
-.x-panel-header-text-default {
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
+.x-panel-header-text-default,
+.x-panel-header-text-default-framed {
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
 }
 .x-accordion-hd .x-panel-header-text {
   text-shadow: 0 1px 0 #fff;
