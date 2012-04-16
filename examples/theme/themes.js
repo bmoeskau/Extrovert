@@ -420,6 +420,7 @@ function getFormWidgets () {
         buttons: [
             {
                 text   :'Toggle Enabled',
+                scale  : 'small',
                 handler: function() {
                     this.up('form').items.each(function(item) {
                         item.setDisabled(!item.disabled);
@@ -428,12 +429,15 @@ function getFormWidgets () {
             },
             {
                 text   : 'Reset Form',
+                scale  : 'medium',
                 handler: function() {
                     Ext.getCmp('form-widgets').getForm().reset();
                 }
             },
             {
                 text   : 'Validate',
+                scale  : 'large',
+                cls    : 'extro-btn-inverse',
                 handler: function() {
                     Ext.getCmp('form-widgets').getForm().isValid();
                 }

@@ -879,7 +879,7 @@ tr.x-container:before {
 
 /* line 639, ../../lib/extjs/4.1.0-rc3/resources/themes/stylesheets/ext4/default/widgets/_button.scss */
 .x-btn-default-small .x-btn-inner {
-  font-size: 11px;
+  font-size: 12px;
   font-weight: normal;
   font-family: "Helvetica Neue", Helvetica, Tahoma, Arial, sans-serif;
   color: #333333;
@@ -1214,8 +1214,8 @@ tr.x-container:before {
 
 /* line 639, ../../lib/extjs/4.1.0-rc3/resources/themes/stylesheets/ext4/default/widgets/_button.scss */
 .x-btn-default-medium .x-btn-inner {
-  font-size: 11px;
-  font-weight: normal;
+  font-size: 14px;
+  font-weight: 200;
   font-family: "Helvetica Neue", Helvetica, Tahoma, Arial, sans-serif;
   color: #333333;
   background-repeat: no-repeat;
@@ -1546,8 +1546,8 @@ tr.x-container:before {
 
 /* line 639, ../../lib/extjs/4.1.0-rc3/resources/themes/stylesheets/ext4/default/widgets/_button.scss */
 .x-btn-default-large .x-btn-inner {
-  font-size: 11px;
-  font-weight: normal;
+  font-size: 16px;
+  font-weight: 200;
   font-family: "Helvetica Neue", Helvetica, Tahoma, Arial, sans-serif;
   color: #333333;
   background-repeat: no-repeat;
@@ -1867,7 +1867,7 @@ tr.x-container:before {
 
 /* line 639, ../../lib/extjs/4.1.0-rc3/resources/themes/stylesheets/ext4/default/widgets/_button.scss */
 .x-btn-default-toolbar-small .x-btn-inner {
-  font-size: 11px;
+  font-size: 12px;
   font-weight: normal;
   font-family: "Helvetica Neue", Helvetica, Tahoma, Arial, sans-serif;
   color: #333333;
@@ -2171,8 +2171,8 @@ tr.x-container:before {
 
 /* line 639, ../../lib/extjs/4.1.0-rc3/resources/themes/stylesheets/ext4/default/widgets/_button.scss */
 .x-btn-default-toolbar-medium .x-btn-inner {
-  font-size: 11px;
-  font-weight: normal;
+  font-size: 14px;
+  font-weight: 200;
   font-family: "Helvetica Neue", Helvetica, Tahoma, Arial, sans-serif;
   color: #333333;
   background-repeat: no-repeat;
@@ -2475,8 +2475,8 @@ tr.x-container:before {
 
 /* line 639, ../../lib/extjs/4.1.0-rc3/resources/themes/stylesheets/ext4/default/widgets/_button.scss */
 .x-btn-default-toolbar-large .x-btn-inner {
-  font-size: 11px;
-  font-weight: normal;
+  font-size: 16px;
+  font-weight: 200;
   font-family: "Helvetica Neue", Helvetica, Tahoma, Arial, sans-serif;
   color: #333333;
   background-repeat: no-repeat;
@@ -9629,7 +9629,7 @@ svg, vml {
     direction: rtl;
     unicode-bidi: bidi-override; }
 
-/* line 146, ../sass/extrovert.scss */
+/* line 153, ../sass/extrovert.scss */
 .x-mask {
   background: -moz-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0) 0%, rgba(37, 37, 37, 0.2) 39%, rgba(85, 85, 85, 0.75) 90%, #5e5e5e 100%);
   /* FF3.6+ */
@@ -9646,11 +9646,42 @@ svg, vml {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#5e5e5e',GradientType=1 );
   /* IE6-9 fallback on horizontal gradient */ }
 
-/* line 156, ../sass/extrovert.scss */
+/* line 163, ../sass/extrovert.scss */
 .x-tab button {
   padding: 5px !important;
   font-size: 12px; }
 
-/* line 161, ../sass/extrovert.scss */
+/* line 168, ../sass/extrovert.scss */
 .x-panel-header-text-default {
-  text-shadow: 0px 2px 0 #000; }
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5); }
+
+/* line 171, ../sass/extrovert.scss */
+.x-accordion-hd .x-panel-header-text {
+  text-shadow: 0 1px 0 #fff; }
+
+/* line 175, ../sass/extrovert.scss */
+.extro-btn-primary {
+  background: #0074CC; }
+
+/* line 178, ../sass/extrovert.scss */
+.extro-btn-primary.x-btn-over {
+  background-color: #0055cc; }
+
+/* line 181, ../sass/extrovert.scss */
+.extro-btn-inverse {
+  background: #414141; }
+
+/* line 184, ../sass/extrovert.scss */
+.extro-btn-inverse.x-btn-over {
+  background-color: #222222; }
+
+/* line 188, ../sass/extrovert.scss */
+.extro-btn-primary,
+.extro-btn-inverse {
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25); }
+
+/* line 192, ../sass/extrovert.scss */
+.extro-btn-primary .x-btn-inner,
+.extro-btn-inverse .x-btn-inner {
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
+  color: white; }
