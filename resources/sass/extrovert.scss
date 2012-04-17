@@ -1,15 +1,8 @@
 // Unless you want to include all components, you must set $include-default to false
 // IF you set this to true, you can also remove lines 10 to 38 of this file
 $include-default: true;
+$theme-name: 'extrovert';
 
-// This line changes the location of your images when creating UIs to be relative instead of within the ExtJS directory.
-// You MUST set this to true/string value if you are creating new UIs + supporting legacy browsers.
-// This only applies to new UIs. It does not apply to default component images (i.e. when changing $base-color)
-// The value can either be true, in which case the image path will be "../images/"
-// or a string, of where the path is
-//$relative-image-path-for-uis: true; // defaults to "../images/" when true
-
-//$theme-name: 'extrovert';
 $base-color: #6086A1;
 $font-family: "Helvetica Neue", Helvetica, Tahoma, Arial, sans-serif !default;
 $font-size  : 12px !default;
@@ -69,9 +62,10 @@ $btn-group-border-color: #d0d0d0;
 $btn-group-header-color: #666;
 
 //form
+$form-field-height: 26px;
 $fieldset-header-color: #333;
-
 $boundlist-border-color: #b5b8c8;
+$boundlist-item-padding: 6px 4px;
 
 //acordion
 $accordion-header-background-color: #e5e5e5;
@@ -168,6 +162,34 @@ $button-large-font-weight : 200;
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#5e5e5e',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
+$extro-field-border-radius: 3px;
+
+input,
+textarea {
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+  -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+  -ms-transition: border linear 0.2s, box-shadow linear 0.2s;
+  -o-transition: border linear 0.2s, box-shadow linear 0.2s;
+  transition: border linear 0.2s, box-shadow linear 0.2s;
+  
+  //TODO: Enable this with exceptions for trigger fields:
+  //border-radius: $extro-field-border-radius;
+  //-moz-border-radius: $extro-field-border-radius;
+  //-webkit-border-radius: $extro-field-border-radius;
+}
+.x-form-focus {
+  border-color: rgba(82, 168, 236, 0.8) !important;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+  outline: 0;
+  outline: thin dotted \9;
+}
+
+
 // The SASS doesn't provide a variable that allows overriding this inner shadow
 // ONLY for active tabs so we have to default to a CSS override:
 .x-tab-default-top-active {
@@ -209,4 +231,12 @@ $button-large-font-weight : 200;
 .extro-btn-inverse .x-btn-inner {
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
   color: white;
+}
+
+.x-boundlist-item-over,
+.x-boundlist-selected {
+  color: #fff;
+}
+.x-boundlist-item {
+  border-bottom: 1px solid #eee; 
 }
