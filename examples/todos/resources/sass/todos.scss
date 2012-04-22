@@ -1,0 +1,21 @@
+
+@import 'compass';
+@import '../../../../resources/sass/extrovert.scss';
+
+$highlight-background-color: #7b8b9d;
+$header-background-color: darken($highlight-background-color, 30);
+
+.todo-header {
+    @include background-gradient($header-background-color, 'matte');
+    padding: 10px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 200;
+    text-align: center;
+    text-shadow: 0 1px 0 darken($header-background-color, 15);
+    border-bottom: 1px solid darken($header-background-color, 15) !important;
+}
+
+.todo-sidebar {
+    background: #369;
+}
