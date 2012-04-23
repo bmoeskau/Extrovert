@@ -5760,7 +5760,7 @@ textarea.x-form-invalid-field {
 
 /* line 253, ../../../../lib/extjs/resources/themes/stylesheets/ext4/default/widgets/_panel.scss */
 .x-panel-header-default {
-  font-size: 14px;
+  font-size: 15px;
   border-color: #324654;
   border-width: 1px;
   border-style: solid;
@@ -5811,7 +5811,7 @@ textarea.x-form-invalid-field {
 /* line 338, ../../../../lib/extjs/resources/themes/stylesheets/ext4/default/widgets/_panel.scss */
 .x-panel-header-text-default {
   color: white;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 400;
   font-family: "Helvetica Neue", Helvetica, Tahoma, Arial, sans-serif;
   line-height: 17px;
@@ -5964,7 +5964,7 @@ textarea.x-form-invalid-field {
 
 /* line 253, ../../../../lib/extjs/resources/themes/stylesheets/ext4/default/widgets/_panel.scss */
 .x-panel-header-default-framed {
-  font-size: 14px;
+  font-size: 15px;
   border-color: #324654;
   border-width: 1px;
   border-style: solid;
@@ -6045,7 +6045,7 @@ textarea.x-form-invalid-field {
 /* line 338, ../../../../lib/extjs/resources/themes/stylesheets/ext4/default/widgets/_panel.scss */
 .x-panel-header-text-default-framed {
   color: white;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 400;
   font-family: "Helvetica Neue", Helvetica, Tahoma, Arial, sans-serif;
   line-height: 17px;
@@ -7829,7 +7829,7 @@ textarea.x-form-invalid-field {
 
 /* line 184, ../../../../lib/extjs/resources/themes/stylesheets/ext4/default/widgets/_window.scss */
 .x-window-header-default {
-  font-size: 14px;
+  font-size: 15px;
   border-color: #5e5e5e;
   zoom: 1;
 }
@@ -7840,7 +7840,7 @@ textarea.x-form-invalid-field {
   font-weight: 400;
   line-height: 17px;
   font-family: "Helvetica Neue", Helvetica, Tahoma, Arial, sans-serif;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 /* line 58, ../../../../lib/extjs/resources/themes/stylesheets/ext4/default/mixins/_frame.scss */
@@ -11345,16 +11345,22 @@ textarea {
   border-bottom: 1px solid #eee;
 }
 
-/* line 8, ../sass/todos.scss */
+/* line 9, ../sass/todos.scss */
+#todo-viewport,
+#todo-viewport-body {
+  background: #555;
+}
+
+/* line 13, ../sass/todos.scss */
 .todo-header {
   background-image: none;
   background-color: #363f49;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #3d4752), color-stop(100%, #2d353d));
-  background-image: -webkit-linear-gradient(top, #3d4752, #2d353d);
-  background-image: -moz-linear-gradient(top, #3d4752, #2d353d);
-  background-image: -o-linear-gradient(top, #3d4752, #2d353d);
-  background-image: -ms-linear-gradient(top, #3d4752, #2d353d);
-  background-image: linear-gradient(top, #3d4752, #2d353d);
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #576575), color-stop(30%, #475360), color-stop(65%, #363f49), color-stop(100%, #293037));
+  background-image: -webkit-linear-gradient(top, #576575, #475360 30%, #363f49 65%, #293037);
+  background-image: -moz-linear-gradient(top, #576575, #475360 30%, #363f49 65%, #293037);
+  background-image: -o-linear-gradient(top, #576575, #475360 30%, #363f49 65%, #293037);
+  background-image: -ms-linear-gradient(top, #576575, #475360 30%, #363f49 65%, #293037);
+  background-image: linear-gradient(top, #576575, #475360 30%, #363f49 65%, #293037);
   padding: 10px;
   color: #fff;
   font-size: 24px;
@@ -11364,7 +11370,42 @@ textarea {
   border-bottom: 1px solid #16191d !important;
 }
 
-/* line 19, ../sass/todos.scss */
+/* line 24, ../sass/todos.scss */
 .todo-sidebar {
-  background: #369;
+  border-width: 1px !important;
+  padding: 0 0 5px 0;
+}
+/* line 28, ../sass/todos.scss */
+.todo-sidebar .x-panel-body-default {
+  border-color: #324654;
+}
+/* line 33, ../sass/todos.scss */
+.todo-sidebar .x-panel-body .x-panel-header {
+  background-image: none;
+  background-color: #6f91a9;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #9fb5c5), color-stop(50%, #7f9db2), color-stop(51%, #6f91a9), color-stop(100%, #5f859f));
+  background-image: -webkit-linear-gradient(top, #9fb5c5, #7f9db2 50%, #6f91a9 51%, #5f859f);
+  background-image: -moz-linear-gradient(top, #9fb5c5, #7f9db2 50%, #6f91a9 51%, #5f859f);
+  background-image: -o-linear-gradient(top, #9fb5c5, #7f9db2 50%, #6f91a9 51%, #5f859f);
+  background-image: -ms-linear-gradient(top, #9fb5c5, #7f9db2 50%, #6f91a9 51%, #5f859f);
+  background-image: linear-gradient(top, #9fb5c5, #7f9db2 50%, #6f91a9 51%, #5f859f);
+  padding: 5px 8px 3px !important;
+}
+/* line 38, ../sass/todos.scss */
+.todo-sidebar .x-panel-body .x-panel-header .x-panel-header-text,
+.todo-sidebar .x-panel-body .x-panel-header .x-panel-header-text-default {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+/* line 46, ../sass/todos.scss */
+.x-toolbar {
+  background-image: none;
+  background-color: #bbbbbb;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e1e1e1), color-stop(30%, #cfcfcf), color-stop(65%, #bbbbbb), color-stop(100%, #acacac));
+  background-image: -webkit-linear-gradient(top, #e1e1e1, #cfcfcf 30%, #bbbbbb 65%, #acacac);
+  background-image: -moz-linear-gradient(top, #e1e1e1, #cfcfcf 30%, #bbbbbb 65%, #acacac);
+  background-image: -o-linear-gradient(top, #e1e1e1, #cfcfcf 30%, #bbbbbb 65%, #acacac);
+  background-image: -ms-linear-gradient(top, #e1e1e1, #cfcfcf 30%, #bbbbbb 65%, #acacac);
+  background-image: linear-gradient(top, #e1e1e1, #cfcfcf 30%, #bbbbbb 65%, #acacac);
 }

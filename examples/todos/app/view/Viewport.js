@@ -13,12 +13,12 @@ Ext.define('Todo.view.Viewport', {
             items: [
                 {
                     xtype: 'panel',
+                    id: 'todo-viewport',
                     border: false,
-                    id: 'viewport',
+                    bodyBorder: false,
                     
                     layout: {
-                        type: 'vbox',
-                        align: 'stretch'
+                        type: 'fit'
                     },
                     
                     dockedItems: [

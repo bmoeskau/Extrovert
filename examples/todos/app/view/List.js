@@ -5,7 +5,10 @@ Ext.define('Todo.view.List', {
     initComponent: function() {
         Ext.apply(this, {
             title: 'To Do',
-            border: false
+            border: false,
+            frame: true,
+            flex: 1,
+            margin: '8 8 8 0'
         });
                 
         this.callParent(arguments);
