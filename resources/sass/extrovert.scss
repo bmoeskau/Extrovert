@@ -16,7 +16,7 @@ $panel-header-background-gradient: color-stops($extro-main-light, $extro-main-co
 $panel-border-color: $extro-main-color;
 $panel-header-color: #fff;
 $panel-header-padding: 8px 5px 5px 8px !important;
-$panel-header-font-size: ceil($font-size * 1.1);
+$panel-header-font-size: ceil($font-size * 1.2);
 $panel-header-font-weight: 400;
 
 $panel-frame-background-color: #f1f1f1;
@@ -25,7 +25,7 @@ $panel-frame-background-color: #f1f1f1;
 $window-background-color: #e8e8e8;
 $window-header-color: #333;
 $window-header-padding: 8px 5px 5px 8px !important;
-$window-header-font-size: ceil($font-size * 1.1);
+$window-header-font-size: ceil($font-size * 1.2);
 $window-header-font-weight: 400;
 
 //menu
@@ -166,14 +166,14 @@ $extro-field-border-radius: 3px;
 
 input,
 textarea {
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
-  -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
-  -ms-transition: border linear 0.2s, box-shadow linear 0.2s;
-  -o-transition: border linear 0.2s, box-shadow linear 0.2s;
-  transition: border linear 0.2s, box-shadow linear 0.2s;
+  -moz-box-shadow: inset 0 1px 3px #e0e0e0,0 1px #fafbfb;
+  -webkit-box-shadow: inset 0 1px 3px #e0e0e0,0 1px #fafbfb;
+  box-shadow: inset 0 1px 3px #e0e0e0,0 1px #fafbfb;
+  // -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+  // -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+  // -ms-transition: border linear 0.2s, box-shadow linear 0.2s;
+  // -o-transition: border linear 0.2s, box-shadow linear 0.2s;
+  // transition: border linear 0.2s, box-shadow linear 0.2s;
   
   //TODO: Enable this with exceptions for trigger fields:
   //border-radius: $extro-field-border-radius;
@@ -181,7 +181,7 @@ textarea {
   //-webkit-border-radius: $extro-field-border-radius;
 }
 .x-form-focus {
-  border-color: rgba(82, 168, 236, 0.8) !important;
+  border-color: $base-color !important;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
   -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
