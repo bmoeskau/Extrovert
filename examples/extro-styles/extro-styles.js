@@ -109,6 +109,7 @@ Ext.onReady(function() {
                 title: 'Center',
                 region: 'center',
                 id: 'center-region',
+                collapsible: false,
                 bodyStyle: 'padding:10px;',
                 html: 'You can change the panel style dynamically',
                 
@@ -134,7 +135,7 @@ Ext.onReady(function() {
                         },
                         changeHandler: function(cycleBtn, activeItem) {
                             var center = Ext.getCmp('center-region'),
-                                cls = 'extro-panel-' + activeItem.text.toLowerCase();
+                                cls = 'extro-panel-child-' + activeItem.text.toLowerCase();
                             
                             // Remove the previous one, if any
                             center.removeCls(center.extroCls);

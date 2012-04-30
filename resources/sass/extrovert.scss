@@ -163,9 +163,13 @@ $button-large-font-size : 16px;
 $button-medium-font-weight: 200;
 $button-large-font-weight : 200;
 
-
+// Default Ext imports:
 @import 'compass';
 @import 'ext4/default/all';
+
+// Extrovert mixins:
+@import 'mixins/styled-panel';
+@import 'mixins/child-panel';
 
 .x-mask {
   background: -moz-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%, rgba(37,37,37,0.2) 39%, rgba(85,85,85,0.75) 90%, rgba(94,94,94,1) 100%); /* FF3.6+ */
@@ -223,71 +227,39 @@ textarea {
 .x-accordion-hd .x-panel-header-text {
   text-shadow: 0 1px 0 #fff;
 }
-
-.extro-panel-inverse {
-  border-color: $extro-color-inverse;
-  
-  .x-panel-header {
-    @include background-gradient($extro-color-inverse, 'bevel');
-  }
-  .x-panel-header-default,
-  .x-panel-header-default-framed,
-  .x-panel-body-default {
-    border-color: $extro-color-inverse;
-  }
-  .x-panel-header-default-top,
-  .x-panel-header-default-framed {
-    box-shadow: 0 1px 0 0 lighten($extro-color-inverse, 30) inset
-  }
+.x-panel-header-default-top,
+.x-panel-header-default-framed {
+  box-shadow: 0 1px 0 0 lighten($extro-color-main, 30) inset
 }
 
+.extro-panel-child {
+  @include child-panel;
+}
+.extro-panel-child-danger {
+  @include child-panel($extro-color-danger);
+}
+.extro-panel-child-warning {
+  @include child-panel($extro-color-warning);
+}
+.extro-panel-child-inverse {
+  @include child-panel($extro-color-inverse);
+}
+
+/*
+ * Custom panel styles. Note that you can optionally
+ * specify border width and header gradient as well:
+ * 
+ *   @include styled-panel(#336699, 2px, 'glossy');
+ * 
+ */
 .extro-panel-danger {
-  border-color: $extro-color-danger;
-  
-  .x-panel-header {
-    @include background-gradient($extro-color-danger, 'bevel');
-  }
-  .x-panel-header-default,
-  .x-panel-header-default-framed,
-  .x-panel-body-default {
-    border-color: $extro-color-danger;
-  }
-  .x-panel-header-default-top,
-  .x-panel-header-default-framed {
-    box-shadow: 0 1px 0 0 lighten($extro-color-danger, 30) inset
-  }
+  @include styled-panel($extro-color-danger);
 }
-
 .extro-panel-warning {
-  border-color: $extro-color-warning;
-  
-  .x-panel-header {
-    @include background-gradient($extro-color-warning, 'bevel');
-  }
-  .x-panel-header-default,
-  .x-panel-header-default-framed,
-  .x-panel-body-default {
-    border-color: $extro-color-warning;
-  }
-  .x-panel-header-default-top,
-  .x-panel-header-default-framed {
-    box-shadow: 0 1px 0 0 lighten($extro-color-warning, 30) inset
-  }
+  @include styled-panel($extro-color-warning);
 }
-   
-.x-panel-body {
-  .extro-panel-child {
-    .x-panel-header {
-        @include background-gradient(lighten($extro-color-main-light, 15), 'bevel');
-        padding: 6px 8px 2px !important;
-        
-        .x-panel-header-text,
-        .x-panel-header-text-default {
-            font-size: $font-size;
-            font-weight: 400;
-        }
-     }
-  }
+.extro-panel-inverse {
+  @include styled-panel($extro-color-inverse);
 }
 
 .extro-btn-primary {

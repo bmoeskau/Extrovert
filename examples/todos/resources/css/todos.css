@@ -11258,7 +11258,17 @@ textarea {
   text-shadow: 0 1px 0 #fff;
 }
 
-/* line 228, ../../../../resources/sass/extrovert.scss */
+/* line 227, ../../../../resources/sass/extrovert.scss */
+.x-panel-header-default-top,
+.x-panel-header-default-framed {
+  box-shadow: 0 1px 0 0 #7394ac inset;
+}
+
+/* line 231, ../../../../resources/sass/extrovert.scss */
+.extro-panel-inverse {
+  border-color: #414141;
+}
+/* line 234, ../../../../resources/sass/extrovert.scss */
 .extro-panel-inverse .x-panel-header {
   background-image: none;
   background-color: #414141;
@@ -11269,17 +11279,23 @@ textarea {
   background-image: -ms-linear-gradient(top, #676767, #555555 30%, #414141 65%, #323232);
   background-image: linear-gradient(top, #676767, #555555 30%, #414141 65%, #323232);
 }
-/* line 232, ../../../../resources/sass/extrovert.scss */
+/* line 239, ../../../../resources/sass/extrovert.scss */
 .extro-panel-inverse .x-panel-header-default,
+.extro-panel-inverse .x-panel-header-default-framed,
 .extro-panel-inverse .x-panel-body-default {
   border-color: #414141;
 }
-/* line 235, ../../../../resources/sass/extrovert.scss */
-.extro-panel-inverse .x-panel-header-default-top {
+/* line 243, ../../../../resources/sass/extrovert.scss */
+.extro-panel-inverse .x-panel-header-default-top,
+.extro-panel-inverse .x-panel-header-default-framed {
   box-shadow: 0 1px 0 0 #8d8d8d inset;
 }
 
-/* line 241, ../../../../resources/sass/extrovert.scss */
+/* line 248, ../../../../resources/sass/extrovert.scss */
+.extro-panel-danger {
+  border-color: #da4f49;
+}
+/* line 251, ../../../../resources/sass/extrovert.scss */
 .extro-panel-danger .x-panel-header {
   background-image: none;
   background-color: #da4f49;
@@ -11290,17 +11306,23 @@ textarea {
   background-image: -ms-linear-gradient(top, #e78c89, #e1706b 30%, #da4f49 65%, #d53630);
   background-image: linear-gradient(top, #e78c89, #e1706b 30%, #da4f49 65%, #d53630);
 }
-/* line 245, ../../../../resources/sass/extrovert.scss */
+/* line 256, ../../../../resources/sass/extrovert.scss */
 .extro-panel-danger .x-panel-header-default,
+.extro-panel-danger .x-panel-header-default-framed,
 .extro-panel-danger .x-panel-body-default {
   border-color: #da4f49;
 }
-/* line 248, ../../../../resources/sass/extrovert.scss */
-.extro-panel-danger .x-panel-header-default-top {
+/* line 260, ../../../../resources/sass/extrovert.scss */
+.extro-panel-danger .x-panel-header-default-top,
+.extro-panel-danger .x-panel-header-default-framed {
   box-shadow: 0 1px 0 0 #f4cac8 inset;
 }
 
-/* line 254, ../../../../resources/sass/extrovert.scss */
+/* line 265, ../../../../resources/sass/extrovert.scss */
+.extro-panel-warning {
+  border-color: #faa732;
+}
+/* line 268, ../../../../resources/sass/extrovert.scss */
 .extro-panel-warning .x-panel-header {
   background-image: none;
   background-color: #faa732;
@@ -11311,17 +11333,19 @@ textarea {
   background-image: -ms-linear-gradient(top, #fcc77d, #fbb85a 30%, #faa732 65%, #f99a14);
   background-image: linear-gradient(top, #fcc77d, #fbb85a 30%, #faa732 65%, #f99a14);
 }
-/* line 258, ../../../../resources/sass/extrovert.scss */
+/* line 273, ../../../../resources/sass/extrovert.scss */
 .extro-panel-warning .x-panel-header-default,
+.extro-panel-warning .x-panel-header-default-framed,
 .extro-panel-warning .x-panel-body-default {
   border-color: #faa732;
 }
-/* line 261, ../../../../resources/sass/extrovert.scss */
-.extro-panel-warning .x-panel-header-default-top {
+/* line 277, ../../../../resources/sass/extrovert.scss */
+.extro-panel-warning .x-panel-header-default-top,
+.extro-panel-warning .x-panel-header-default-framed {
   box-shadow: 0 1px 0 0 #fee7c7 inset;
 }
 
-/* line 268, ../../../../resources/sass/extrovert.scss */
+/* line 284, ../../../../resources/sass/extrovert.scss */
 .x-panel-body .extro-panel-child .x-panel-header {
   background-image: none;
   background-color: #6f91a9;
@@ -11333,58 +11357,58 @@ textarea {
   background-image: linear-gradient(top, #9fb5c5, #88a4b8 30%, #6f91a9 65%, #5d829c);
   padding: 6px 8px 2px !important;
 }
-/* line 273, ../../../../resources/sass/extrovert.scss */
+/* line 289, ../../../../resources/sass/extrovert.scss */
 .x-panel-body .extro-panel-child .x-panel-header .x-panel-header-text,
 .x-panel-body .extro-panel-child .x-panel-header .x-panel-header-text-default {
   font-size: 12px;
   font-weight: 400;
 }
 
-/* line 281, ../../../../resources/sass/extrovert.scss */
+/* line 297, ../../../../resources/sass/extrovert.scss */
 .extro-btn-primary {
   background: #0074CC;
 }
 
-/* line 284, ../../../../resources/sass/extrovert.scss */
+/* line 300, ../../../../resources/sass/extrovert.scss */
 .extro-btn-primary.x-btn-over {
   background-color: #0055cc;
 }
 
-/* line 287, ../../../../resources/sass/extrovert.scss */
+/* line 303, ../../../../resources/sass/extrovert.scss */
 .extro-btn-inverse {
   background: #414141;
 }
 
-/* line 290, ../../../../resources/sass/extrovert.scss */
+/* line 306, ../../../../resources/sass/extrovert.scss */
 .extro-btn-inverse.x-btn-over {
   background-color: #222222;
 }
 
-/* line 294, ../../../../resources/sass/extrovert.scss */
+/* line 310, ../../../../resources/sass/extrovert.scss */
 .extro-btn-primary,
 .extro-btn-inverse {
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
 }
 
-/* line 298, ../../../../resources/sass/extrovert.scss */
+/* line 314, ../../../../resources/sass/extrovert.scss */
 .extro-btn-primary .x-btn-inner,
 .extro-btn-inverse .x-btn-inner {
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
   color: white;
 }
 
-/* line 304, ../../../../resources/sass/extrovert.scss */
+/* line 320, ../../../../resources/sass/extrovert.scss */
 .x-boundlist-item-over,
 .x-boundlist-selected {
   color: #fff;
 }
 
-/* line 307, ../../../../resources/sass/extrovert.scss */
+/* line 323, ../../../../resources/sass/extrovert.scss */
 .x-boundlist-item {
   border-bottom: 1px solid #eee;
 }
 
-/* line 311, ../../../../resources/sass/extrovert.scss */
+/* line 327, ../../../../resources/sass/extrovert.scss */
 .x-toolbar {
   background-image: none;
   background-color: #dddddd;
@@ -11396,7 +11420,7 @@ textarea {
   background-image: linear-gradient(top, #ffffff, #f1f1f1 30%, #dddddd 65%, #cecece);
 }
 
-/* line 314, ../../../../resources/sass/extrovert.scss */
+/* line 330, ../../../../resources/sass/extrovert.scss */
 .x-toolbar-vertical {
   background-image: none;
   background-color: #dddddd;

@@ -1,0 +1,28 @@
+/**
+ * Extrovert styled Panel mixin
+ * @mixin styled-panel
+ * 
+ * @param {Color} $border-color The border color and header base color
+ * @param {Units} $border-width (optional) The border width (defaults to 1px)
+ * @param {String/List} $gradient-type (optional) The type of gradient to be used (defaults
+ *        to the value of $base-gradient). Can either be a string which is a predefined
+ *        gradient, or it can be a list of color stops.
+ */
+@mixin styled-panel($border-color, $border-width: 1px, $gradient-type: $base-gradient) {
+  border-color: $border-color;
+  border-width: $border-width;
+  
+  .x-panel-header {
+    @include background-gradient($border-color, $gradient-type);
+  }
+  .x-panel-header-default,
+  .x-panel-header-default-framed,
+  .x-panel-body-default {
+    border-color: $border-color;
+    border-width: $border-width;
+  }
+  .x-panel-header-default-top,
+  .x-panel-header-default-framed {
+    box-shadow: 0 1px 0 0 lighten($border-color, 30) inset
+  }
+}

@@ -9657,7 +9657,21 @@ svg, vml {
     direction: rtl;
     unicode-bidi: bidi-override; }
 
-/* line 170, ../sass/extrovert.scss */
+/**
+ * Extrovert styled Panel mixin
+ * @mixin styled-panel
+ * 
+ * @param {Color} $border-color The border color and header base color
+ * @param {Units} $border-width (optional) The border width (defaults to 1px)
+ * @param {String/List} $gradient-type (optional) The type of gradient to be used (defaults
+ *        to the value of $base-gradient). Can either be a string which is a predefined
+ *        gradient, or it can be a list of color stops.
+ */
+/**
+ * Extrovert child Panel mixin
+ * @mixin child-panel
+ */
+/* line 174, ../sass/extrovert.scss */
 .x-mask {
   background: -moz-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0) 0%, rgba(37, 37, 37, 0.2) 39%, rgba(85, 85, 85, 0.75) 90%, #5e5e5e 100%);
   /* FF3.6+ */
@@ -9674,14 +9688,14 @@ svg, vml {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#5e5e5e',GradientType=1 );
   /* IE6-9 fallback on horizontal gradient */ }
 
-/* line 181, ../sass/extrovert.scss */
+/* line 185, ../sass/extrovert.scss */
 input,
 textarea {
   -moz-box-shadow: inset 0 1px 3px #e0e0e0,0 1px #fafbfb;
   -webkit-box-shadow: inset 0 1px 3px #e0e0e0,0 1px #fafbfb;
   box-shadow: inset 0 1px 3px #e0e0e0,0 1px #fafbfb; }
 
-/* line 196, ../sass/extrovert.scss */
+/* line 200, ../sass/extrovert.scss */
 .x-form-focus {
   border-color: #6086a1 !important;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
@@ -9690,150 +9704,210 @@ textarea {
   outline: 0;
   outline: thin dotted \9; }
 
-/* line 208, ../sass/extrovert.scss */
+/* line 212, ../sass/extrovert.scss */
 .x-tab-default-top-active {
   -webkit-box-shadow: rgba(255, 255, 255, 0.6) 0 1px 0px 0 inset, #6086a1 -1px 0 0px 0 inset, #6086a1 1px 0 0px 0 inset;
   -moz-box-shadow: rgba(255, 255, 255, 0.6) 0 1px 0px 0 inset, #6086a1 -1px 0 0px 0 inset, #6086a1 1px 0 0px 0 inset;
   box-shadow: rgba(255, 255, 255, 0.6) 0 1px 0px 0 inset, #6086a1 -1px 0 0px 0 inset, #6086a1 1px 0 0px 0 inset;
   border-bottom: 1px solid #4c6a7f !important; }
 
-/* line 214, ../sass/extrovert.scss */
+/* line 218, ../sass/extrovert.scss */
 .x-tab button {
   padding: 2px;
   font-size: 12px; }
 
-/* line 220, ../sass/extrovert.scss */
+/* line 224, ../sass/extrovert.scss */
 .x-panel-header-text-default,
 .x-panel-header-text-default-framed {
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5); }
 
-/* line 223, ../sass/extrovert.scss */
+/* line 227, ../sass/extrovert.scss */
 .x-accordion-hd .x-panel-header-text {
   text-shadow: 0 1px 0 #fff; }
 
-/* line 227, ../sass/extrovert.scss */
-.extro-panel-inverse {
-  border-color: #414141; }
-  /* line 230, ../sass/extrovert.scss */
-  .extro-panel-inverse .x-panel-header {
-    background-image: none;
-    background-color: #414141;
-    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #676767), color-stop(30%, #555555), color-stop(65%, #414141), color-stop(100%, #323232));
-    background-image: -webkit-linear-gradient(top, #676767, #555555 30%, #414141 65%, #323232);
-    background-image: -moz-linear-gradient(top, #676767, #555555 30%, #414141 65%, #323232);
-    background-image: -o-linear-gradient(top, #676767, #555555 30%, #414141 65%, #323232);
-    background-image: -ms-linear-gradient(top, #676767, #555555 30%, #414141 65%, #323232);
-    background-image: linear-gradient(top, #676767, #555555 30%, #414141 65%, #323232); }
-  /* line 235, ../sass/extrovert.scss */
-  .extro-panel-inverse .x-panel-header-default,
-  .extro-panel-inverse .x-panel-header-default-framed,
-  .extro-panel-inverse .x-panel-body-default {
-    border-color: #414141; }
-  /* line 239, ../sass/extrovert.scss */
-  .extro-panel-inverse .x-panel-header-default-top,
-  .extro-panel-inverse .x-panel-header-default-framed {
-    box-shadow: 0 1px 0 0 #8d8d8d inset; }
+/* line 231, ../sass/extrovert.scss */
+.x-panel-header-default-top,
+.x-panel-header-default-framed {
+  box-shadow: 0 1px 0 0 #7394ac inset; }
 
-/* line 244, ../sass/extrovert.scss */
+/* line 13, ../sass/mixins/_child-panel.scss */
+.extro-panel-child .x-panel-header {
+  background-image: none;
+  background-color: #6f91a9;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #7898ae), color-stop(100%, #6287a1));
+  background-image: -webkit-linear-gradient(top, #7898ae, #6287a1);
+  background-image: -moz-linear-gradient(top, #7898ae, #6287a1);
+  background-image: -o-linear-gradient(top, #7898ae, #6287a1);
+  background-image: -ms-linear-gradient(top, #7898ae, #6287a1);
+  background-image: linear-gradient(top, #7898ae, #6287a1);
+  padding: 6px 8px 2px !important; }
+  /* line 18, ../sass/mixins/_child-panel.scss */
+  .extro-panel-child .x-panel-header .x-panel-header-text,
+  .extro-panel-child .x-panel-header .x-panel-header-text-default {
+    font-size: 12px;
+    font-weight: 400; }
+
+/* line 13, ../sass/mixins/_child-panel.scss */
+.extro-panel-child-danger .x-panel-header {
+  background-image: none;
+  background-color: #e78c89;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ea9995), color-stop(100%, #e37c78));
+  background-image: -webkit-linear-gradient(top, #ea9995, #e37c78);
+  background-image: -moz-linear-gradient(top, #ea9995, #e37c78);
+  background-image: -o-linear-gradient(top, #ea9995, #e37c78);
+  background-image: -ms-linear-gradient(top, #ea9995, #e37c78);
+  background-image: linear-gradient(top, #ea9995, #e37c78);
+  padding: 6px 8px 2px !important; }
+  /* line 18, ../sass/mixins/_child-panel.scss */
+  .extro-panel-child-danger .x-panel-header .x-panel-header-text, .extro-panel-child-danger .x-panel-header .x-panel-header-text-default {
+    font-size: 12px;
+    font-weight: 400; }
+
+/* line 13, ../sass/mixins/_child-panel.scss */
+.extro-panel-child-warning .x-panel-header {
+  background-image: none;
+  background-color: #fcc77d;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fccd8c), color-stop(100%, #fbbf69));
+  background-image: -webkit-linear-gradient(top, #fccd8c, #fbbf69);
+  background-image: -moz-linear-gradient(top, #fccd8c, #fbbf69);
+  background-image: -o-linear-gradient(top, #fccd8c, #fbbf69);
+  background-image: -ms-linear-gradient(top, #fccd8c, #fbbf69);
+  background-image: linear-gradient(top, #fccd8c, #fbbf69);
+  padding: 6px 8px 2px !important; }
+  /* line 18, ../sass/mixins/_child-panel.scss */
+  .extro-panel-child-warning .x-panel-header .x-panel-header-text, .extro-panel-child-warning .x-panel-header .x-panel-header-text-default {
+    font-size: 12px;
+    font-weight: 400; }
+
+/* line 13, ../sass/mixins/_child-panel.scss */
+.extro-panel-child-inverse .x-panel-header {
+  background-image: none;
+  background-color: #676767;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #6f6f6f), color-stop(100%, #5d5d5d));
+  background-image: -webkit-linear-gradient(top, #6f6f6f, #5d5d5d);
+  background-image: -moz-linear-gradient(top, #6f6f6f, #5d5d5d);
+  background-image: -o-linear-gradient(top, #6f6f6f, #5d5d5d);
+  background-image: -ms-linear-gradient(top, #6f6f6f, #5d5d5d);
+  background-image: linear-gradient(top, #6f6f6f, #5d5d5d);
+  padding: 6px 8px 2px !important; }
+  /* line 18, ../sass/mixins/_child-panel.scss */
+  .extro-panel-child-inverse .x-panel-header .x-panel-header-text, .extro-panel-child-inverse .x-panel-header .x-panel-header-text-default {
+    font-size: 12px;
+    font-weight: 400; }
+
+/*
+ * Custom panel styles. Note that you can optionally
+ * specify border width and header gradient as well:
+ * 
+ *   @include styled-panel(#336699, 2px, 'glossy');
+ * 
+ */
+/* line 255, ../sass/extrovert.scss */
 .extro-panel-danger {
-  border-color: #da4f49; }
-  /* line 247, ../sass/extrovert.scss */
+  border-color: #da4f49;
+  border-width: 1px; }
+  /* line 15, ../sass/mixins/_styled-panel.scss */
   .extro-panel-danger .x-panel-header {
     background-image: none;
     background-color: #da4f49;
-    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e78c89), color-stop(30%, #e1706b), color-stop(65%, #da4f49), color-stop(100%, #d53630));
-    background-image: -webkit-linear-gradient(top, #e78c89, #e1706b 30%, #da4f49 65%, #d53630);
-    background-image: -moz-linear-gradient(top, #e78c89, #e1706b 30%, #da4f49 65%, #d53630);
-    background-image: -o-linear-gradient(top, #e78c89, #e1706b 30%, #da4f49 65%, #d53630);
-    background-image: -ms-linear-gradient(top, #e78c89, #e1706b 30%, #da4f49 65%, #d53630);
-    background-image: linear-gradient(top, #e78c89, #e1706b 30%, #da4f49 65%, #d53630); }
-  /* line 252, ../sass/extrovert.scss */
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #dd5b56), color-stop(100%, #d73f38));
+    background-image: -webkit-linear-gradient(top, #dd5b56, #d73f38);
+    background-image: -moz-linear-gradient(top, #dd5b56, #d73f38);
+    background-image: -o-linear-gradient(top, #dd5b56, #d73f38);
+    background-image: -ms-linear-gradient(top, #dd5b56, #d73f38);
+    background-image: linear-gradient(top, #dd5b56, #d73f38); }
+  /* line 20, ../sass/mixins/_styled-panel.scss */
   .extro-panel-danger .x-panel-header-default,
   .extro-panel-danger .x-panel-header-default-framed,
   .extro-panel-danger .x-panel-body-default {
-    border-color: #da4f49; }
-  /* line 256, ../sass/extrovert.scss */
+    border-color: #da4f49;
+    border-width: 1px; }
+  /* line 25, ../sass/mixins/_styled-panel.scss */
   .extro-panel-danger .x-panel-header-default-top,
   .extro-panel-danger .x-panel-header-default-framed {
     box-shadow: 0 1px 0 0 #f4cac8 inset; }
 
-/* line 261, ../sass/extrovert.scss */
+/* line 258, ../sass/extrovert.scss */
 .extro-panel-warning {
-  border-color: #faa732; }
-  /* line 264, ../sass/extrovert.scss */
+  border-color: #faa732;
+  border-width: 1px; }
+  /* line 15, ../sass/mixins/_styled-panel.scss */
   .extro-panel-warning .x-panel-header {
     background-image: none;
     background-color: #faa732;
-    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fcc77d), color-stop(30%, #fbb85a), color-stop(65%, #faa732), color-stop(100%, #f99a14));
-    background-image: -webkit-linear-gradient(top, #fcc77d, #fbb85a 30%, #faa732 65%, #f99a14);
-    background-image: -moz-linear-gradient(top, #fcc77d, #fbb85a 30%, #faa732 65%, #f99a14);
-    background-image: -o-linear-gradient(top, #fcc77d, #fbb85a 30%, #faa732 65%, #f99a14);
-    background-image: -ms-linear-gradient(top, #fcc77d, #fbb85a 30%, #faa732 65%, #f99a14);
-    background-image: linear-gradient(top, #fcc77d, #fbb85a 30%, #faa732 65%, #f99a14); }
-  /* line 269, ../sass/extrovert.scss */
-  .extro-panel-warning .x-panel-header-default,
-  .extro-panel-warning .x-panel-header-default-framed,
-  .extro-panel-warning .x-panel-body-default {
-    border-color: #faa732; }
-  /* line 273, ../sass/extrovert.scss */
-  .extro-panel-warning .x-panel-header-default-top,
-  .extro-panel-warning .x-panel-header-default-framed {
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #faad41), color-stop(100%, #fa9e1e));
+    background-image: -webkit-linear-gradient(top, #faad41, #fa9e1e);
+    background-image: -moz-linear-gradient(top, #faad41, #fa9e1e);
+    background-image: -o-linear-gradient(top, #faad41, #fa9e1e);
+    background-image: -ms-linear-gradient(top, #faad41, #fa9e1e);
+    background-image: linear-gradient(top, #faad41, #fa9e1e); }
+  /* line 20, ../sass/mixins/_styled-panel.scss */
+  .extro-panel-warning .x-panel-header-default, .extro-panel-warning .x-panel-header-default-framed, .extro-panel-warning .x-panel-body-default {
+    border-color: #faa732;
+    border-width: 1px; }
+  /* line 25, ../sass/mixins/_styled-panel.scss */
+  .extro-panel-warning .x-panel-header-default-top, .extro-panel-warning .x-panel-header-default-framed {
     box-shadow: 0 1px 0 0 #fee7c7 inset; }
 
-/* line 280, ../sass/extrovert.scss */
-.x-panel-body .extro-panel-child .x-panel-header {
-  background-image: none;
-  background-color: #6f91a9;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #9fb5c5), color-stop(30%, #88a4b8), color-stop(65%, #6f91a9), color-stop(100%, #5d829c));
-  background-image: -webkit-linear-gradient(top, #9fb5c5, #88a4b8 30%, #6f91a9 65%, #5d829c);
-  background-image: -moz-linear-gradient(top, #9fb5c5, #88a4b8 30%, #6f91a9 65%, #5d829c);
-  background-image: -o-linear-gradient(top, #9fb5c5, #88a4b8 30%, #6f91a9 65%, #5d829c);
-  background-image: -ms-linear-gradient(top, #9fb5c5, #88a4b8 30%, #6f91a9 65%, #5d829c);
-  background-image: linear-gradient(top, #9fb5c5, #88a4b8 30%, #6f91a9 65%, #5d829c);
-  padding: 6px 8px 2px !important; }
-  /* line 285, ../sass/extrovert.scss */
-  .x-panel-body .extro-panel-child .x-panel-header .x-panel-header-text,
-  .x-panel-body .extro-panel-child .x-panel-header .x-panel-header-text-default {
-    font-size: 12px;
-    font-weight: 400; }
+/* line 261, ../sass/extrovert.scss */
+.extro-panel-inverse {
+  border-color: #414141;
+  border-width: 1px; }
+  /* line 15, ../sass/mixins/_styled-panel.scss */
+  .extro-panel-inverse .x-panel-header {
+    background-image: none;
+    background-color: #414141;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #494949), color-stop(100%, #373737));
+    background-image: -webkit-linear-gradient(top, #494949, #373737);
+    background-image: -moz-linear-gradient(top, #494949, #373737);
+    background-image: -o-linear-gradient(top, #494949, #373737);
+    background-image: -ms-linear-gradient(top, #494949, #373737);
+    background-image: linear-gradient(top, #494949, #373737); }
+  /* line 20, ../sass/mixins/_styled-panel.scss */
+  .extro-panel-inverse .x-panel-header-default, .extro-panel-inverse .x-panel-header-default-framed, .extro-panel-inverse .x-panel-body-default {
+    border-color: #414141;
+    border-width: 1px; }
+  /* line 25, ../sass/mixins/_styled-panel.scss */
+  .extro-panel-inverse .x-panel-header-default-top, .extro-panel-inverse .x-panel-header-default-framed {
+    box-shadow: 0 1px 0 0 #8d8d8d inset; }
 
-/* line 293, ../sass/extrovert.scss */
+/* line 265, ../sass/extrovert.scss */
 .extro-btn-primary {
   background: #0074CC; }
 
-/* line 296, ../sass/extrovert.scss */
+/* line 268, ../sass/extrovert.scss */
 .extro-btn-primary.x-btn-over {
   background-color: #0055cc; }
 
-/* line 299, ../sass/extrovert.scss */
+/* line 271, ../sass/extrovert.scss */
 .extro-btn-inverse {
   background: #414141; }
 
-/* line 302, ../sass/extrovert.scss */
+/* line 274, ../sass/extrovert.scss */
 .extro-btn-inverse.x-btn-over {
   background-color: #222222; }
 
-/* line 306, ../sass/extrovert.scss */
+/* line 278, ../sass/extrovert.scss */
 .extro-btn-primary,
 .extro-btn-inverse {
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25); }
 
-/* line 310, ../sass/extrovert.scss */
+/* line 282, ../sass/extrovert.scss */
 .extro-btn-primary .x-btn-inner,
 .extro-btn-inverse .x-btn-inner {
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
   color: white; }
 
-/* line 316, ../sass/extrovert.scss */
+/* line 288, ../sass/extrovert.scss */
 .x-boundlist-item-over,
 .x-boundlist-selected {
   color: #fff; }
 
-/* line 319, ../sass/extrovert.scss */
+/* line 291, ../sass/extrovert.scss */
 .x-boundlist-item {
   border-bottom: 1px solid #eee; }
 
-/* line 323, ../sass/extrovert.scss */
+/* line 295, ../sass/extrovert.scss */
 .x-toolbar {
   background-image: none;
   background-color: #dddddd;
@@ -9844,7 +9918,7 @@ textarea {
   background-image: -ms-linear-gradient(top, #ffffff, #f1f1f1 30%, #dddddd 65%, #cecece);
   background-image: linear-gradient(top, #ffffff, #f1f1f1 30%, #dddddd 65%, #cecece); }
 
-/* line 326, ../sass/extrovert.scss */
+/* line 298, ../sass/extrovert.scss */
 .x-toolbar-vertical {
   background-image: none;
   background-color: #dddddd;

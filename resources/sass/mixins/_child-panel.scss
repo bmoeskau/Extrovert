@@ -1,0 +1,23 @@
+/**
+ * Extrovert child Panel mixin
+ * @mixin child-panel
+ */
+@mixin child-panel(
+  $header-base-color: $extro-color-main-light,
+  $lighten: 15,
+  $font-size: 12px,
+  $font-weight: 400,
+  $padding: 6px 8px 2px !important,
+  $gradient-type: $base-gradient
+) {
+  .x-panel-header {
+      @include background-gradient(lighten($header-base-color, $lighten), $gradient-type);
+      padding: $padding;
+      
+      .x-panel-header-text,
+      .x-panel-header-text-default {
+          font-size: $font-size;
+          font-weight: $font-weight;
+      }
+   }
+}
