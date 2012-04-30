@@ -133,15 +133,19 @@ Ext.onReady(function() {
                             }]
                         },
                         changeHandler: function(cycleBtn, activeItem) {
-                            var center = Ext.get('center-region'),
+                            var center = Ext.getCmp('center-region'),
                                 cls = 'extro-panel-' + activeItem.text.toLowerCase();
                             
                             // Remove the previous one, if any
                             center.removeCls(center.extroCls);
                             
-                            if (cls !== 'default') {
+                            if (cls !== 'Default') {
                                 center.extroCls = cls;
                                 center.addCls(center.extroCls);
+                                center.setTitle(activeItem.text);
+                            }
+                            else {
+                                center.setTitle('Center');
                             }
                         }
                     }]
