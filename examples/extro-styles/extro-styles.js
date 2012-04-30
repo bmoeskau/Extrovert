@@ -5,32 +5,36 @@ Ext.require([
 
 Ext.onReady(function() {
     
-    function getDefaultPanel() {
+    function getDefaultPanel(x, y, frame) {
         return {
-            title: 'Default Panel',
-            width: 200,
-            height: 150,
-            x: 30,
-            y: 20,
+            title: (frame ? 'Framed ' : '') + 'Default Panel',
             layout: 'fit',
             bodyStyle: 'padding:10px;',
+            collapsible: true,
+            width: 200,
+            height: 150,
+            x: x,
+            y: y,
+            frame: frame,
             
             items: [{
-                title: 'Default Child Panel',
+                title: (frame ? 'Framed ' : '') + 'Child Panel',
                 cls: 'extro-panel-child',
+                frame: frame,
                 bodyStyle: 'padding:10px;',
                 html: "<code>cls: 'extro-panel-child'</code>"
             }]
         };
     }
     
-    function getStyledPanel(name, cls, x, y) {
+    function getCustomPanel(name, cls, x, y, frame) {
         return {
-            title: '"' + name + '" Panel',
+            title: (frame ? 'Framed ' : '') + '"' + name + '" Panel',
             width: 200,
             height: 150,
             x: x,
             y: y,
+            frame: frame,
             cls: 'extro-panel-' + cls,
             bodyStyle: 'padding:10px;',
             html: "<code>cls: 'extro-panel-" + cls + "'</code>"
@@ -60,13 +64,13 @@ Ext.onReady(function() {
             }]
         }
     }
-    
+        
     function getBorderLayoutPanel() {
         return {
             title : 'BorderLayout Panel with Child Styles',
-            width : 450,
+            width : 420,
             height: 350,
-            x: 660, y: 190,
+            x: 690, y: 190,
             collapsible: true,
             layout: {
                 type: 'border',
@@ -104,8 +108,44 @@ Ext.onReady(function() {
             },{
                 title: 'Center',
                 region: 'center',
-                collapsible: false,
-                html: 'Center'
+                id: 'center-region',
+                bodyStyle: 'padding:10px;',
+                html: 'You can change the panel style dynamically',
+                
+                dockedItems: [{
+                    xtype: 'toolbar',
+                    dock: 'bottom',
+                    
+                    items: [{
+                        xtype: 'cycle',
+                        showText: true,
+                        menu: {
+                            id: 'view-type-menu',
+                            items: [{
+                                text: 'Default',
+                                checked: true
+                            },{
+                                text: 'Danger'
+                            },{
+                                text: 'Warning'
+                            },{
+                                text: 'Inverse'
+                            }]
+                        },
+                        changeHandler: function(cycleBtn, activeItem) {
+                            var center = Ext.get('center-region'),
+                                cls = 'extro-panel-' + activeItem.text.toLowerCase();
+                            
+                            // Remove the previous one, if any
+                            center.removeCls(center.extroCls);
+                            
+                            if (cls !== 'default') {
+                                center.extroCls = cls;
+                                center.addCls(center.extroCls);
+                            }
+                        }
+                    }]
+                }]
             }]
         };
     }
@@ -120,17 +160,21 @@ Ext.onReady(function() {
         },{
             region: 'center',
             layout: 'absolute',
+            autoScroll: true,
             border: 0,
             
             items: [
                 // Row 1
-                getDefaultPanel(),
-                getStyledPanel('Inverse', 'inverse', 250, 20),
-                getStyledPanel('Warning', 'warning', 470, 20),
-                getStyledPanel('Danger', 'danger', 690, 20),
+                getDefaultPanel(30, 20),
+                getCustomPanel('Danger', 'danger', 250, 20),
+                getCustomPanel('Warning', 'warning', 470, 20),
+                getCustomPanel('Inverse', 'inverse', 690, 20),
                 getMultiPanel(),
                 
                 // Row 2
+                getDefaultPanel(30, 190, true),
+                getCustomPanel('Danger', 'danger', 250, 190, true),
+                getCustomPanel('Warning', 'warning', 470, 190, true),
                 getBorderLayoutPanel()
             ]
         }]

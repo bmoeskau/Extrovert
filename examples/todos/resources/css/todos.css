@@ -11384,13 +11384,37 @@ textarea {
   border-bottom: 1px solid #eee;
 }
 
-/* line 9, ../sass/todos.scss */
+/* line 311, ../../../../resources/sass/extrovert.scss */
+.x-toolbar {
+  background-image: none;
+  background-color: #dddddd;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(30%, #f1f1f1), color-stop(65%, #dddddd), color-stop(100%, #cecece));
+  background-image: -webkit-linear-gradient(top, #ffffff, #f1f1f1 30%, #dddddd 65%, #cecece);
+  background-image: -moz-linear-gradient(top, #ffffff, #f1f1f1 30%, #dddddd 65%, #cecece);
+  background-image: -o-linear-gradient(top, #ffffff, #f1f1f1 30%, #dddddd 65%, #cecece);
+  background-image: -ms-linear-gradient(top, #ffffff, #f1f1f1 30%, #dddddd 65%, #cecece);
+  background-image: linear-gradient(top, #ffffff, #f1f1f1 30%, #dddddd 65%, #cecece);
+}
+
+/* line 314, ../../../../resources/sass/extrovert.scss */
+.x-toolbar-vertical {
+  background-image: none;
+  background-color: #dddddd;
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #ffffff), color-stop(30%, #f1f1f1), color-stop(65%, #dddddd), color-stop(100%, #cecece));
+  background-image: -webkit-linear-gradient("left", #ffffff, #f1f1f1 30%, #dddddd 65%, #cecece);
+  background-image: -moz-linear-gradient("left", #ffffff, #f1f1f1 30%, #dddddd 65%, #cecece);
+  background-image: -o-linear-gradient("left", #ffffff, #f1f1f1 30%, #dddddd 65%, #cecece);
+  background-image: -ms-linear-gradient("left", #ffffff, #f1f1f1 30%, #dddddd 65%, #cecece);
+  background-image: linear-gradient("left", #ffffff, #f1f1f1 30%, #dddddd 65%, #cecece);
+}
+
+/* line 13, ../sass/todos.scss */
 #todo-viewport,
 #todo-viewport-body {
   background: #555;
 }
 
-/* line 13, ../sass/todos.scss */
+/* line 17, ../sass/todos.scss */
 .todo-header {
   background-image: none;
   background-color: #363f49;
@@ -11400,7 +11424,7 @@ textarea {
   background-image: -o-linear-gradient(top, #576575, #475360 30%, #363f49 65%, #293037);
   background-image: -ms-linear-gradient(top, #576575, #475360 30%, #363f49 65%, #293037);
   background-image: linear-gradient(top, #576575, #475360 30%, #363f49 65%, #293037);
-  padding: 10px;
+  padding: 15px;
   color: #fff;
   font-size: 24px;
   font-weight: 200;
@@ -11409,24 +11433,12 @@ textarea {
   border-bottom: 1px solid #16191d !important;
 }
 
-/* line 24, ../sass/todos.scss */
+/* line 28, ../sass/todos.scss */
 .todo-sidebar {
   border-width: 1px !important;
   padding: 0 0 5px 0;
 }
-/* line 28, ../sass/todos.scss */
+/* line 32, ../sass/todos.scss */
 .todo-sidebar .x-panel-body-default {
   border-color: #324654;
-}
-
-/* line 33, ../sass/todos.scss */
-.x-toolbar {
-  background-image: none;
-  background-color: #bbbbbb;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e1e1e1), color-stop(30%, #cfcfcf), color-stop(65%, #bbbbbb), color-stop(100%, #acacac));
-  background-image: -webkit-linear-gradient(top, #e1e1e1, #cfcfcf 30%, #bbbbbb 65%, #acacac);
-  background-image: -moz-linear-gradient(top, #e1e1e1, #cfcfcf 30%, #bbbbbb 65%, #acacac);
-  background-image: -o-linear-gradient(top, #e1e1e1, #cfcfcf 30%, #bbbbbb 65%, #acacac);
-  background-image: -ms-linear-gradient(top, #e1e1e1, #cfcfcf 30%, #bbbbbb 65%, #acacac);
-  background-image: linear-gradient(top, #e1e1e1, #cfcfcf 30%, #bbbbbb 65%, #acacac);
 }

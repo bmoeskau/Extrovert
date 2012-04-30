@@ -1,18 +1,22 @@
-
 @import 'compass';
 @import '../../../../resources/sass/extrovert.scss';
+
 
 $highlight-background-color: #7b8b9d;
 $header-background-color: darken($highlight-background-color, 30);
 
+
+//*************************************************
+// Custom To Do app styles
+//*************************************************
 #todo-viewport,
 #todo-viewport-body {
   background: #555;
-}
+} 
 
 .todo-header {
     @include background-gradient($header-background-color, 'bevel');
-    padding: 10px;
+    padding: 15px;
     color: #fff;
     font-size: 24px;
     font-weight: 200;
@@ -27,13 +31,5 @@ $header-background-color: darken($highlight-background-color, 30);
     
     .x-panel-body-default {
         border-color: $extro-color-main;
-    }
-}
-
-.x-toolbar {
-    @include background-gradient(#bbb, 'bevel');
-    
-    .x-toolbar-item {
-        //border-color: #bbb;
     }
 }

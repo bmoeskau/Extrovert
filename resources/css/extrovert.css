@@ -9711,61 +9711,76 @@ textarea {
 .x-accordion-hd .x-panel-header-text {
   text-shadow: 0 1px 0 #fff; }
 
-/* line 228, ../sass/extrovert.scss */
-.extro-panel-inverse .x-panel-header {
-  background-image: none;
-  background-color: #414141;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #676767), color-stop(30%, #555555), color-stop(65%, #414141), color-stop(100%, #323232));
-  background-image: -webkit-linear-gradient(top, #676767, #555555 30%, #414141 65%, #323232);
-  background-image: -moz-linear-gradient(top, #676767, #555555 30%, #414141 65%, #323232);
-  background-image: -o-linear-gradient(top, #676767, #555555 30%, #414141 65%, #323232);
-  background-image: -ms-linear-gradient(top, #676767, #555555 30%, #414141 65%, #323232);
-  background-image: linear-gradient(top, #676767, #555555 30%, #414141 65%, #323232); }
-/* line 232, ../sass/extrovert.scss */
-.extro-panel-inverse .x-panel-header-default,
-.extro-panel-inverse .x-panel-body-default {
+/* line 227, ../sass/extrovert.scss */
+.extro-panel-inverse {
   border-color: #414141; }
-/* line 235, ../sass/extrovert.scss */
-.extro-panel-inverse .x-panel-header-default-top {
-  box-shadow: 0 1px 0 0 #8d8d8d inset; }
+  /* line 230, ../sass/extrovert.scss */
+  .extro-panel-inverse .x-panel-header {
+    background-image: none;
+    background-color: #414141;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #676767), color-stop(30%, #555555), color-stop(65%, #414141), color-stop(100%, #323232));
+    background-image: -webkit-linear-gradient(top, #676767, #555555 30%, #414141 65%, #323232);
+    background-image: -moz-linear-gradient(top, #676767, #555555 30%, #414141 65%, #323232);
+    background-image: -o-linear-gradient(top, #676767, #555555 30%, #414141 65%, #323232);
+    background-image: -ms-linear-gradient(top, #676767, #555555 30%, #414141 65%, #323232);
+    background-image: linear-gradient(top, #676767, #555555 30%, #414141 65%, #323232); }
+  /* line 235, ../sass/extrovert.scss */
+  .extro-panel-inverse .x-panel-header-default,
+  .extro-panel-inverse .x-panel-header-default-framed,
+  .extro-panel-inverse .x-panel-body-default {
+    border-color: #414141; }
+  /* line 239, ../sass/extrovert.scss */
+  .extro-panel-inverse .x-panel-header-default-top,
+  .extro-panel-inverse .x-panel-header-default-framed {
+    box-shadow: 0 1px 0 0 #8d8d8d inset; }
 
-/* line 241, ../sass/extrovert.scss */
-.extro-panel-danger .x-panel-header {
-  background-image: none;
-  background-color: #da4f49;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e78c89), color-stop(30%, #e1706b), color-stop(65%, #da4f49), color-stop(100%, #d53630));
-  background-image: -webkit-linear-gradient(top, #e78c89, #e1706b 30%, #da4f49 65%, #d53630);
-  background-image: -moz-linear-gradient(top, #e78c89, #e1706b 30%, #da4f49 65%, #d53630);
-  background-image: -o-linear-gradient(top, #e78c89, #e1706b 30%, #da4f49 65%, #d53630);
-  background-image: -ms-linear-gradient(top, #e78c89, #e1706b 30%, #da4f49 65%, #d53630);
-  background-image: linear-gradient(top, #e78c89, #e1706b 30%, #da4f49 65%, #d53630); }
-/* line 245, ../sass/extrovert.scss */
-.extro-panel-danger .x-panel-header-default,
-.extro-panel-danger .x-panel-body-default {
+/* line 244, ../sass/extrovert.scss */
+.extro-panel-danger {
   border-color: #da4f49; }
-/* line 248, ../sass/extrovert.scss */
-.extro-panel-danger .x-panel-header-default-top {
-  box-shadow: 0 1px 0 0 #f4cac8 inset; }
+  /* line 247, ../sass/extrovert.scss */
+  .extro-panel-danger .x-panel-header {
+    background-image: none;
+    background-color: #da4f49;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e78c89), color-stop(30%, #e1706b), color-stop(65%, #da4f49), color-stop(100%, #d53630));
+    background-image: -webkit-linear-gradient(top, #e78c89, #e1706b 30%, #da4f49 65%, #d53630);
+    background-image: -moz-linear-gradient(top, #e78c89, #e1706b 30%, #da4f49 65%, #d53630);
+    background-image: -o-linear-gradient(top, #e78c89, #e1706b 30%, #da4f49 65%, #d53630);
+    background-image: -ms-linear-gradient(top, #e78c89, #e1706b 30%, #da4f49 65%, #d53630);
+    background-image: linear-gradient(top, #e78c89, #e1706b 30%, #da4f49 65%, #d53630); }
+  /* line 252, ../sass/extrovert.scss */
+  .extro-panel-danger .x-panel-header-default,
+  .extro-panel-danger .x-panel-header-default-framed,
+  .extro-panel-danger .x-panel-body-default {
+    border-color: #da4f49; }
+  /* line 256, ../sass/extrovert.scss */
+  .extro-panel-danger .x-panel-header-default-top,
+  .extro-panel-danger .x-panel-header-default-framed {
+    box-shadow: 0 1px 0 0 #f4cac8 inset; }
 
-/* line 254, ../sass/extrovert.scss */
-.extro-panel-warning .x-panel-header {
-  background-image: none;
-  background-color: #faa732;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fcc77d), color-stop(30%, #fbb85a), color-stop(65%, #faa732), color-stop(100%, #f99a14));
-  background-image: -webkit-linear-gradient(top, #fcc77d, #fbb85a 30%, #faa732 65%, #f99a14);
-  background-image: -moz-linear-gradient(top, #fcc77d, #fbb85a 30%, #faa732 65%, #f99a14);
-  background-image: -o-linear-gradient(top, #fcc77d, #fbb85a 30%, #faa732 65%, #f99a14);
-  background-image: -ms-linear-gradient(top, #fcc77d, #fbb85a 30%, #faa732 65%, #f99a14);
-  background-image: linear-gradient(top, #fcc77d, #fbb85a 30%, #faa732 65%, #f99a14); }
-/* line 258, ../sass/extrovert.scss */
-.extro-panel-warning .x-panel-header-default,
-.extro-panel-warning .x-panel-body-default {
-  border-color: #faa732; }
 /* line 261, ../sass/extrovert.scss */
-.extro-panel-warning .x-panel-header-default-top {
-  box-shadow: 0 1px 0 0 #fee7c7 inset; }
+.extro-panel-warning {
+  border-color: #faa732; }
+  /* line 264, ../sass/extrovert.scss */
+  .extro-panel-warning .x-panel-header {
+    background-image: none;
+    background-color: #faa732;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fcc77d), color-stop(30%, #fbb85a), color-stop(65%, #faa732), color-stop(100%, #f99a14));
+    background-image: -webkit-linear-gradient(top, #fcc77d, #fbb85a 30%, #faa732 65%, #f99a14);
+    background-image: -moz-linear-gradient(top, #fcc77d, #fbb85a 30%, #faa732 65%, #f99a14);
+    background-image: -o-linear-gradient(top, #fcc77d, #fbb85a 30%, #faa732 65%, #f99a14);
+    background-image: -ms-linear-gradient(top, #fcc77d, #fbb85a 30%, #faa732 65%, #f99a14);
+    background-image: linear-gradient(top, #fcc77d, #fbb85a 30%, #faa732 65%, #f99a14); }
+  /* line 269, ../sass/extrovert.scss */
+  .extro-panel-warning .x-panel-header-default,
+  .extro-panel-warning .x-panel-header-default-framed,
+  .extro-panel-warning .x-panel-body-default {
+    border-color: #faa732; }
+  /* line 273, ../sass/extrovert.scss */
+  .extro-panel-warning .x-panel-header-default-top,
+  .extro-panel-warning .x-panel-header-default-framed {
+    box-shadow: 0 1px 0 0 #fee7c7 inset; }
 
-/* line 268, ../sass/extrovert.scss */
+/* line 280, ../sass/extrovert.scss */
 .x-panel-body .extro-panel-child .x-panel-header {
   background-image: none;
   background-color: #6f91a9;
@@ -9776,44 +9791,66 @@ textarea {
   background-image: -ms-linear-gradient(top, #9fb5c5, #88a4b8 30%, #6f91a9 65%, #5d829c);
   background-image: linear-gradient(top, #9fb5c5, #88a4b8 30%, #6f91a9 65%, #5d829c);
   padding: 6px 8px 2px !important; }
-  /* line 273, ../sass/extrovert.scss */
+  /* line 285, ../sass/extrovert.scss */
   .x-panel-body .extro-panel-child .x-panel-header .x-panel-header-text,
   .x-panel-body .extro-panel-child .x-panel-header .x-panel-header-text-default {
     font-size: 12px;
     font-weight: 400; }
 
-/* line 281, ../sass/extrovert.scss */
+/* line 293, ../sass/extrovert.scss */
 .extro-btn-primary {
   background: #0074CC; }
 
-/* line 284, ../sass/extrovert.scss */
+/* line 296, ../sass/extrovert.scss */
 .extro-btn-primary.x-btn-over {
   background-color: #0055cc; }
 
-/* line 287, ../sass/extrovert.scss */
+/* line 299, ../sass/extrovert.scss */
 .extro-btn-inverse {
   background: #414141; }
 
-/* line 290, ../sass/extrovert.scss */
+/* line 302, ../sass/extrovert.scss */
 .extro-btn-inverse.x-btn-over {
   background-color: #222222; }
 
-/* line 294, ../sass/extrovert.scss */
+/* line 306, ../sass/extrovert.scss */
 .extro-btn-primary,
 .extro-btn-inverse {
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25); }
 
-/* line 298, ../sass/extrovert.scss */
+/* line 310, ../sass/extrovert.scss */
 .extro-btn-primary .x-btn-inner,
 .extro-btn-inverse .x-btn-inner {
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
   color: white; }
 
-/* line 304, ../sass/extrovert.scss */
+/* line 316, ../sass/extrovert.scss */
 .x-boundlist-item-over,
 .x-boundlist-selected {
   color: #fff; }
 
-/* line 307, ../sass/extrovert.scss */
+/* line 319, ../sass/extrovert.scss */
 .x-boundlist-item {
   border-bottom: 1px solid #eee; }
+
+/* line 323, ../sass/extrovert.scss */
+.x-toolbar {
+  background-image: none;
+  background-color: #dddddd;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(30%, #f1f1f1), color-stop(65%, #dddddd), color-stop(100%, #cecece));
+  background-image: -webkit-linear-gradient(top, #ffffff, #f1f1f1 30%, #dddddd 65%, #cecece);
+  background-image: -moz-linear-gradient(top, #ffffff, #f1f1f1 30%, #dddddd 65%, #cecece);
+  background-image: -o-linear-gradient(top, #ffffff, #f1f1f1 30%, #dddddd 65%, #cecece);
+  background-image: -ms-linear-gradient(top, #ffffff, #f1f1f1 30%, #dddddd 65%, #cecece);
+  background-image: linear-gradient(top, #ffffff, #f1f1f1 30%, #dddddd 65%, #cecece); }
+
+/* line 326, ../sass/extrovert.scss */
+.x-toolbar-vertical {
+  background-image: none;
+  background-color: #dddddd;
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #ffffff), color-stop(30%, #f1f1f1), color-stop(65%, #dddddd), color-stop(100%, #cecece));
+  background-image: -webkit-linear-gradient("left", #ffffff, #f1f1f1 30%, #dddddd 65%, #cecece);
+  background-image: -moz-linear-gradient("left", #ffffff, #f1f1f1 30%, #dddddd 65%, #cecece);
+  background-image: -o-linear-gradient("left", #ffffff, #f1f1f1 30%, #dddddd 65%, #cecece);
+  background-image: -ms-linear-gradient("left", #ffffff, #f1f1f1 30%, #dddddd 65%, #cecece);
+  background-image: linear-gradient("left", #ffffff, #f1f1f1 30%, #dddddd 65%, #cecece); }

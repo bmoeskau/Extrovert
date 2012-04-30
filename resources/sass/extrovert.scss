@@ -225,40 +225,52 @@ textarea {
 }
 
 .extro-panel-inverse {
+  border-color: $extro-color-inverse;
+  
   .x-panel-header {
     @include background-gradient($extro-color-inverse, 'bevel');
   }
   .x-panel-header-default,
+  .x-panel-header-default-framed,
   .x-panel-body-default {
     border-color: $extro-color-inverse;
   }
-  .x-panel-header-default-top {
+  .x-panel-header-default-top,
+  .x-panel-header-default-framed {
     box-shadow: 0 1px 0 0 lighten($extro-color-inverse, 30) inset
   }
 }
 
 .extro-panel-danger {
+  border-color: $extro-color-danger;
+  
   .x-panel-header {
     @include background-gradient($extro-color-danger, 'bevel');
   }
   .x-panel-header-default,
+  .x-panel-header-default-framed,
   .x-panel-body-default {
     border-color: $extro-color-danger;
   }
-  .x-panel-header-default-top {
+  .x-panel-header-default-top,
+  .x-panel-header-default-framed {
     box-shadow: 0 1px 0 0 lighten($extro-color-danger, 30) inset
   }
 }
 
 .extro-panel-warning {
+  border-color: $extro-color-warning;
+  
   .x-panel-header {
     @include background-gradient($extro-color-warning, 'bevel');
   }
   .x-panel-header-default,
+  .x-panel-header-default-framed,
   .x-panel-body-default {
     border-color: $extro-color-warning;
   }
-  .x-panel-header-default-top {
+  .x-panel-header-default-top,
+  .x-panel-header-default-framed {
     box-shadow: 0 1px 0 0 lighten($extro-color-warning, 30) inset
   }
 }
@@ -306,4 +318,11 @@ textarea {
 }
 .x-boundlist-item {
   border-bottom: 1px solid #eee; 
+}
+
+.x-toolbar {
+  @include background-gradient(#ddd, 'bevel');
+}
+.x-toolbar-vertical {
+  @include background-gradient(#ddd, 'bevel', 'left');
 }
