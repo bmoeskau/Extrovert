@@ -17,7 +17,8 @@ Ext.define('Todo.view.SideBar', {
             
             defaults: {
                 collapsible: 'true',
-                border: false
+                border: false,
+                cls: 'extro-panel-child'
             },
             
             dockedItems: [{

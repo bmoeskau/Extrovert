@@ -26,20 +26,7 @@ $header-background-color: darken($highlight-background-color, 30);
     padding: 0 0 5px 0; 
     
     .x-panel-body-default {
-        border-color: $extro-main-color;
-    }
-    
-    .x-panel-body {
-        .x-panel-header {
-            @include background-gradient(lighten($extro-main-light, 15), 'glossy');
-            padding: 5px 8px 3px !important;
-            
-            .x-panel-header-text,
-            .x-panel-header-text-default {
-                font-size: $font-size;
-                font-weight: 400;
-            }
-        }
+        border-color: $extro-color-main;
     }
 }
 
