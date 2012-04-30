@@ -8,7 +8,7 @@ Ext.define('Todo.view.List', {
             border: false,
             frame: true,
             flex: 1,
-            margin: '8 8 8 0'
+            margin: '12 12 12 0'
         });
                 
         this.callParent(arguments);

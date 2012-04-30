@@ -9,7 +9,7 @@ Ext.define('Todo.view.SideBar', {
             width: 200,
             cls: 'todo-sidebar',
             frame: true,
-            margin: '8 3 8 8',
+            margin: '12 3 12 12',
             
             layout: {
                 
