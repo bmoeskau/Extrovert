@@ -9,9 +9,9 @@ $header-background-color: darken($highlight-background-color, 30);
 //*************************************************
 // Custom To Do app styles
 //*************************************************
-#todo-viewport,
-#todo-viewport-body {
-  background: #555;
+
+.x-border-layout-ct {
+  background-color: #444;
 } 
 
 .todo-header {
@@ -25,11 +25,14 @@ $header-background-color: darken($highlight-background-color, 30);
     border-bottom: 1px solid darken($header-background-color, 15) !important;
 }
 
-.todo-sidebar {
-    border-width: 1px !important;
-    padding: 0 0 5px 0; 
-    
-    .x-panel-body-default {
-        border-color: $extro-color-main;
-    }
+.todo-main-panel {
+  @include styled-panel(
+    #333,     // border-color / header-base-color
+    2px,      // border-width
+    10,       // header-lighten (%)
+    'glossy', // header-gradient-style
+    18px,     // header-font-size
+    400,      // header-font-weight
+    10px      // header-padding
+  );
 }

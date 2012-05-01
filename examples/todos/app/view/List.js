@@ -3,12 +3,13 @@ Ext.define('Todo.view.List', {
     extend: 'Ext.panel.Panel',
     
     initComponent: function() {
-        Ext.apply(this, {
+        Ext.applyIf(this, {
             title: 'To Do',
+            region: 'center',
+            cls: 'todo-main-panel',
             border: false,
             frame: true,
-            flex: 1,
-            margin: '12 12 12 0'
+            margin: '10 10 10 0'
         });
                 
         this.callParent(arguments);

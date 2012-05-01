@@ -1,0 +1,33 @@
+[{
+    id: 1,
+    name: 'Extensible',
+    lists: [{
+        id: 1,
+        name: 'Calendar Pro',
+        tasks: [{
+            id: 100,
+            text: 'Recurrence',
+            due: '2012-05-01',
+            done: false
+        },{
+            id: 101,
+            text: 'Year view',
+            due: '2012-06-01',
+            done: false
+        }]
+    },{
+        id: 2,
+        name: 'Extrovert',
+        tasks: [{
+            id: 200,
+            text: 'ToDo Example',
+            due: '2012-05-01',
+            done: false
+        },{
+            id: 201,
+            text: 'Custom theme',
+            due: '2012-05-02',
+            done: false
+        }]
+    }]
+}]

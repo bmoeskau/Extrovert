@@ -3,20 +3,21 @@ Ext.define('Todo.view.SideBar', {
     extend: 'Ext.panel.Panel',
     
     initComponent: function() {
-        Ext.apply(this, {
+        Ext.applyIf(this, {
             title: 'Projects',
-            dock: 'left',
+            region: 'west',
+            collapsible: true,
+            split: true,
             width: 200,
-            cls: 'todo-sidebar',
-            frame: true,
-            margin: '12 3 12 12',
+            cls: 'todo-main-panel',
+            margin: '10 0 10 10',
             
             layout: {
-                
+                type: 'accordion'
             },
             
             defaults: {
-                collapsible: 'true',
+                collapsible: true,
                 border: false,
                 cls: 'extro-panel-child'
             },
@@ -24,7 +25,6 @@ Ext.define('Todo.view.SideBar', {
             dockedItems: [{
                 xtype: 'toolbar',
                 dock: 'top',
-                border: false,
                 items: [{
                     text: 'Foo',
                     scale: 'medium'
@@ -38,12 +38,6 @@ Ext.define('Todo.view.SideBar', {
                 title: 'Bar',
                 html: 'asddf'
             }]
-            
-            // tools: [{
-                // type: 'left',
-                // handler: function(e, toolEl, header) {
-                // }
-            // }]
         });
                 
         this.callParent(arguments);

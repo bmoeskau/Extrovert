@@ -6,6 +6,8 @@ Ext.define('Todo.view.Header', {
     
     initComponent: function() {
         Ext.applyIf(this, {
+            region: 'north',
+            height: 60,
             html: 'Extrovert ToDo'
         });
                 
