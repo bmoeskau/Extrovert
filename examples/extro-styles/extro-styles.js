@@ -19,19 +19,19 @@ Ext.onReady(function() {
             
             items: [{
                 title: (frame ? 'Framed ' : '') + 'Child Panel',
-                cls: 'extro-panel-child',
+                cls: 'extro-panel-child-light',
                 frame: frame,
                 bodyStyle: 'padding:10px;',
-                html: "<code>cls: 'extro-panel-child'</code>"
+                html: "<code>cls: 'extro-panel-child-light'</code>"
             }]
         };
     }
     
-    function getCustomPanel(name, cls, x, y, frame) {
+    function getCustomPanel(name, cls, x, y, frame, w, h) {
         return {
             title: (frame ? 'Framed ' : '') + '"' + name + '" Panel',
-            width: 200,
-            height: 150,
+            width: w || 200,
+            height: h || 150,
             x: x,
             y: y,
             frame: frame,
@@ -53,18 +53,20 @@ Ext.onReady(function() {
             
             items: [{
                 title: 'First Child',
-                cls: 'extro-panel-danger',
+                cls: 'extro-panel-child-danger-light',
                 layout: 'fit',
                 bodyStyle: 'padding:10px;',
                 
                 items: [{
                     title: 'Second Child',
-                    cls: 'extro-panel-warning'
+                    cls: 'extro-panel-child-warning-light'
                 }]
             }]
         }
     }
-        
+     
+    var centerCls = 'extro-panel-child-danger';
+    
     function getBorderLayoutPanel() {
         return {
             title : 'BorderLayout Panel with Child Styles',
@@ -79,7 +81,7 @@ Ext.onReady(function() {
             defaults: {
                 collapsible: true,
                 split: true,
-                cls: 'extro-panel-child'
+                cls: 'extro-panel-child-light'
             },
             
             items: [{
@@ -106,12 +108,13 @@ Ext.onReady(function() {
                 html: 'East',
                 width: 100
             },{
-                title: 'Center',
+                title: 'Danger',
                 region: 'center',
                 id: 'center-region',
                 collapsible: false,
                 bodyStyle: 'padding:10px;',
                 html: 'You can change the panel style dynamically',
+                cls: centerCls,
                 
                 dockedItems: [{
                     xtype: 'toolbar',
@@ -123,10 +126,10 @@ Ext.onReady(function() {
                         menu: {
                             id: 'view-type-menu',
                             items: [{
-                                text: 'Default',
-                                checked: true
+                                text: 'Default'
                             },{
-                                text: 'Danger'
+                                text: 'Danger',
+                                checked: true
                             },{
                                 text: 'Warning'
                             },{
@@ -137,17 +140,17 @@ Ext.onReady(function() {
                             var center = Ext.getCmp('center-region'),
                                 cls = 'extro-panel-child-' + activeItem.text.toLowerCase();
                             
-                            // Remove the previous one, if any
-                            center.removeCls(center.extroCls);
+                            center.removeCls(centerCls);
                             
-                            if (cls !== 'Default') {
-                                center.extroCls = cls;
-                                center.addCls(center.extroCls);
-                                center.setTitle(activeItem.text);
-                            }
-                            else {
+                            if (activeItem.text === 'Default') {
+                                centerCls = 'extro-panel-child-light';
                                 center.setTitle('Center');
                             }
+                            else {
+                                centerCls = cls;
+                                center.setTitle(activeItem.text);
+                            }
+                            center.addCls(centerCls).doLayout();
                         }
                     }]
                 }]
@@ -180,7 +183,10 @@ Ext.onReady(function() {
                 getDefaultPanel(30, 190, true),
                 getCustomPanel('Danger', 'danger', 250, 190, true),
                 getCustomPanel('Warning', 'warning', 470, 190, true),
-                getBorderLayoutPanel()
+                getBorderLayoutPanel(),
+                
+                // Row 3
+                getCustomPanel('Special', 'special', 30, 360, true, 420)
             ]
         }]
     })

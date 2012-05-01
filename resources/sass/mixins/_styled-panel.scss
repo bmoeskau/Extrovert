@@ -8,12 +8,28 @@
  *        to the value of $base-gradient). Can either be a string which is a predefined
  *        gradient, or it can be a list of color stops.
  */
-@mixin styled-panel($border-color, $border-width: 1px, $gradient-type: $base-gradient) {
+@mixin styled-panel(
+  $border-color: $extro-color-main,
+  $border-width: 1px,
+  $header-lighten: 0,
+  $header-gradient-type: $base-gradient,
+  $header-font-size: $panel-header-font-size,
+  $header-font-weight: $panel-header-font-weight,
+  $header-padding: $panel-header-padding
+) {
   border-color: $border-color;
   border-width: $border-width;
   
-  .x-panel-header {
-    @include background-gradient($border-color, $gradient-type);
+  .x-panel-header,
+  .x-panel-header-horizontal {
+    @include background-gradient(lighten($border-color, $header-lighten), $header-gradient-type);
+    padding: $header-padding !important;
+    
+    .x-panel-header-text,
+    .x-panel-header-text-default {
+        font-size: $header-font-size;
+        font-weight: $header-font-weight;
+    }
   }
   .x-panel-header-default,
   .x-panel-header-default-framed,

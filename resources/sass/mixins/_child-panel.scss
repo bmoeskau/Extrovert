@@ -4,20 +4,20 @@
  */
 @mixin child-panel(
   $header-base-color: $extro-color-main-light,
-  $lighten: 15,
-  $font-size: 12px,
-  $font-weight: 400,
-  $padding: 6px 8px 2px !important,
-  $gradient-type: $base-gradient
+  $header-lighten: 0,
+  $border-width: 1px,
+  $header-gradient-type: $base-gradient,
+  $header-font-size: $font-size,
+  $header-font-weight: $panel-header-font-weight,
+  $header-padding: 6px 8px 2px !important
 ) {
-  .x-panel-header {
-      @include background-gradient(lighten($header-base-color, $lighten), $gradient-type);
-      padding: $padding;
-      
-      .x-panel-header-text,
-      .x-panel-header-text-default {
-          font-size: $font-size;
-          font-weight: $font-weight;
-      }
-   }
+  @include styled-panel(
+    $border-color: $header-base-color,
+    $border-width: $border-width,
+    $header-gradient-type: $header-gradient-type,
+    $header-lighten: $header-lighten,
+    $header-font-size: $header-font-size,
+    $header-font-weight: $header-font-weight,
+    $header-padding: $header-padding
+  );
 }
