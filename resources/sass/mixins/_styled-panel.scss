@@ -31,6 +31,10 @@
         font-weight: $header-font-weight;
     }
   }
+  .x-panel-header-text-default,
+  .x-panel-header-text-default-framed {
+    line-height: ceil($header-font-size * 1.3);
+  }
   .x-panel-header-default,
   .x-panel-header-default-framed,
   .x-panel-body-default {

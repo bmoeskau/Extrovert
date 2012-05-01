@@ -9,13 +9,13 @@
   $header-gradient-type: $base-gradient,
   $header-font-size: $font-size,
   $header-font-weight: $panel-header-font-weight,
-  $header-padding: 6px 8px 2px !important
+  $header-padding: 6px 8px 2px
 ) {
   @include styled-panel(
     $border-color: $header-base-color,
     $border-width: $border-width,
-    $header-gradient-type: $header-gradient-type,
     $header-lighten: $header-lighten,
+    $header-gradient-type: $header-gradient-type,
     $header-font-size: $header-font-size,
     $header-font-weight: $header-font-weight,
     $header-padding: $header-padding
