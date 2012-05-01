@@ -171,7 +171,7 @@ $button-large-font-weight : 200;
 @import 'mixins/styled-panel';
 @import 'mixins/child-panel';
 
-.x-mask {
+.#{$prefix}mask {
   background: -moz-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%, rgba(37,37,37,0.2) 39%, rgba(85,85,85,0.75) 90%, rgba(94,94,94,1) 100%); /* FF3.6+ */
   background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(0,0,0,0)), color-stop(39%,rgba(37,37,37,0.2)), color-stop(90%,rgba(85,85,85,0.75)), color-stop(100%,rgba(94,94,94,1))); /* Chrome,Safari4+ */
   background: -webkit-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%,rgba(37,37,37,0.2) 39%,rgba(85,85,85,0.75) 90%,rgba(94,94,94,1) 100%); /* Chrome10+,Safari5.1+ */
@@ -197,7 +197,7 @@ textarea {
   //-moz-border-radius: $extro-field-border-radius;
   //-webkit-border-radius: $extro-field-border-radius;
 }
-.x-form-focus {
+.#{$prefix}form-focus {
   border-color: $base-color !important;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
   -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
@@ -209,22 +209,22 @@ textarea {
 
 // The SASS doesn't provide a variable that allows overriding this inner shadow
 // ONLY for active tabs so we have to default to a CSS override:
-.x-tab-default-top-active {
+.#{$prefix}tab-default-top-active {
   -webkit-box-shadow: rgba(255,255,255,0.6) 0 1px 0px 0 inset, $base-color -1px 0 0px 0 inset, $base-color 1px 0 0px 0 inset;
   -moz-box-shadow: rgba(255,255,255,0.6) 0 1px 0px 0 inset, $base-color -1px 0 0px 0 inset, $base-color 1px 0 0px 0 inset;
   box-shadow: rgba(255,255,255,0.6) 0 1px 0px 0 inset, $base-color -1px 0 0px 0 inset, $base-color 1px 0 0px 0 inset;
   border-bottom: 1px solid $extro-color-main-light !important;
 }
-.x-tab button {
+.#{$prefix}tab button {
   padding: 2px;
   font-size: 12px;
 }
 
-.x-panel-header-text-default,
-.x-panel-header-text-default-framed {
+.#{$prefix}panel-header-text-default,
+.#{$prefix}panel-header-text-default-framed {
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
 }
-.x-accordion-hd .x-panel-header-text {
+.#{$prefix}accordion-hd .#{$prefix}panel-header-text {
   text-shadow: 0 1px 0 #fff;
 }
 
@@ -246,7 +246,9 @@ textarea {
 }
 
 // Not really a useful style, but demonstrates the level of
-// customization you can achieve with a one-line definition:
+// customization you can achieve with a one-line definition.
+// Use this as a template for creating your own custom panel
+// classes as demonstrated in the ToDo app example.
 .extro-panel-special {
   @include styled-panel(
     #369,     // border-color / header-base-color
@@ -257,8 +259,8 @@ textarea {
     400,      // header-font-weight
     12px      // header-padding
   );
-  .x-panel-header-text-default,
-  .x-panel-header-text-default-framed {
+  .#{$prefix}panel-header-text-default,
+  .#{$prefix}panel-header-text-default-framed {
     line-height: 25px;
   }
 }
@@ -301,36 +303,36 @@ textarea {
 .extro-btn-primary {
   background: #0074CC;
 }
-.extro-btn-primary.x-btn-over {
+.extro-btn-primary.#{$prefix}btn-over {
   background-color: #0055cc;
 }
 .extro-btn-inverse {
   background: #414141;
 }
-.extro-btn-inverse.x-btn-over {
+.extro-btn-inverse.#{$prefix}btn-over {
   background-color: #222222;
 }
 .extro-btn-primary,
 .extro-btn-inverse {
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
 }
-.extro-btn-primary .x-btn-inner,
-.extro-btn-inverse .x-btn-inner {
+.extro-btn-primary .#{$prefix}btn-inner,
+.extro-btn-inverse .#{$prefix}btn-inner {
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
   color: white;
 }
 
-.x-boundlist-item-over,
-.x-boundlist-selected {
+.#{$prefix}boundlist-item-over,
+.#{$prefix}boundlist-selected {
   color: #fff;
 }
-.x-boundlist-item {
+.#{$prefix}boundlist-item {
   border-bottom: 1px solid #eee; 
 }
 
-.x-toolbar {
+.#{$prefix}toolbar {
   @include background-gradient(#ddd, 'bevel');
 }
-.x-toolbar-vertical {
+.#{$prefix}toolbar-vertical {
   @include background-gradient(#ddd, 'bevel', 'left');
 }
