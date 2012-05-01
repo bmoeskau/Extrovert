@@ -257,6 +257,10 @@ textarea {
     400,      // header-font-weight
     12px      // header-padding
   );
+  .x-panel-header-text-default,
+  .x-panel-header-text-default-framed {
+    line-height: 25px;
+  }
 }
 
 
