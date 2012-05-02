@@ -14,8 +14,9 @@
   border-width: $border-width;
   box-shadow: 0 1px 0 0 lighten($border-color, 30) inset;
   
-  .#{prefix}panel-header-text,
-  .#{prefix}panel-header-text-default {
+  .#{$prefix}panel-header-text,
+  .#{$prefix}panel-header-text-default,
+  .#{$prefix}panel-header-text-default-framed {
       font-size: $header-font-size !important;
       font-weight: $header-font-weight !important;
   }

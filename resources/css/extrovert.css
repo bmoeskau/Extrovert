@@ -9737,9 +9737,10 @@ textarea {
   border-width: 10;
   box-shadow: 0 1px 0 0 #9fb5c5 inset;
   padding: 4px 5px 3px !important; }
-  /* line 18, ../sass/mixins/_styled-header.scss */
-  .x-accordion-hd .prefixpanel-header-text,
-  .x-accordion-hd .prefixpanel-header-text-default {
+  /* line 19, ../sass/mixins/_styled-header.scss */
+  .x-accordion-hd .x-panel-header-text,
+  .x-accordion-hd .x-panel-header-text-default,
+  .x-accordion-hd .x-panel-header-text-default-framed {
     font-size: 15px !important;
     font-weight: 400 !important; }
   /* line 234, ../sass/extrovert.scss */
@@ -9776,17 +9777,22 @@ textarea {
     border-color: #da4f49;
     border-width: 1px;
     box-shadow: 0 1px 0 0 #f4cac8 inset; }
-    /* line 18, ../sass/mixins/_styled-header.scss */
-    .extro-panel-danger .x-panel-header .prefixpanel-header-text,
-    .extro-panel-danger .x-panel-header .prefixpanel-header-text-default,
-    .extro-panel-danger .x-panel-header-default-top .prefixpanel-header-text,
-    .extro-panel-danger .x-panel-header-default-top .prefixpanel-header-text-default,
-    .extro-panel-danger .x-panel-header-default .prefixpanel-header-text,
-    .extro-panel-danger .x-panel-header-default .prefixpanel-header-text-default,
-    .extro-panel-danger .x-panel-header-default-framed .prefixpanel-header-text,
-    .extro-panel-danger .x-panel-header-default-framed .prefixpanel-header-text-default,
-    .extro-panel-danger .x-panel-header-horizontal .prefixpanel-header-text,
-    .extro-panel-danger .x-panel-header-horizontal .prefixpanel-header-text-default {
+    /* line 19, ../sass/mixins/_styled-header.scss */
+    .extro-panel-danger .x-panel-header .x-panel-header-text,
+    .extro-panel-danger .x-panel-header .x-panel-header-text-default,
+    .extro-panel-danger .x-panel-header .x-panel-header-text-default-framed,
+    .extro-panel-danger .x-panel-header-default-top .x-panel-header-text,
+    .extro-panel-danger .x-panel-header-default-top .x-panel-header-text-default,
+    .extro-panel-danger .x-panel-header-default-top .x-panel-header-text-default-framed,
+    .extro-panel-danger .x-panel-header-default .x-panel-header-text,
+    .extro-panel-danger .x-panel-header-default .x-panel-header-text-default,
+    .extro-panel-danger .x-panel-header-default .x-panel-header-text-default-framed,
+    .extro-panel-danger .x-panel-header-default-framed .x-panel-header-text,
+    .extro-panel-danger .x-panel-header-default-framed .x-panel-header-text-default,
+    .extro-panel-danger .x-panel-header-default-framed .x-panel-header-text-default-framed,
+    .extro-panel-danger .x-panel-header-horizontal .x-panel-header-text,
+    .extro-panel-danger .x-panel-header-horizontal .x-panel-header-text-default,
+    .extro-panel-danger .x-panel-header-horizontal .x-panel-header-text-default-framed {
       font-size: 15px !important;
       font-weight: 400 !important; }
   /* line 40, ../sass/mixins/_styled-panel.scss */
@@ -9812,9 +9818,10 @@ textarea {
     border-color: #faa732;
     border-width: 1px;
     box-shadow: 0 1px 0 0 #fee7c7 inset; }
-    /* line 18, ../sass/mixins/_styled-header.scss */
-    .extro-panel-warning .x-panel-header .prefixpanel-header-text,
-    .extro-panel-warning .x-panel-header .prefixpanel-header-text-default, .extro-panel-warning .x-panel-header-default-top .prefixpanel-header-text, .extro-panel-warning .x-panel-header-default-top .prefixpanel-header-text-default, .extro-panel-warning .x-panel-header-default .prefixpanel-header-text, .extro-panel-warning .x-panel-header-default .prefixpanel-header-text-default, .extro-panel-warning .x-panel-header-default-framed .prefixpanel-header-text, .extro-panel-warning .x-panel-header-default-framed .prefixpanel-header-text-default, .extro-panel-warning .x-panel-header-horizontal .prefixpanel-header-text, .extro-panel-warning .x-panel-header-horizontal .prefixpanel-header-text-default {
+    /* line 19, ../sass/mixins/_styled-header.scss */
+    .extro-panel-warning .x-panel-header .x-panel-header-text,
+    .extro-panel-warning .x-panel-header .x-panel-header-text-default,
+    .extro-panel-warning .x-panel-header .x-panel-header-text-default-framed, .extro-panel-warning .x-panel-header-default-top .x-panel-header-text, .extro-panel-warning .x-panel-header-default-top .x-panel-header-text-default, .extro-panel-warning .x-panel-header-default-top .x-panel-header-text-default-framed, .extro-panel-warning .x-panel-header-default .x-panel-header-text, .extro-panel-warning .x-panel-header-default .x-panel-header-text-default, .extro-panel-warning .x-panel-header-default .x-panel-header-text-default-framed, .extro-panel-warning .x-panel-header-default-framed .x-panel-header-text, .extro-panel-warning .x-panel-header-default-framed .x-panel-header-text-default, .extro-panel-warning .x-panel-header-default-framed .x-panel-header-text-default-framed, .extro-panel-warning .x-panel-header-horizontal .x-panel-header-text, .extro-panel-warning .x-panel-header-horizontal .x-panel-header-text-default, .extro-panel-warning .x-panel-header-horizontal .x-panel-header-text-default-framed {
       font-size: 15px !important;
       font-weight: 400 !important; }
   /* line 40, ../sass/mixins/_styled-panel.scss */
@@ -9840,9 +9847,10 @@ textarea {
     border-color: #414141;
     border-width: 1px;
     box-shadow: 0 1px 0 0 #8d8d8d inset; }
-    /* line 18, ../sass/mixins/_styled-header.scss */
-    .extro-panel-inverse .x-panel-header .prefixpanel-header-text,
-    .extro-panel-inverse .x-panel-header .prefixpanel-header-text-default, .extro-panel-inverse .x-panel-header-default-top .prefixpanel-header-text, .extro-panel-inverse .x-panel-header-default-top .prefixpanel-header-text-default, .extro-panel-inverse .x-panel-header-default .prefixpanel-header-text, .extro-panel-inverse .x-panel-header-default .prefixpanel-header-text-default, .extro-panel-inverse .x-panel-header-default-framed .prefixpanel-header-text, .extro-panel-inverse .x-panel-header-default-framed .prefixpanel-header-text-default, .extro-panel-inverse .x-panel-header-horizontal .prefixpanel-header-text, .extro-panel-inverse .x-panel-header-horizontal .prefixpanel-header-text-default {
+    /* line 19, ../sass/mixins/_styled-header.scss */
+    .extro-panel-inverse .x-panel-header .x-panel-header-text,
+    .extro-panel-inverse .x-panel-header .x-panel-header-text-default,
+    .extro-panel-inverse .x-panel-header .x-panel-header-text-default-framed, .extro-panel-inverse .x-panel-header-default-top .x-panel-header-text, .extro-panel-inverse .x-panel-header-default-top .x-panel-header-text-default, .extro-panel-inverse .x-panel-header-default-top .x-panel-header-text-default-framed, .extro-panel-inverse .x-panel-header-default .x-panel-header-text, .extro-panel-inverse .x-panel-header-default .x-panel-header-text-default, .extro-panel-inverse .x-panel-header-default .x-panel-header-text-default-framed, .extro-panel-inverse .x-panel-header-default-framed .x-panel-header-text, .extro-panel-inverse .x-panel-header-default-framed .x-panel-header-text-default, .extro-panel-inverse .x-panel-header-default-framed .x-panel-header-text-default-framed, .extro-panel-inverse .x-panel-header-horizontal .x-panel-header-text, .extro-panel-inverse .x-panel-header-horizontal .x-panel-header-text-default, .extro-panel-inverse .x-panel-header-horizontal .x-panel-header-text-default-framed {
       font-size: 15px !important;
       font-weight: 400 !important; }
   /* line 40, ../sass/mixins/_styled-panel.scss */
@@ -9868,9 +9876,10 @@ textarea {
     border-color: #336699;
     border-width: 3px;
     box-shadow: 0 1px 0 0 #8cb2d9 inset; }
-    /* line 18, ../sass/mixins/_styled-header.scss */
-    .extro-panel-special .x-panel-header .prefixpanel-header-text,
-    .extro-panel-special .x-panel-header .prefixpanel-header-text-default, .extro-panel-special .x-panel-header-default-top .prefixpanel-header-text, .extro-panel-special .x-panel-header-default-top .prefixpanel-header-text-default, .extro-panel-special .x-panel-header-default .prefixpanel-header-text, .extro-panel-special .x-panel-header-default .prefixpanel-header-text-default, .extro-panel-special .x-panel-header-default-framed .prefixpanel-header-text, .extro-panel-special .x-panel-header-default-framed .prefixpanel-header-text-default, .extro-panel-special .x-panel-header-horizontal .prefixpanel-header-text, .extro-panel-special .x-panel-header-horizontal .prefixpanel-header-text-default {
+    /* line 19, ../sass/mixins/_styled-header.scss */
+    .extro-panel-special .x-panel-header .x-panel-header-text,
+    .extro-panel-special .x-panel-header .x-panel-header-text-default,
+    .extro-panel-special .x-panel-header .x-panel-header-text-default-framed, .extro-panel-special .x-panel-header-default-top .x-panel-header-text, .extro-panel-special .x-panel-header-default-top .x-panel-header-text-default, .extro-panel-special .x-panel-header-default-top .x-panel-header-text-default-framed, .extro-panel-special .x-panel-header-default .x-panel-header-text, .extro-panel-special .x-panel-header-default .x-panel-header-text-default, .extro-panel-special .x-panel-header-default .x-panel-header-text-default-framed, .extro-panel-special .x-panel-header-default-framed .x-panel-header-text, .extro-panel-special .x-panel-header-default-framed .x-panel-header-text-default, .extro-panel-special .x-panel-header-default-framed .x-panel-header-text-default-framed, .extro-panel-special .x-panel-header-horizontal .x-panel-header-text, .extro-panel-special .x-panel-header-horizontal .x-panel-header-text-default, .extro-panel-special .x-panel-header-horizontal .x-panel-header-text-default-framed {
       font-size: 20px !important;
       font-weight: 400 !important; }
   /* line 40, ../sass/mixins/_styled-panel.scss */
@@ -9906,9 +9915,10 @@ textarea {
     border-color: #324654;
     border-width: 1px;
     box-shadow: 0 1px 0 0 #7394ac inset; }
-    /* line 18, ../sass/mixins/_styled-header.scss */
-    .extro-panel-child .x-panel-header .prefixpanel-header-text,
-    .extro-panel-child .x-panel-header .prefixpanel-header-text-default, .extro-panel-child .x-panel-header-default-top .prefixpanel-header-text, .extro-panel-child .x-panel-header-default-top .prefixpanel-header-text-default, .extro-panel-child .x-panel-header-default .prefixpanel-header-text, .extro-panel-child .x-panel-header-default .prefixpanel-header-text-default, .extro-panel-child .x-panel-header-default-framed .prefixpanel-header-text, .extro-panel-child .x-panel-header-default-framed .prefixpanel-header-text-default, .extro-panel-child .x-panel-header-horizontal .prefixpanel-header-text, .extro-panel-child .x-panel-header-horizontal .prefixpanel-header-text-default {
+    /* line 19, ../sass/mixins/_styled-header.scss */
+    .extro-panel-child .x-panel-header .x-panel-header-text,
+    .extro-panel-child .x-panel-header .x-panel-header-text-default,
+    .extro-panel-child .x-panel-header .x-panel-header-text-default-framed, .extro-panel-child .x-panel-header-default-top .x-panel-header-text, .extro-panel-child .x-panel-header-default-top .x-panel-header-text-default, .extro-panel-child .x-panel-header-default-top .x-panel-header-text-default-framed, .extro-panel-child .x-panel-header-default .x-panel-header-text, .extro-panel-child .x-panel-header-default .x-panel-header-text-default, .extro-panel-child .x-panel-header-default .x-panel-header-text-default-framed, .extro-panel-child .x-panel-header-default-framed .x-panel-header-text, .extro-panel-child .x-panel-header-default-framed .x-panel-header-text-default, .extro-panel-child .x-panel-header-default-framed .x-panel-header-text-default-framed, .extro-panel-child .x-panel-header-horizontal .x-panel-header-text, .extro-panel-child .x-panel-header-horizontal .x-panel-header-text-default, .extro-panel-child .x-panel-header-horizontal .x-panel-header-text-default-framed {
       font-size: 12px !important;
       font-weight: 400 !important; }
   /* line 40, ../sass/mixins/_styled-panel.scss */
@@ -9934,9 +9944,10 @@ textarea {
     border-color: #da4f49;
     border-width: 1px;
     box-shadow: 0 1px 0 0 #f4cac8 inset; }
-    /* line 18, ../sass/mixins/_styled-header.scss */
-    .extro-panel-child-danger .x-panel-header .prefixpanel-header-text,
-    .extro-panel-child-danger .x-panel-header .prefixpanel-header-text-default, .extro-panel-child-danger .x-panel-header-default-top .prefixpanel-header-text, .extro-panel-child-danger .x-panel-header-default-top .prefixpanel-header-text-default, .extro-panel-child-danger .x-panel-header-default .prefixpanel-header-text, .extro-panel-child-danger .x-panel-header-default .prefixpanel-header-text-default, .extro-panel-child-danger .x-panel-header-default-framed .prefixpanel-header-text, .extro-panel-child-danger .x-panel-header-default-framed .prefixpanel-header-text-default, .extro-panel-child-danger .x-panel-header-horizontal .prefixpanel-header-text, .extro-panel-child-danger .x-panel-header-horizontal .prefixpanel-header-text-default {
+    /* line 19, ../sass/mixins/_styled-header.scss */
+    .extro-panel-child-danger .x-panel-header .x-panel-header-text,
+    .extro-panel-child-danger .x-panel-header .x-panel-header-text-default,
+    .extro-panel-child-danger .x-panel-header .x-panel-header-text-default-framed, .extro-panel-child-danger .x-panel-header-default-top .x-panel-header-text, .extro-panel-child-danger .x-panel-header-default-top .x-panel-header-text-default, .extro-panel-child-danger .x-panel-header-default-top .x-panel-header-text-default-framed, .extro-panel-child-danger .x-panel-header-default .x-panel-header-text, .extro-panel-child-danger .x-panel-header-default .x-panel-header-text-default, .extro-panel-child-danger .x-panel-header-default .x-panel-header-text-default-framed, .extro-panel-child-danger .x-panel-header-default-framed .x-panel-header-text, .extro-panel-child-danger .x-panel-header-default-framed .x-panel-header-text-default, .extro-panel-child-danger .x-panel-header-default-framed .x-panel-header-text-default-framed, .extro-panel-child-danger .x-panel-header-horizontal .x-panel-header-text, .extro-panel-child-danger .x-panel-header-horizontal .x-panel-header-text-default, .extro-panel-child-danger .x-panel-header-horizontal .x-panel-header-text-default-framed {
       font-size: 12px !important;
       font-weight: 400 !important; }
   /* line 40, ../sass/mixins/_styled-panel.scss */
@@ -9962,9 +9973,10 @@ textarea {
     border-color: #faa732;
     border-width: 1px;
     box-shadow: 0 1px 0 0 #fee7c7 inset; }
-    /* line 18, ../sass/mixins/_styled-header.scss */
-    .extro-panel-child-warning .x-panel-header .prefixpanel-header-text,
-    .extro-panel-child-warning .x-panel-header .prefixpanel-header-text-default, .extro-panel-child-warning .x-panel-header-default-top .prefixpanel-header-text, .extro-panel-child-warning .x-panel-header-default-top .prefixpanel-header-text-default, .extro-panel-child-warning .x-panel-header-default .prefixpanel-header-text, .extro-panel-child-warning .x-panel-header-default .prefixpanel-header-text-default, .extro-panel-child-warning .x-panel-header-default-framed .prefixpanel-header-text, .extro-panel-child-warning .x-panel-header-default-framed .prefixpanel-header-text-default, .extro-panel-child-warning .x-panel-header-horizontal .prefixpanel-header-text, .extro-panel-child-warning .x-panel-header-horizontal .prefixpanel-header-text-default {
+    /* line 19, ../sass/mixins/_styled-header.scss */
+    .extro-panel-child-warning .x-panel-header .x-panel-header-text,
+    .extro-panel-child-warning .x-panel-header .x-panel-header-text-default,
+    .extro-panel-child-warning .x-panel-header .x-panel-header-text-default-framed, .extro-panel-child-warning .x-panel-header-default-top .x-panel-header-text, .extro-panel-child-warning .x-panel-header-default-top .x-panel-header-text-default, .extro-panel-child-warning .x-panel-header-default-top .x-panel-header-text-default-framed, .extro-panel-child-warning .x-panel-header-default .x-panel-header-text, .extro-panel-child-warning .x-panel-header-default .x-panel-header-text-default, .extro-panel-child-warning .x-panel-header-default .x-panel-header-text-default-framed, .extro-panel-child-warning .x-panel-header-default-framed .x-panel-header-text, .extro-panel-child-warning .x-panel-header-default-framed .x-panel-header-text-default, .extro-panel-child-warning .x-panel-header-default-framed .x-panel-header-text-default-framed, .extro-panel-child-warning .x-panel-header-horizontal .x-panel-header-text, .extro-panel-child-warning .x-panel-header-horizontal .x-panel-header-text-default, .extro-panel-child-warning .x-panel-header-horizontal .x-panel-header-text-default-framed {
       font-size: 12px !important;
       font-weight: 400 !important; }
   /* line 40, ../sass/mixins/_styled-panel.scss */
@@ -9990,9 +10002,10 @@ textarea {
     border-color: #414141;
     border-width: 1px;
     box-shadow: 0 1px 0 0 #8d8d8d inset; }
-    /* line 18, ../sass/mixins/_styled-header.scss */
-    .extro-panel-child-inverse .x-panel-header .prefixpanel-header-text,
-    .extro-panel-child-inverse .x-panel-header .prefixpanel-header-text-default, .extro-panel-child-inverse .x-panel-header-default-top .prefixpanel-header-text, .extro-panel-child-inverse .x-panel-header-default-top .prefixpanel-header-text-default, .extro-panel-child-inverse .x-panel-header-default .prefixpanel-header-text, .extro-panel-child-inverse .x-panel-header-default .prefixpanel-header-text-default, .extro-panel-child-inverse .x-panel-header-default-framed .prefixpanel-header-text, .extro-panel-child-inverse .x-panel-header-default-framed .prefixpanel-header-text-default, .extro-panel-child-inverse .x-panel-header-horizontal .prefixpanel-header-text, .extro-panel-child-inverse .x-panel-header-horizontal .prefixpanel-header-text-default {
+    /* line 19, ../sass/mixins/_styled-header.scss */
+    .extro-panel-child-inverse .x-panel-header .x-panel-header-text,
+    .extro-panel-child-inverse .x-panel-header .x-panel-header-text-default,
+    .extro-panel-child-inverse .x-panel-header .x-panel-header-text-default-framed, .extro-panel-child-inverse .x-panel-header-default-top .x-panel-header-text, .extro-panel-child-inverse .x-panel-header-default-top .x-panel-header-text-default, .extro-panel-child-inverse .x-panel-header-default-top .x-panel-header-text-default-framed, .extro-panel-child-inverse .x-panel-header-default .x-panel-header-text, .extro-panel-child-inverse .x-panel-header-default .x-panel-header-text-default, .extro-panel-child-inverse .x-panel-header-default .x-panel-header-text-default-framed, .extro-panel-child-inverse .x-panel-header-default-framed .x-panel-header-text, .extro-panel-child-inverse .x-panel-header-default-framed .x-panel-header-text-default, .extro-panel-child-inverse .x-panel-header-default-framed .x-panel-header-text-default-framed, .extro-panel-child-inverse .x-panel-header-horizontal .x-panel-header-text, .extro-panel-child-inverse .x-panel-header-horizontal .x-panel-header-text-default, .extro-panel-child-inverse .x-panel-header-horizontal .x-panel-header-text-default-framed {
       font-size: 12px !important;
       font-weight: 400 !important; }
   /* line 40, ../sass/mixins/_styled-panel.scss */
@@ -10018,9 +10031,10 @@ textarea {
     border-color: #4c6a7f;
     border-width: 1px;
     box-shadow: 0 1px 0 0 #9fb5c5 inset; }
-    /* line 18, ../sass/mixins/_styled-header.scss */
-    .extro-panel-child-light .x-panel-header .prefixpanel-header-text,
-    .extro-panel-child-light .x-panel-header .prefixpanel-header-text-default, .extro-panel-child-light .x-panel-header-default-top .prefixpanel-header-text, .extro-panel-child-light .x-panel-header-default-top .prefixpanel-header-text-default, .extro-panel-child-light .x-panel-header-default .prefixpanel-header-text, .extro-panel-child-light .x-panel-header-default .prefixpanel-header-text-default, .extro-panel-child-light .x-panel-header-default-framed .prefixpanel-header-text, .extro-panel-child-light .x-panel-header-default-framed .prefixpanel-header-text-default, .extro-panel-child-light .x-panel-header-horizontal .prefixpanel-header-text, .extro-panel-child-light .x-panel-header-horizontal .prefixpanel-header-text-default {
+    /* line 19, ../sass/mixins/_styled-header.scss */
+    .extro-panel-child-light .x-panel-header .x-panel-header-text,
+    .extro-panel-child-light .x-panel-header .x-panel-header-text-default,
+    .extro-panel-child-light .x-panel-header .x-panel-header-text-default-framed, .extro-panel-child-light .x-panel-header-default-top .x-panel-header-text, .extro-panel-child-light .x-panel-header-default-top .x-panel-header-text-default, .extro-panel-child-light .x-panel-header-default-top .x-panel-header-text-default-framed, .extro-panel-child-light .x-panel-header-default .x-panel-header-text, .extro-panel-child-light .x-panel-header-default .x-panel-header-text-default, .extro-panel-child-light .x-panel-header-default .x-panel-header-text-default-framed, .extro-panel-child-light .x-panel-header-default-framed .x-panel-header-text, .extro-panel-child-light .x-panel-header-default-framed .x-panel-header-text-default, .extro-panel-child-light .x-panel-header-default-framed .x-panel-header-text-default-framed, .extro-panel-child-light .x-panel-header-horizontal .x-panel-header-text, .extro-panel-child-light .x-panel-header-horizontal .x-panel-header-text-default, .extro-panel-child-light .x-panel-header-horizontal .x-panel-header-text-default-framed {
       font-size: 12px !important;
       font-weight: 400 !important; }
   /* line 40, ../sass/mixins/_styled-panel.scss */
@@ -10046,9 +10060,10 @@ textarea {
     border-color: #da4f49;
     border-width: 1px;
     box-shadow: 0 1px 0 0 #f4cac8 inset; }
-    /* line 18, ../sass/mixins/_styled-header.scss */
-    .extro-panel-child-danger-light .x-panel-header .prefixpanel-header-text,
-    .extro-panel-child-danger-light .x-panel-header .prefixpanel-header-text-default, .extro-panel-child-danger-light .x-panel-header-default-top .prefixpanel-header-text, .extro-panel-child-danger-light .x-panel-header-default-top .prefixpanel-header-text-default, .extro-panel-child-danger-light .x-panel-header-default .prefixpanel-header-text, .extro-panel-child-danger-light .x-panel-header-default .prefixpanel-header-text-default, .extro-panel-child-danger-light .x-panel-header-default-framed .prefixpanel-header-text, .extro-panel-child-danger-light .x-panel-header-default-framed .prefixpanel-header-text-default, .extro-panel-child-danger-light .x-panel-header-horizontal .prefixpanel-header-text, .extro-panel-child-danger-light .x-panel-header-horizontal .prefixpanel-header-text-default {
+    /* line 19, ../sass/mixins/_styled-header.scss */
+    .extro-panel-child-danger-light .x-panel-header .x-panel-header-text,
+    .extro-panel-child-danger-light .x-panel-header .x-panel-header-text-default,
+    .extro-panel-child-danger-light .x-panel-header .x-panel-header-text-default-framed, .extro-panel-child-danger-light .x-panel-header-default-top .x-panel-header-text, .extro-panel-child-danger-light .x-panel-header-default-top .x-panel-header-text-default, .extro-panel-child-danger-light .x-panel-header-default-top .x-panel-header-text-default-framed, .extro-panel-child-danger-light .x-panel-header-default .x-panel-header-text, .extro-panel-child-danger-light .x-panel-header-default .x-panel-header-text-default, .extro-panel-child-danger-light .x-panel-header-default .x-panel-header-text-default-framed, .extro-panel-child-danger-light .x-panel-header-default-framed .x-panel-header-text, .extro-panel-child-danger-light .x-panel-header-default-framed .x-panel-header-text-default, .extro-panel-child-danger-light .x-panel-header-default-framed .x-panel-header-text-default-framed, .extro-panel-child-danger-light .x-panel-header-horizontal .x-panel-header-text, .extro-panel-child-danger-light .x-panel-header-horizontal .x-panel-header-text-default, .extro-panel-child-danger-light .x-panel-header-horizontal .x-panel-header-text-default-framed {
       font-size: 12px !important;
       font-weight: 400 !important; }
   /* line 40, ../sass/mixins/_styled-panel.scss */
@@ -10074,9 +10089,10 @@ textarea {
     border-color: #faa732;
     border-width: 1px;
     box-shadow: 0 1px 0 0 #fee7c7 inset; }
-    /* line 18, ../sass/mixins/_styled-header.scss */
-    .extro-panel-child-warning-light .x-panel-header .prefixpanel-header-text,
-    .extro-panel-child-warning-light .x-panel-header .prefixpanel-header-text-default, .extro-panel-child-warning-light .x-panel-header-default-top .prefixpanel-header-text, .extro-panel-child-warning-light .x-panel-header-default-top .prefixpanel-header-text-default, .extro-panel-child-warning-light .x-panel-header-default .prefixpanel-header-text, .extro-panel-child-warning-light .x-panel-header-default .prefixpanel-header-text-default, .extro-panel-child-warning-light .x-panel-header-default-framed .prefixpanel-header-text, .extro-panel-child-warning-light .x-panel-header-default-framed .prefixpanel-header-text-default, .extro-panel-child-warning-light .x-panel-header-horizontal .prefixpanel-header-text, .extro-panel-child-warning-light .x-panel-header-horizontal .prefixpanel-header-text-default {
+    /* line 19, ../sass/mixins/_styled-header.scss */
+    .extro-panel-child-warning-light .x-panel-header .x-panel-header-text,
+    .extro-panel-child-warning-light .x-panel-header .x-panel-header-text-default,
+    .extro-panel-child-warning-light .x-panel-header .x-panel-header-text-default-framed, .extro-panel-child-warning-light .x-panel-header-default-top .x-panel-header-text, .extro-panel-child-warning-light .x-panel-header-default-top .x-panel-header-text-default, .extro-panel-child-warning-light .x-panel-header-default-top .x-panel-header-text-default-framed, .extro-panel-child-warning-light .x-panel-header-default .x-panel-header-text, .extro-panel-child-warning-light .x-panel-header-default .x-panel-header-text-default, .extro-panel-child-warning-light .x-panel-header-default .x-panel-header-text-default-framed, .extro-panel-child-warning-light .x-panel-header-default-framed .x-panel-header-text, .extro-panel-child-warning-light .x-panel-header-default-framed .x-panel-header-text-default, .extro-panel-child-warning-light .x-panel-header-default-framed .x-panel-header-text-default-framed, .extro-panel-child-warning-light .x-panel-header-horizontal .x-panel-header-text, .extro-panel-child-warning-light .x-panel-header-horizontal .x-panel-header-text-default, .extro-panel-child-warning-light .x-panel-header-horizontal .x-panel-header-text-default-framed {
       font-size: 12px !important;
       font-weight: 400 !important; }
   /* line 40, ../sass/mixins/_styled-panel.scss */
@@ -10102,9 +10118,10 @@ textarea {
     border-color: #414141;
     border-width: 1px;
     box-shadow: 0 1px 0 0 #8d8d8d inset; }
-    /* line 18, ../sass/mixins/_styled-header.scss */
-    .extro-panel-child-inverse-light .x-panel-header .prefixpanel-header-text,
-    .extro-panel-child-inverse-light .x-panel-header .prefixpanel-header-text-default, .extro-panel-child-inverse-light .x-panel-header-default-top .prefixpanel-header-text, .extro-panel-child-inverse-light .x-panel-header-default-top .prefixpanel-header-text-default, .extro-panel-child-inverse-light .x-panel-header-default .prefixpanel-header-text, .extro-panel-child-inverse-light .x-panel-header-default .prefixpanel-header-text-default, .extro-panel-child-inverse-light .x-panel-header-default-framed .prefixpanel-header-text, .extro-panel-child-inverse-light .x-panel-header-default-framed .prefixpanel-header-text-default, .extro-panel-child-inverse-light .x-panel-header-horizontal .prefixpanel-header-text, .extro-panel-child-inverse-light .x-panel-header-horizontal .prefixpanel-header-text-default {
+    /* line 19, ../sass/mixins/_styled-header.scss */
+    .extro-panel-child-inverse-light .x-panel-header .x-panel-header-text,
+    .extro-panel-child-inverse-light .x-panel-header .x-panel-header-text-default,
+    .extro-panel-child-inverse-light .x-panel-header .x-panel-header-text-default-framed, .extro-panel-child-inverse-light .x-panel-header-default-top .x-panel-header-text, .extro-panel-child-inverse-light .x-panel-header-default-top .x-panel-header-text-default, .extro-panel-child-inverse-light .x-panel-header-default-top .x-panel-header-text-default-framed, .extro-panel-child-inverse-light .x-panel-header-default .x-panel-header-text, .extro-panel-child-inverse-light .x-panel-header-default .x-panel-header-text-default, .extro-panel-child-inverse-light .x-panel-header-default .x-panel-header-text-default-framed, .extro-panel-child-inverse-light .x-panel-header-default-framed .x-panel-header-text, .extro-panel-child-inverse-light .x-panel-header-default-framed .x-panel-header-text-default, .extro-panel-child-inverse-light .x-panel-header-default-framed .x-panel-header-text-default-framed, .extro-panel-child-inverse-light .x-panel-header-horizontal .x-panel-header-text, .extro-panel-child-inverse-light .x-panel-header-horizontal .x-panel-header-text-default, .extro-panel-child-inverse-light .x-panel-header-horizontal .x-panel-header-text-default-framed {
       font-size: 12px !important;
       font-weight: 400 !important; }
   /* line 40, ../sass/mixins/_styled-panel.scss */
