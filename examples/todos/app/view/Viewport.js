@@ -4,7 +4,7 @@ Ext.define('Todo.view.Viewport', {
     
     requires: [
         'Todo.view.Header',
-        'Todo.view.SideBar',
+        'Todo.view.Projects',
         'Todo.view.List'
     ],
     
@@ -12,7 +12,7 @@ Ext.define('Todo.view.Viewport', {
         Ext.apply(this, {
             items: [
                 Ext.create('Todo.view.Header'),
-                Ext.create('Todo.view.SideBar'),
+                Ext.create('Todo.view.Projects'),
                 Ext.create('Todo.view.List')
             ]
         });

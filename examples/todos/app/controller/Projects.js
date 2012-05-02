@@ -6,8 +6,8 @@ Ext.define('Todo.controller.Projects', {
     stores: ['Projects'],
     
     refs: [{
-        ref: 'sideBar',
-        selector: 'todo-sidebar'
+        ref: 'projectsPanel',
+        selector: 'todo-projects'
     }],
 
     // init: function() {

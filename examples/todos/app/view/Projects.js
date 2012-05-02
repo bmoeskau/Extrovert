@@ -1,5 +1,5 @@
-Ext.define('Todo.view.SideBar', {
-    alias: 'widget.todo-sidebar',
+Ext.define('Todo.view.Projects', {
+    alias: 'widget.todo-projects',
     extend: 'Ext.panel.Panel',
     
     initComponent: function() {
