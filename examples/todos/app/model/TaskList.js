@@ -11,6 +11,8 @@ Ext.define('Todo.model.TaskList', {
         name: 'tasks',
         model: 'Todo.model.Task'
     },
+    
+    belongsTo: 'Todo.model.Project',
 
     fields: [
         'id',

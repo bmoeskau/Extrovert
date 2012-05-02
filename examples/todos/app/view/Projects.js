@@ -29,17 +29,34 @@ Ext.define('Todo.view.Projects', {
                     text: 'Foo',
                     scale: 'medium'
                 }]
-            }],
-            
-            items: [{
-                title: 'Foo',
-                html: 'dfgsf'
-            },{
-                title: 'Bar',
-                html: 'asddf'
             }]
         });
                 
         this.callParent(arguments);
+    },
+    
+    setStore: function(store) {
+        this.store = store;
+        this.store.on('load', this.onStoreLoad, this);
+    },
+    
+    onStoreLoad: function() {
+        var me = this;
+        
+        me.removeAll();
+        
+        me.store.each(function(project) {
+            project.lists().each(function(list) {
+                console.log(list.data.name);
+                
+                list.tasks().each(function(task) {
+                    console.log(' - '+task.data.text)
+                })
+            });
+            
+            me.add({
+                title: project.data.name
+            });
+        });
     }
 });

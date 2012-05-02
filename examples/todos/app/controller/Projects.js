@@ -26,7 +26,7 @@ Ext.define('Todo.controller.Projects', {
     // },
     
     onLaunch: function() {
-        //this.getSideBar().bindStore(this.getBooksStore());
+        this.getProjectsPanel().setStore(this.getProjectsStore());
     },
     
     // onSideBarSelectionChange: function(view, records) {

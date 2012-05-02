@@ -6,6 +6,6 @@ Ext.define('Todo.store.Projects', {
     
     proxy: {
         type: 'ajax',
-        url : 'resources/data/projects.json'
+        url: 'resources/data/projects.json'
     }
 });
