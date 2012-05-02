@@ -46,8 +46,8 @@ Ext.onReady(function() {
             title: 'Multi-Nested',
             width: 200,
             height: 150,
-            x: 910,
-            y: 20,
+            x: 890,
+            y: 0,
             layout: 'fit',
             bodyStyle: 'padding:10px;',
             
@@ -70,9 +70,9 @@ Ext.onReady(function() {
     function getBorderLayoutPanel() {
         return {
             title : 'BorderLayout Panel with Child Styles',
-            width : 420,
+            width : 410,
             height: 350,
-            x: 690, y: 190,
+            x: 680, y: 160,
             collapsible: true,
             layout: {
                 type: 'border',
@@ -173,20 +173,20 @@ Ext.onReady(function() {
             
             items: [
                 // Row 1
-                getDefaultPanel(30, 20),
-                getCustomPanel('Danger', 'danger', 250, 20),
-                getCustomPanel('Warning', 'warning', 470, 20),
-                getCustomPanel('Inverse', 'inverse', 690, 20),
+                getDefaultPanel(50, 0),
+                getCustomPanel('Danger', 'danger', 260, 0),
+                getCustomPanel('Warning', 'warning', 470, 0),
+                getCustomPanel('Inverse', 'inverse', 680, 0),
                 getMultiPanel(),
                 
                 // Row 2
-                getDefaultPanel(30, 190, true),
-                getCustomPanel('Danger', 'danger', 250, 190, true),
-                getCustomPanel('Warning', 'warning', 470, 190, true),
+                getDefaultPanel(50, 160, true),
+                getCustomPanel('Danger', 'danger', 260, 160, true),
+                getCustomPanel('Warning', 'warning', 470, 160, true),
                 getBorderLayoutPanel(),
                 
                 // Row 3
-                getCustomPanel('Special', 'special', 30, 360, true, 420)
+                getCustomPanel('Special', 'special', 50, 320, true, 410)
             ]
         }]
     })
