@@ -30,4 +30,26 @@
             done: false
         }]
     }]
+},{
+    id: 2,
+    name: 'Personal',
+    lists: [{
+        id: 1,
+        name: 'Errands',
+        tasks: [{
+            id: 100,
+            text: 'Pick up dry cleaning',
+            due: '2012-05-15',
+            done: false
+        },{
+            id: 101,
+            text: 'Take books back to the library',
+            due: '2012-05-15',
+            done: false
+        }]
+    },{
+        id: 2,
+        name: 'Grocery List',
+        tasks: []
+    }]
 }]
