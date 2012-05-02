@@ -83,7 +83,7 @@ $boundlist-border-color: #b5b8c8;
 $boundlist-item-padding: 6px 4px;
 
 //acordion
-$accordion-header-background-color: #e5e5e5;
+//$accordion-header-background-color: $extro-color-main-light;
 
 //tabs
 $tab-base-color: #eaeaea;
@@ -168,6 +168,7 @@ $button-large-font-weight : 200;
 @import 'ext4/default/all';
 
 // Extrovert mixins:
+@import 'mixins/styled-header';
 @import 'mixins/styled-panel';
 @import 'mixins/child-panel';
 
@@ -224,8 +225,16 @@ textarea {
 .#{$prefix}panel-header-text-default-framed {
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
 }
-.#{$prefix}accordion-hd .#{$prefix}panel-header-text {
-  text-shadow: 0 1px 0 #fff;
+
+.#{$prefix}accordion-hd {
+  background: none;
+  @include styled-header($extro-color-main-light, 10);
+  padding: 4px 5px 3px !important;
+  
+  .#{$prefix}panel-header-text {
+    text-shadow: 0 1px 0 #fff;
+    font-size: $font-size;
+  }
 }
 
 /*
@@ -259,6 +268,9 @@ textarea {
     400,      // header-font-weight
     12px      // header-padding
   );
+  // It's hard to set line-height generically. Generally the default
+  // is OK but when using a large font size you might need to bump
+  // this up to avoid cutting off descenders as in this case.
   .#{$prefix}panel-header-text-default,
   .#{$prefix}panel-header-text-default-framed {
     line-height: 25px;

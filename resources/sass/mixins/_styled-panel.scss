@@ -21,24 +21,28 @@
   border-width: $border-width;
   
   .x-panel-header,
-  .x-panel-header-horizontal {
-    @include background-gradient(lighten($border-color, $header-lighten), $header-gradient-type);
-    padding: $header-padding !important;
-    
-    .x-panel-header-text,
-    .x-panel-header-text-default {
-        font-size: $header-font-size;
-        font-weight: $header-font-weight;
-    }
-  }
+  .x-panel-header-default-top,
   .x-panel-header-default,
   .x-panel-header-default-framed,
+  .x-panel-header-horizontal {
+    @include styled-header(
+      $border-color: $border-color,
+      $border-width: $border-width,
+      $header-lighten: $header-lighten,
+      $header-gradient-type: $header-gradient-type,
+      $header-font-size: $header-font-size,
+      $header-font-weight: $header-font-weight,
+      $header-padding: $header-padding
+    );
+  }
+  //.x-panel-header-default,
+  //.x-panel-header-default-framed,
   .x-panel-body-default {
     border-color: $border-color;
     border-width: $border-width;
   }
-  .x-panel-header-default-top,
-  .x-panel-header-default-framed {
-    box-shadow: 0 1px 0 0 lighten($border-color, 30) inset
-  }
+  // .x-panel-header-default-top,
+  // .x-panel-header-default-framed {
+    // box-shadow: 0 2px 0 0 lighten($border-color, 30) inset;
+  // }
 }

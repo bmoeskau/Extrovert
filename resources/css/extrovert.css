@@ -8942,10 +8942,10 @@ svg, vml {
 
 /* line 108, ../../lib/extjs/resources/themes/stylesheets/ext4/default/layout/_layout.scss */
 .x-accordion-hd {
-  background: #e5e5e5 !important;
-  -webkit-box-shadow: inset 0 0 0 0 #e5e5e5;
-  -moz-box-shadow: inset 0 0 0 0 #e5e5e5;
-  box-shadow: inset 0 0 0 0 #e5e5e5; }
+  background: #6899bc !important;
+  -webkit-box-shadow: inset 0 0 0 0 #6899bc;
+  -moz-box-shadow: inset 0 0 0 0 #6899bc;
+  box-shadow: inset 0 0 0 0 #6899bc; }
   /* line 112, ../../lib/extjs/resources/themes/stylesheets/ext4/default/layout/_layout.scss */
   .x-accordion-hd .x-tool-collapse-top,
   .x-accordion-hd .x-tool-collapse-right,
@@ -8990,7 +8990,7 @@ svg, vml {
 
 /* line 160, ../../lib/extjs/resources/themes/stylesheets/ext4/default/layout/_layout.scss */
 .x-accordion-hd-last-collapsed {
-  border-bottom-color: #e5e5e5 !important; }
+  border-bottom-color: #6899bc !important; }
 
 /* line 169, ../../lib/extjs/resources/themes/stylesheets/ext4/default/layout/_layout.scss */
 .x-frame-tl,
@@ -9671,7 +9671,7 @@ svg, vml {
  * Extrovert child Panel mixin
  * @mixin child-panel
  */
-/* line 174, ../sass/extrovert.scss */
+/* line 175, ../sass/extrovert.scss */
 .x-mask {
   background: -moz-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0) 0%, rgba(37, 37, 37, 0.2) 39%, rgba(85, 85, 85, 0.75) 90%, #5e5e5e 100%);
   /* FF3.6+ */
@@ -9688,14 +9688,14 @@ svg, vml {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#5e5e5e',GradientType=1 );
   /* IE6-9 fallback on horizontal gradient */ }
 
-/* line 185, ../sass/extrovert.scss */
+/* line 186, ../sass/extrovert.scss */
 input,
 textarea {
   -moz-box-shadow: inset 0 1px 3px #e0e0e0,0 1px #fafbfb;
   -webkit-box-shadow: inset 0 1px 3px #e0e0e0,0 1px #fafbfb;
   box-shadow: inset 0 1px 3px #e0e0e0,0 1px #fafbfb; }
 
-/* line 200, ../sass/extrovert.scss */
+/* line 201, ../sass/extrovert.scss */
 .x-form-focus {
   border-color: #6086a1 !important;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
@@ -9704,26 +9704,48 @@ textarea {
   outline: 0;
   outline: thin dotted \9; }
 
-/* line 212, ../sass/extrovert.scss */
+/* line 213, ../sass/extrovert.scss */
 .x-tab-default-top-active {
   -webkit-box-shadow: rgba(255, 255, 255, 0.6) 0 1px 0px 0 inset, #6086a1 -1px 0 0px 0 inset, #6086a1 1px 0 0px 0 inset;
   -moz-box-shadow: rgba(255, 255, 255, 0.6) 0 1px 0px 0 inset, #6086a1 -1px 0 0px 0 inset, #6086a1 1px 0 0px 0 inset;
   box-shadow: rgba(255, 255, 255, 0.6) 0 1px 0px 0 inset, #6086a1 -1px 0 0px 0 inset, #6086a1 1px 0 0px 0 inset;
   border-bottom: 1px solid #4c6a7f !important; }
 
-/* line 218, ../sass/extrovert.scss */
+/* line 219, ../sass/extrovert.scss */
 .x-tab button {
   padding: 2px;
   font-size: 12px; }
 
-/* line 224, ../sass/extrovert.scss */
+/* line 225, ../sass/extrovert.scss */
 .x-panel-header-text-default,
 .x-panel-header-text-default-framed {
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5); }
 
-/* line 227, ../sass/extrovert.scss */
-.x-accordion-hd .x-panel-header-text {
-  text-shadow: 0 1px 0 #fff; }
+/* line 229, ../sass/extrovert.scss */
+.x-accordion-hd {
+  background: none;
+  background-image: none;
+  background-color: #4c6a7f;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #527289), color-stop(100%, #445f72));
+  background-image: -webkit-linear-gradient(top, #527289, #445f72);
+  background-image: -moz-linear-gradient(top, #527289, #445f72);
+  background-image: -o-linear-gradient(top, #527289, #445f72);
+  background-image: -ms-linear-gradient(top, #527289, #445f72);
+  background-image: linear-gradient(top, #527289, #445f72);
+  padding: 8px 5px 5px 8px !important !important;
+  border-color: #4c6a7f;
+  border-width: 10;
+  box-shadow: 0 1px 0 0 #9fb5c5 inset;
+  padding: 4px 5px 3px !important; }
+  /* line 18, ../sass/mixins/_styled-header.scss */
+  .x-accordion-hd .prefixpanel-header-text,
+  .x-accordion-hd .prefixpanel-header-text-default {
+    font-size: 15px !important;
+    font-weight: 400 !important; }
+  /* line 234, ../sass/extrovert.scss */
+  .x-accordion-hd .x-panel-header-text {
+    text-shadow: 0 1px 0 #fff;
+    font-size: 12px; }
 
 /*
  * Custom panel styles. Note that you can optionally
@@ -9732,12 +9754,15 @@ textarea {
  *   @include styled-panel(#336699, 2px, 'glossy');
  * 
  */
-/* line 238, ../sass/extrovert.scss */
+/* line 247, ../sass/extrovert.scss */
 .extro-panel-danger {
   border-color: #da4f49;
   border-width: 1px; }
-  /* line 24, ../sass/mixins/_styled-panel.scss */
+  /* line 27, ../sass/mixins/_styled-panel.scss */
   .extro-panel-danger .x-panel-header,
+  .extro-panel-danger .x-panel-header-default-top,
+  .extro-panel-danger .x-panel-header-default,
+  .extro-panel-danger .x-panel-header-default-framed,
   .extro-panel-danger .x-panel-header-horizontal {
     background-image: none;
     background-color: #da4f49;
@@ -9747,31 +9772,34 @@ textarea {
     background-image: -o-linear-gradient(top, #dd5b56, #d73f38);
     background-image: -ms-linear-gradient(top, #dd5b56, #d73f38);
     background-image: linear-gradient(top, #dd5b56, #d73f38);
-    padding: 8px 5px 5px 8px !important !important; }
-    /* line 29, ../sass/mixins/_styled-panel.scss */
-    .extro-panel-danger .x-panel-header .x-panel-header-text,
-    .extro-panel-danger .x-panel-header .x-panel-header-text-default,
-    .extro-panel-danger .x-panel-header-horizontal .x-panel-header-text,
-    .extro-panel-danger .x-panel-header-horizontal .x-panel-header-text-default {
-      font-size: 15px;
-      font-weight: 400; }
-  /* line 36, ../sass/mixins/_styled-panel.scss */
-  .extro-panel-danger .x-panel-header-default,
-  .extro-panel-danger .x-panel-header-default-framed,
+    padding: 8px 5px 5px 8px !important !important;
+    border-color: #da4f49;
+    border-width: 1px;
+    box-shadow: 0 1px 0 0 #f4cac8 inset; }
+    /* line 18, ../sass/mixins/_styled-header.scss */
+    .extro-panel-danger .x-panel-header .prefixpanel-header-text,
+    .extro-panel-danger .x-panel-header .prefixpanel-header-text-default,
+    .extro-panel-danger .x-panel-header-default-top .prefixpanel-header-text,
+    .extro-panel-danger .x-panel-header-default-top .prefixpanel-header-text-default,
+    .extro-panel-danger .x-panel-header-default .prefixpanel-header-text,
+    .extro-panel-danger .x-panel-header-default .prefixpanel-header-text-default,
+    .extro-panel-danger .x-panel-header-default-framed .prefixpanel-header-text,
+    .extro-panel-danger .x-panel-header-default-framed .prefixpanel-header-text-default,
+    .extro-panel-danger .x-panel-header-horizontal .prefixpanel-header-text,
+    .extro-panel-danger .x-panel-header-horizontal .prefixpanel-header-text-default {
+      font-size: 15px !important;
+      font-weight: 400 !important; }
+  /* line 40, ../sass/mixins/_styled-panel.scss */
   .extro-panel-danger .x-panel-body-default {
     border-color: #da4f49;
     border-width: 1px; }
-  /* line 41, ../sass/mixins/_styled-panel.scss */
-  .extro-panel-danger .x-panel-header-default-top,
-  .extro-panel-danger .x-panel-header-default-framed {
-    box-shadow: 0 1px 0 0 #f4cac8 inset; }
 
-/* line 241, ../sass/extrovert.scss */
+/* line 250, ../sass/extrovert.scss */
 .extro-panel-warning {
   border-color: #faa732;
   border-width: 1px; }
-  /* line 24, ../sass/mixins/_styled-panel.scss */
-  .extro-panel-warning .x-panel-header, .extro-panel-warning .x-panel-header-horizontal {
+  /* line 27, ../sass/mixins/_styled-panel.scss */
+  .extro-panel-warning .x-panel-header, .extro-panel-warning .x-panel-header-default-top, .extro-panel-warning .x-panel-header-default, .extro-panel-warning .x-panel-header-default-framed, .extro-panel-warning .x-panel-header-horizontal {
     background-image: none;
     background-color: #faa732;
     background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #faad41), color-stop(100%, #fa9e1e));
@@ -9780,25 +9808,26 @@ textarea {
     background-image: -o-linear-gradient(top, #faad41, #fa9e1e);
     background-image: -ms-linear-gradient(top, #faad41, #fa9e1e);
     background-image: linear-gradient(top, #faad41, #fa9e1e);
-    padding: 8px 5px 5px 8px !important !important; }
-    /* line 29, ../sass/mixins/_styled-panel.scss */
-    .extro-panel-warning .x-panel-header .x-panel-header-text, .extro-panel-warning .x-panel-header .x-panel-header-text-default, .extro-panel-warning .x-panel-header-horizontal .x-panel-header-text, .extro-panel-warning .x-panel-header-horizontal .x-panel-header-text-default {
-      font-size: 15px;
-      font-weight: 400; }
-  /* line 36, ../sass/mixins/_styled-panel.scss */
-  .extro-panel-warning .x-panel-header-default, .extro-panel-warning .x-panel-header-default-framed, .extro-panel-warning .x-panel-body-default {
+    padding: 8px 5px 5px 8px !important !important;
+    border-color: #faa732;
+    border-width: 1px;
+    box-shadow: 0 1px 0 0 #fee7c7 inset; }
+    /* line 18, ../sass/mixins/_styled-header.scss */
+    .extro-panel-warning .x-panel-header .prefixpanel-header-text,
+    .extro-panel-warning .x-panel-header .prefixpanel-header-text-default, .extro-panel-warning .x-panel-header-default-top .prefixpanel-header-text, .extro-panel-warning .x-panel-header-default-top .prefixpanel-header-text-default, .extro-panel-warning .x-panel-header-default .prefixpanel-header-text, .extro-panel-warning .x-panel-header-default .prefixpanel-header-text-default, .extro-panel-warning .x-panel-header-default-framed .prefixpanel-header-text, .extro-panel-warning .x-panel-header-default-framed .prefixpanel-header-text-default, .extro-panel-warning .x-panel-header-horizontal .prefixpanel-header-text, .extro-panel-warning .x-panel-header-horizontal .prefixpanel-header-text-default {
+      font-size: 15px !important;
+      font-weight: 400 !important; }
+  /* line 40, ../sass/mixins/_styled-panel.scss */
+  .extro-panel-warning .x-panel-body-default {
     border-color: #faa732;
     border-width: 1px; }
-  /* line 41, ../sass/mixins/_styled-panel.scss */
-  .extro-panel-warning .x-panel-header-default-top, .extro-panel-warning .x-panel-header-default-framed {
-    box-shadow: 0 1px 0 0 #fee7c7 inset; }
 
-/* line 244, ../sass/extrovert.scss */
+/* line 253, ../sass/extrovert.scss */
 .extro-panel-inverse {
   border-color: #414141;
   border-width: 1px; }
-  /* line 24, ../sass/mixins/_styled-panel.scss */
-  .extro-panel-inverse .x-panel-header, .extro-panel-inverse .x-panel-header-horizontal {
+  /* line 27, ../sass/mixins/_styled-panel.scss */
+  .extro-panel-inverse .x-panel-header, .extro-panel-inverse .x-panel-header-default-top, .extro-panel-inverse .x-panel-header-default, .extro-panel-inverse .x-panel-header-default-framed, .extro-panel-inverse .x-panel-header-horizontal {
     background-image: none;
     background-color: #414141;
     background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #494949), color-stop(100%, #373737));
@@ -9807,25 +9836,26 @@ textarea {
     background-image: -o-linear-gradient(top, #494949, #373737);
     background-image: -ms-linear-gradient(top, #494949, #373737);
     background-image: linear-gradient(top, #494949, #373737);
-    padding: 8px 5px 5px 8px !important !important; }
-    /* line 29, ../sass/mixins/_styled-panel.scss */
-    .extro-panel-inverse .x-panel-header .x-panel-header-text, .extro-panel-inverse .x-panel-header .x-panel-header-text-default, .extro-panel-inverse .x-panel-header-horizontal .x-panel-header-text, .extro-panel-inverse .x-panel-header-horizontal .x-panel-header-text-default {
-      font-size: 15px;
-      font-weight: 400; }
-  /* line 36, ../sass/mixins/_styled-panel.scss */
-  .extro-panel-inverse .x-panel-header-default, .extro-panel-inverse .x-panel-header-default-framed, .extro-panel-inverse .x-panel-body-default {
+    padding: 8px 5px 5px 8px !important !important;
+    border-color: #414141;
+    border-width: 1px;
+    box-shadow: 0 1px 0 0 #8d8d8d inset; }
+    /* line 18, ../sass/mixins/_styled-header.scss */
+    .extro-panel-inverse .x-panel-header .prefixpanel-header-text,
+    .extro-panel-inverse .x-panel-header .prefixpanel-header-text-default, .extro-panel-inverse .x-panel-header-default-top .prefixpanel-header-text, .extro-panel-inverse .x-panel-header-default-top .prefixpanel-header-text-default, .extro-panel-inverse .x-panel-header-default .prefixpanel-header-text, .extro-panel-inverse .x-panel-header-default .prefixpanel-header-text-default, .extro-panel-inverse .x-panel-header-default-framed .prefixpanel-header-text, .extro-panel-inverse .x-panel-header-default-framed .prefixpanel-header-text-default, .extro-panel-inverse .x-panel-header-horizontal .prefixpanel-header-text, .extro-panel-inverse .x-panel-header-horizontal .prefixpanel-header-text-default {
+      font-size: 15px !important;
+      font-weight: 400 !important; }
+  /* line 40, ../sass/mixins/_styled-panel.scss */
+  .extro-panel-inverse .x-panel-body-default {
     border-color: #414141;
     border-width: 1px; }
-  /* line 41, ../sass/mixins/_styled-panel.scss */
-  .extro-panel-inverse .x-panel-header-default-top, .extro-panel-inverse .x-panel-header-default-framed {
-    box-shadow: 0 1px 0 0 #8d8d8d inset; }
 
-/* line 250, ../sass/extrovert.scss */
+/* line 261, ../sass/extrovert.scss */
 .extro-panel-special {
   border-color: #336699;
   border-width: 3px; }
-  /* line 24, ../sass/mixins/_styled-panel.scss */
-  .extro-panel-special .x-panel-header, .extro-panel-special .x-panel-header-horizontal {
+  /* line 27, ../sass/mixins/_styled-panel.scss */
+  .extro-panel-special .x-panel-header, .extro-panel-special .x-panel-header-default-top, .extro-panel-special .x-panel-header-default, .extro-panel-special .x-panel-header-default-framed, .extro-panel-special .x-panel-header-horizontal {
     background-image: none;
     background-color: #407fbf;
     background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #79a6d2), color-stop(50%, #538cc6), color-stop(51%, #407fbf), color-stop(100%, #3973ac));
@@ -9834,19 +9864,20 @@ textarea {
     background-image: -o-linear-gradient(top, #79a6d2, #538cc6 50%, #407fbf 51%, #3973ac);
     background-image: -ms-linear-gradient(top, #79a6d2, #538cc6 50%, #407fbf 51%, #3973ac);
     background-image: linear-gradient(top, #79a6d2, #538cc6 50%, #407fbf 51%, #3973ac);
-    padding: 12px !important; }
-    /* line 29, ../sass/mixins/_styled-panel.scss */
-    .extro-panel-special .x-panel-header .x-panel-header-text, .extro-panel-special .x-panel-header .x-panel-header-text-default, .extro-panel-special .x-panel-header-horizontal .x-panel-header-text, .extro-panel-special .x-panel-header-horizontal .x-panel-header-text-default {
-      font-size: 20px;
-      font-weight: 400; }
-  /* line 36, ../sass/mixins/_styled-panel.scss */
-  .extro-panel-special .x-panel-header-default, .extro-panel-special .x-panel-header-default-framed, .extro-panel-special .x-panel-body-default {
+    padding: 12px !important;
+    border-color: #336699;
+    border-width: 3px;
+    box-shadow: 0 1px 0 0 #8cb2d9 inset; }
+    /* line 18, ../sass/mixins/_styled-header.scss */
+    .extro-panel-special .x-panel-header .prefixpanel-header-text,
+    .extro-panel-special .x-panel-header .prefixpanel-header-text-default, .extro-panel-special .x-panel-header-default-top .prefixpanel-header-text, .extro-panel-special .x-panel-header-default-top .prefixpanel-header-text-default, .extro-panel-special .x-panel-header-default .prefixpanel-header-text, .extro-panel-special .x-panel-header-default .prefixpanel-header-text-default, .extro-panel-special .x-panel-header-default-framed .prefixpanel-header-text, .extro-panel-special .x-panel-header-default-framed .prefixpanel-header-text-default, .extro-panel-special .x-panel-header-horizontal .prefixpanel-header-text, .extro-panel-special .x-panel-header-horizontal .prefixpanel-header-text-default {
+      font-size: 20px !important;
+      font-weight: 400 !important; }
+  /* line 40, ../sass/mixins/_styled-panel.scss */
+  .extro-panel-special .x-panel-body-default {
     border-color: #336699;
     border-width: 3px; }
-  /* line 41, ../sass/mixins/_styled-panel.scss */
-  .extro-panel-special .x-panel-header-default-top, .extro-panel-special .x-panel-header-default-framed {
-    box-shadow: 0 1px 0 0 #8cb2d9 inset; }
-  /* line 261, ../sass/extrovert.scss */
+  /* line 275, ../sass/extrovert.scss */
   .extro-panel-special .x-panel-header-text-default,
   .extro-panel-special .x-panel-header-text-default-framed {
     line-height: 25px; }
@@ -9857,12 +9888,12 @@ textarea {
  *   @include styled-panel(#336699, 2px, 'glossy');
  * 
  */
-/* line 273, ../sass/extrovert.scss */
+/* line 287, ../sass/extrovert.scss */
 .extro-panel-child {
   border-color: #324654;
   border-width: 1px; }
-  /* line 24, ../sass/mixins/_styled-panel.scss */
-  .extro-panel-child .x-panel-header, .extro-panel-child .x-panel-header-horizontal {
+  /* line 27, ../sass/mixins/_styled-panel.scss */
+  .extro-panel-child .x-panel-header, .extro-panel-child .x-panel-header-default-top, .extro-panel-child .x-panel-header-default, .extro-panel-child .x-panel-header-default-framed, .extro-panel-child .x-panel-header-horizontal {
     background-image: none;
     background-color: #324654;
     background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #384e5e), color-stop(100%, #2a3b47));
@@ -9871,25 +9902,26 @@ textarea {
     background-image: -o-linear-gradient(top, #384e5e, #2a3b47);
     background-image: -ms-linear-gradient(top, #384e5e, #2a3b47);
     background-image: linear-gradient(top, #384e5e, #2a3b47);
-    padding: 6px 8px 2px !important; }
-    /* line 29, ../sass/mixins/_styled-panel.scss */
-    .extro-panel-child .x-panel-header .x-panel-header-text, .extro-panel-child .x-panel-header .x-panel-header-text-default, .extro-panel-child .x-panel-header-horizontal .x-panel-header-text, .extro-panel-child .x-panel-header-horizontal .x-panel-header-text-default {
-      font-size: 12px;
-      font-weight: 400; }
-  /* line 36, ../sass/mixins/_styled-panel.scss */
-  .extro-panel-child .x-panel-header-default, .extro-panel-child .x-panel-header-default-framed, .extro-panel-child .x-panel-body-default {
+    padding: 6px 8px 2px !important;
+    border-color: #324654;
+    border-width: 1px;
+    box-shadow: 0 1px 0 0 #7394ac inset; }
+    /* line 18, ../sass/mixins/_styled-header.scss */
+    .extro-panel-child .x-panel-header .prefixpanel-header-text,
+    .extro-panel-child .x-panel-header .prefixpanel-header-text-default, .extro-panel-child .x-panel-header-default-top .prefixpanel-header-text, .extro-panel-child .x-panel-header-default-top .prefixpanel-header-text-default, .extro-panel-child .x-panel-header-default .prefixpanel-header-text, .extro-panel-child .x-panel-header-default .prefixpanel-header-text-default, .extro-panel-child .x-panel-header-default-framed .prefixpanel-header-text, .extro-panel-child .x-panel-header-default-framed .prefixpanel-header-text-default, .extro-panel-child .x-panel-header-horizontal .prefixpanel-header-text, .extro-panel-child .x-panel-header-horizontal .prefixpanel-header-text-default {
+      font-size: 12px !important;
+      font-weight: 400 !important; }
+  /* line 40, ../sass/mixins/_styled-panel.scss */
+  .extro-panel-child .x-panel-body-default {
     border-color: #324654;
     border-width: 1px; }
-  /* line 41, ../sass/mixins/_styled-panel.scss */
-  .extro-panel-child .x-panel-header-default-top, .extro-panel-child .x-panel-header-default-framed {
-    box-shadow: 0 1px 0 0 #7394ac inset; }
 
-/* line 276, ../sass/extrovert.scss */
+/* line 290, ../sass/extrovert.scss */
 .extro-panel-child-danger {
   border-color: #da4f49;
   border-width: 1px; }
-  /* line 24, ../sass/mixins/_styled-panel.scss */
-  .extro-panel-child-danger .x-panel-header, .extro-panel-child-danger .x-panel-header-horizontal {
+  /* line 27, ../sass/mixins/_styled-panel.scss */
+  .extro-panel-child-danger .x-panel-header, .extro-panel-child-danger .x-panel-header-default-top, .extro-panel-child-danger .x-panel-header-default, .extro-panel-child-danger .x-panel-header-default-framed, .extro-panel-child-danger .x-panel-header-horizontal {
     background-image: none;
     background-color: #da4f49;
     background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #dd5b56), color-stop(100%, #d73f38));
@@ -9898,25 +9930,26 @@ textarea {
     background-image: -o-linear-gradient(top, #dd5b56, #d73f38);
     background-image: -ms-linear-gradient(top, #dd5b56, #d73f38);
     background-image: linear-gradient(top, #dd5b56, #d73f38);
-    padding: 6px 8px 2px !important; }
-    /* line 29, ../sass/mixins/_styled-panel.scss */
-    .extro-panel-child-danger .x-panel-header .x-panel-header-text, .extro-panel-child-danger .x-panel-header .x-panel-header-text-default, .extro-panel-child-danger .x-panel-header-horizontal .x-panel-header-text, .extro-panel-child-danger .x-panel-header-horizontal .x-panel-header-text-default {
-      font-size: 12px;
-      font-weight: 400; }
-  /* line 36, ../sass/mixins/_styled-panel.scss */
-  .extro-panel-child-danger .x-panel-header-default, .extro-panel-child-danger .x-panel-header-default-framed, .extro-panel-child-danger .x-panel-body-default {
+    padding: 6px 8px 2px !important;
+    border-color: #da4f49;
+    border-width: 1px;
+    box-shadow: 0 1px 0 0 #f4cac8 inset; }
+    /* line 18, ../sass/mixins/_styled-header.scss */
+    .extro-panel-child-danger .x-panel-header .prefixpanel-header-text,
+    .extro-panel-child-danger .x-panel-header .prefixpanel-header-text-default, .extro-panel-child-danger .x-panel-header-default-top .prefixpanel-header-text, .extro-panel-child-danger .x-panel-header-default-top .prefixpanel-header-text-default, .extro-panel-child-danger .x-panel-header-default .prefixpanel-header-text, .extro-panel-child-danger .x-panel-header-default .prefixpanel-header-text-default, .extro-panel-child-danger .x-panel-header-default-framed .prefixpanel-header-text, .extro-panel-child-danger .x-panel-header-default-framed .prefixpanel-header-text-default, .extro-panel-child-danger .x-panel-header-horizontal .prefixpanel-header-text, .extro-panel-child-danger .x-panel-header-horizontal .prefixpanel-header-text-default {
+      font-size: 12px !important;
+      font-weight: 400 !important; }
+  /* line 40, ../sass/mixins/_styled-panel.scss */
+  .extro-panel-child-danger .x-panel-body-default {
     border-color: #da4f49;
     border-width: 1px; }
-  /* line 41, ../sass/mixins/_styled-panel.scss */
-  .extro-panel-child-danger .x-panel-header-default-top, .extro-panel-child-danger .x-panel-header-default-framed {
-    box-shadow: 0 1px 0 0 #f4cac8 inset; }
 
-/* line 279, ../sass/extrovert.scss */
+/* line 293, ../sass/extrovert.scss */
 .extro-panel-child-warning {
   border-color: #faa732;
   border-width: 1px; }
-  /* line 24, ../sass/mixins/_styled-panel.scss */
-  .extro-panel-child-warning .x-panel-header, .extro-panel-child-warning .x-panel-header-horizontal {
+  /* line 27, ../sass/mixins/_styled-panel.scss */
+  .extro-panel-child-warning .x-panel-header, .extro-panel-child-warning .x-panel-header-default-top, .extro-panel-child-warning .x-panel-header-default, .extro-panel-child-warning .x-panel-header-default-framed, .extro-panel-child-warning .x-panel-header-horizontal {
     background-image: none;
     background-color: #faa732;
     background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #faad41), color-stop(100%, #fa9e1e));
@@ -9925,25 +9958,26 @@ textarea {
     background-image: -o-linear-gradient(top, #faad41, #fa9e1e);
     background-image: -ms-linear-gradient(top, #faad41, #fa9e1e);
     background-image: linear-gradient(top, #faad41, #fa9e1e);
-    padding: 6px 8px 2px !important; }
-    /* line 29, ../sass/mixins/_styled-panel.scss */
-    .extro-panel-child-warning .x-panel-header .x-panel-header-text, .extro-panel-child-warning .x-panel-header .x-panel-header-text-default, .extro-panel-child-warning .x-panel-header-horizontal .x-panel-header-text, .extro-panel-child-warning .x-panel-header-horizontal .x-panel-header-text-default {
-      font-size: 12px;
-      font-weight: 400; }
-  /* line 36, ../sass/mixins/_styled-panel.scss */
-  .extro-panel-child-warning .x-panel-header-default, .extro-panel-child-warning .x-panel-header-default-framed, .extro-panel-child-warning .x-panel-body-default {
+    padding: 6px 8px 2px !important;
+    border-color: #faa732;
+    border-width: 1px;
+    box-shadow: 0 1px 0 0 #fee7c7 inset; }
+    /* line 18, ../sass/mixins/_styled-header.scss */
+    .extro-panel-child-warning .x-panel-header .prefixpanel-header-text,
+    .extro-panel-child-warning .x-panel-header .prefixpanel-header-text-default, .extro-panel-child-warning .x-panel-header-default-top .prefixpanel-header-text, .extro-panel-child-warning .x-panel-header-default-top .prefixpanel-header-text-default, .extro-panel-child-warning .x-panel-header-default .prefixpanel-header-text, .extro-panel-child-warning .x-panel-header-default .prefixpanel-header-text-default, .extro-panel-child-warning .x-panel-header-default-framed .prefixpanel-header-text, .extro-panel-child-warning .x-panel-header-default-framed .prefixpanel-header-text-default, .extro-panel-child-warning .x-panel-header-horizontal .prefixpanel-header-text, .extro-panel-child-warning .x-panel-header-horizontal .prefixpanel-header-text-default {
+      font-size: 12px !important;
+      font-weight: 400 !important; }
+  /* line 40, ../sass/mixins/_styled-panel.scss */
+  .extro-panel-child-warning .x-panel-body-default {
     border-color: #faa732;
     border-width: 1px; }
-  /* line 41, ../sass/mixins/_styled-panel.scss */
-  .extro-panel-child-warning .x-panel-header-default-top, .extro-panel-child-warning .x-panel-header-default-framed {
-    box-shadow: 0 1px 0 0 #fee7c7 inset; }
 
-/* line 282, ../sass/extrovert.scss */
+/* line 296, ../sass/extrovert.scss */
 .extro-panel-child-inverse {
   border-color: #414141;
   border-width: 1px; }
-  /* line 24, ../sass/mixins/_styled-panel.scss */
-  .extro-panel-child-inverse .x-panel-header, .extro-panel-child-inverse .x-panel-header-horizontal {
+  /* line 27, ../sass/mixins/_styled-panel.scss */
+  .extro-panel-child-inverse .x-panel-header, .extro-panel-child-inverse .x-panel-header-default-top, .extro-panel-child-inverse .x-panel-header-default, .extro-panel-child-inverse .x-panel-header-default-framed, .extro-panel-child-inverse .x-panel-header-horizontal {
     background-image: none;
     background-color: #414141;
     background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #494949), color-stop(100%, #373737));
@@ -9952,25 +9986,26 @@ textarea {
     background-image: -o-linear-gradient(top, #494949, #373737);
     background-image: -ms-linear-gradient(top, #494949, #373737);
     background-image: linear-gradient(top, #494949, #373737);
-    padding: 6px 8px 2px !important; }
-    /* line 29, ../sass/mixins/_styled-panel.scss */
-    .extro-panel-child-inverse .x-panel-header .x-panel-header-text, .extro-panel-child-inverse .x-panel-header .x-panel-header-text-default, .extro-panel-child-inverse .x-panel-header-horizontal .x-panel-header-text, .extro-panel-child-inverse .x-panel-header-horizontal .x-panel-header-text-default {
-      font-size: 12px;
-      font-weight: 400; }
-  /* line 36, ../sass/mixins/_styled-panel.scss */
-  .extro-panel-child-inverse .x-panel-header-default, .extro-panel-child-inverse .x-panel-header-default-framed, .extro-panel-child-inverse .x-panel-body-default {
+    padding: 6px 8px 2px !important;
+    border-color: #414141;
+    border-width: 1px;
+    box-shadow: 0 1px 0 0 #8d8d8d inset; }
+    /* line 18, ../sass/mixins/_styled-header.scss */
+    .extro-panel-child-inverse .x-panel-header .prefixpanel-header-text,
+    .extro-panel-child-inverse .x-panel-header .prefixpanel-header-text-default, .extro-panel-child-inverse .x-panel-header-default-top .prefixpanel-header-text, .extro-panel-child-inverse .x-panel-header-default-top .prefixpanel-header-text-default, .extro-panel-child-inverse .x-panel-header-default .prefixpanel-header-text, .extro-panel-child-inverse .x-panel-header-default .prefixpanel-header-text-default, .extro-panel-child-inverse .x-panel-header-default-framed .prefixpanel-header-text, .extro-panel-child-inverse .x-panel-header-default-framed .prefixpanel-header-text-default, .extro-panel-child-inverse .x-panel-header-horizontal .prefixpanel-header-text, .extro-panel-child-inverse .x-panel-header-horizontal .prefixpanel-header-text-default {
+      font-size: 12px !important;
+      font-weight: 400 !important; }
+  /* line 40, ../sass/mixins/_styled-panel.scss */
+  .extro-panel-child-inverse .x-panel-body-default {
     border-color: #414141;
     border-width: 1px; }
-  /* line 41, ../sass/mixins/_styled-panel.scss */
-  .extro-panel-child-inverse .x-panel-header-default-top, .extro-panel-child-inverse .x-panel-header-default-framed {
-    box-shadow: 0 1px 0 0 #8d8d8d inset; }
 
-/* line 288, ../sass/extrovert.scss */
+/* line 302, ../sass/extrovert.scss */
 .extro-panel-child-light {
   border-color: #4c6a7f;
   border-width: 1px; }
-  /* line 24, ../sass/mixins/_styled-panel.scss */
-  .extro-panel-child-light .x-panel-header, .extro-panel-child-light .x-panel-header-horizontal {
+  /* line 27, ../sass/mixins/_styled-panel.scss */
+  .extro-panel-child-light .x-panel-header, .extro-panel-child-light .x-panel-header-default-top, .extro-panel-child-light .x-panel-header-default, .extro-panel-child-light .x-panel-header-default-framed, .extro-panel-child-light .x-panel-header-horizontal {
     background-image: none;
     background-color: #5f859f;
     background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #688ca5), color-stop(100%, #577a92));
@@ -9979,25 +10014,26 @@ textarea {
     background-image: -o-linear-gradient(top, #688ca5, #577a92);
     background-image: -ms-linear-gradient(top, #688ca5, #577a92);
     background-image: linear-gradient(top, #688ca5, #577a92);
-    padding: 6px 8px 2px !important; }
-    /* line 29, ../sass/mixins/_styled-panel.scss */
-    .extro-panel-child-light .x-panel-header .x-panel-header-text, .extro-panel-child-light .x-panel-header .x-panel-header-text-default, .extro-panel-child-light .x-panel-header-horizontal .x-panel-header-text, .extro-panel-child-light .x-panel-header-horizontal .x-panel-header-text-default {
-      font-size: 12px;
-      font-weight: 400; }
-  /* line 36, ../sass/mixins/_styled-panel.scss */
-  .extro-panel-child-light .x-panel-header-default, .extro-panel-child-light .x-panel-header-default-framed, .extro-panel-child-light .x-panel-body-default {
+    padding: 6px 8px 2px !important;
+    border-color: #4c6a7f;
+    border-width: 1px;
+    box-shadow: 0 1px 0 0 #9fb5c5 inset; }
+    /* line 18, ../sass/mixins/_styled-header.scss */
+    .extro-panel-child-light .x-panel-header .prefixpanel-header-text,
+    .extro-panel-child-light .x-panel-header .prefixpanel-header-text-default, .extro-panel-child-light .x-panel-header-default-top .prefixpanel-header-text, .extro-panel-child-light .x-panel-header-default-top .prefixpanel-header-text-default, .extro-panel-child-light .x-panel-header-default .prefixpanel-header-text, .extro-panel-child-light .x-panel-header-default .prefixpanel-header-text-default, .extro-panel-child-light .x-panel-header-default-framed .prefixpanel-header-text, .extro-panel-child-light .x-panel-header-default-framed .prefixpanel-header-text-default, .extro-panel-child-light .x-panel-header-horizontal .prefixpanel-header-text, .extro-panel-child-light .x-panel-header-horizontal .prefixpanel-header-text-default {
+      font-size: 12px !important;
+      font-weight: 400 !important; }
+  /* line 40, ../sass/mixins/_styled-panel.scss */
+  .extro-panel-child-light .x-panel-body-default {
     border-color: #4c6a7f;
     border-width: 1px; }
-  /* line 41, ../sass/mixins/_styled-panel.scss */
-  .extro-panel-child-light .x-panel-header-default-top, .extro-panel-child-light .x-panel-header-default-framed {
-    box-shadow: 0 1px 0 0 #9fb5c5 inset; }
 
-/* line 291, ../sass/extrovert.scss */
+/* line 305, ../sass/extrovert.scss */
 .extro-panel-child-danger-light {
   border-color: #da4f49;
   border-width: 1px; }
-  /* line 24, ../sass/mixins/_styled-panel.scss */
-  .extro-panel-child-danger-light .x-panel-header, .extro-panel-child-danger-light .x-panel-header-horizontal {
+  /* line 27, ../sass/mixins/_styled-panel.scss */
+  .extro-panel-child-danger-light .x-panel-header, .extro-panel-child-danger-light .x-panel-header-default-top, .extro-panel-child-danger-light .x-panel-header-default, .extro-panel-child-danger-light .x-panel-header-default-framed, .extro-panel-child-danger-light .x-panel-header-horizontal {
     background-image: none;
     background-color: #e37873;
     background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e58480), color-stop(100%, #df6862));
@@ -10006,25 +10042,26 @@ textarea {
     background-image: -o-linear-gradient(top, #e58480, #df6862);
     background-image: -ms-linear-gradient(top, #e58480, #df6862);
     background-image: linear-gradient(top, #e58480, #df6862);
-    padding: 6px 8px 2px !important; }
-    /* line 29, ../sass/mixins/_styled-panel.scss */
-    .extro-panel-child-danger-light .x-panel-header .x-panel-header-text, .extro-panel-child-danger-light .x-panel-header .x-panel-header-text-default, .extro-panel-child-danger-light .x-panel-header-horizontal .x-panel-header-text, .extro-panel-child-danger-light .x-panel-header-horizontal .x-panel-header-text-default {
-      font-size: 12px;
-      font-weight: 400; }
-  /* line 36, ../sass/mixins/_styled-panel.scss */
-  .extro-panel-child-danger-light .x-panel-header-default, .extro-panel-child-danger-light .x-panel-header-default-framed, .extro-panel-child-danger-light .x-panel-body-default {
+    padding: 6px 8px 2px !important;
+    border-color: #da4f49;
+    border-width: 1px;
+    box-shadow: 0 1px 0 0 #f4cac8 inset; }
+    /* line 18, ../sass/mixins/_styled-header.scss */
+    .extro-panel-child-danger-light .x-panel-header .prefixpanel-header-text,
+    .extro-panel-child-danger-light .x-panel-header .prefixpanel-header-text-default, .extro-panel-child-danger-light .x-panel-header-default-top .prefixpanel-header-text, .extro-panel-child-danger-light .x-panel-header-default-top .prefixpanel-header-text-default, .extro-panel-child-danger-light .x-panel-header-default .prefixpanel-header-text, .extro-panel-child-danger-light .x-panel-header-default .prefixpanel-header-text-default, .extro-panel-child-danger-light .x-panel-header-default-framed .prefixpanel-header-text, .extro-panel-child-danger-light .x-panel-header-default-framed .prefixpanel-header-text-default, .extro-panel-child-danger-light .x-panel-header-horizontal .prefixpanel-header-text, .extro-panel-child-danger-light .x-panel-header-horizontal .prefixpanel-header-text-default {
+      font-size: 12px !important;
+      font-weight: 400 !important; }
+  /* line 40, ../sass/mixins/_styled-panel.scss */
+  .extro-panel-child-danger-light .x-panel-body-default {
     border-color: #da4f49;
     border-width: 1px; }
-  /* line 41, ../sass/mixins/_styled-panel.scss */
-  .extro-panel-child-danger-light .x-panel-header-default-top, .extro-panel-child-danger-light .x-panel-header-default-framed {
-    box-shadow: 0 1px 0 0 #f4cac8 inset; }
 
-/* line 294, ../sass/extrovert.scss */
+/* line 308, ../sass/extrovert.scss */
 .extro-panel-child-warning-light {
   border-color: #faa732;
   border-width: 1px; }
-  /* line 24, ../sass/mixins/_styled-panel.scss */
-  .extro-panel-child-warning-light .x-panel-header, .extro-panel-child-warning-light .x-panel-header-horizontal {
+  /* line 27, ../sass/mixins/_styled-panel.scss */
+  .extro-panel-child-warning-light .x-panel-header, .extro-panel-child-warning-light .x-panel-header-default-top, .extro-panel-child-warning-light .x-panel-header-default, .extro-panel-child-warning-light .x-panel-header-default-framed, .extro-panel-child-warning-light .x-panel-header-horizontal {
     background-image: none;
     background-color: #fbbc64;
     background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fcc373), color-stop(100%, #fbb450));
@@ -10033,25 +10070,26 @@ textarea {
     background-image: -o-linear-gradient(top, #fcc373, #fbb450);
     background-image: -ms-linear-gradient(top, #fcc373, #fbb450);
     background-image: linear-gradient(top, #fcc373, #fbb450);
-    padding: 6px 8px 2px !important; }
-    /* line 29, ../sass/mixins/_styled-panel.scss */
-    .extro-panel-child-warning-light .x-panel-header .x-panel-header-text, .extro-panel-child-warning-light .x-panel-header .x-panel-header-text-default, .extro-panel-child-warning-light .x-panel-header-horizontal .x-panel-header-text, .extro-panel-child-warning-light .x-panel-header-horizontal .x-panel-header-text-default {
-      font-size: 12px;
-      font-weight: 400; }
-  /* line 36, ../sass/mixins/_styled-panel.scss */
-  .extro-panel-child-warning-light .x-panel-header-default, .extro-panel-child-warning-light .x-panel-header-default-framed, .extro-panel-child-warning-light .x-panel-body-default {
+    padding: 6px 8px 2px !important;
+    border-color: #faa732;
+    border-width: 1px;
+    box-shadow: 0 1px 0 0 #fee7c7 inset; }
+    /* line 18, ../sass/mixins/_styled-header.scss */
+    .extro-panel-child-warning-light .x-panel-header .prefixpanel-header-text,
+    .extro-panel-child-warning-light .x-panel-header .prefixpanel-header-text-default, .extro-panel-child-warning-light .x-panel-header-default-top .prefixpanel-header-text, .extro-panel-child-warning-light .x-panel-header-default-top .prefixpanel-header-text-default, .extro-panel-child-warning-light .x-panel-header-default .prefixpanel-header-text, .extro-panel-child-warning-light .x-panel-header-default .prefixpanel-header-text-default, .extro-panel-child-warning-light .x-panel-header-default-framed .prefixpanel-header-text, .extro-panel-child-warning-light .x-panel-header-default-framed .prefixpanel-header-text-default, .extro-panel-child-warning-light .x-panel-header-horizontal .prefixpanel-header-text, .extro-panel-child-warning-light .x-panel-header-horizontal .prefixpanel-header-text-default {
+      font-size: 12px !important;
+      font-weight: 400 !important; }
+  /* line 40, ../sass/mixins/_styled-panel.scss */
+  .extro-panel-child-warning-light .x-panel-body-default {
     border-color: #faa732;
     border-width: 1px; }
-  /* line 41, ../sass/mixins/_styled-panel.scss */
-  .extro-panel-child-warning-light .x-panel-header-default-top, .extro-panel-child-warning-light .x-panel-header-default-framed {
-    box-shadow: 0 1px 0 0 #fee7c7 inset; }
 
-/* line 297, ../sass/extrovert.scss */
+/* line 311, ../sass/extrovert.scss */
 .extro-panel-child-inverse-light {
   border-color: #414141;
   border-width: 1px; }
-  /* line 24, ../sass/mixins/_styled-panel.scss */
-  .extro-panel-child-inverse-light .x-panel-header, .extro-panel-child-inverse-light .x-panel-header-horizontal {
+  /* line 27, ../sass/mixins/_styled-panel.scss */
+  .extro-panel-child-inverse-light .x-panel-header, .extro-panel-child-inverse-light .x-panel-header-default-top, .extro-panel-child-inverse-light .x-panel-header-default, .extro-panel-child-inverse-light .x-panel-header-default-framed, .extro-panel-child-inverse-light .x-panel-header-horizontal {
     background-image: none;
     background-color: #5a5a5a;
     background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #626262), color-stop(100%, #505050));
@@ -10060,56 +10098,57 @@ textarea {
     background-image: -o-linear-gradient(top, #626262, #505050);
     background-image: -ms-linear-gradient(top, #626262, #505050);
     background-image: linear-gradient(top, #626262, #505050);
-    padding: 6px 8px 2px !important; }
-    /* line 29, ../sass/mixins/_styled-panel.scss */
-    .extro-panel-child-inverse-light .x-panel-header .x-panel-header-text, .extro-panel-child-inverse-light .x-panel-header .x-panel-header-text-default, .extro-panel-child-inverse-light .x-panel-header-horizontal .x-panel-header-text, .extro-panel-child-inverse-light .x-panel-header-horizontal .x-panel-header-text-default {
-      font-size: 12px;
-      font-weight: 400; }
-  /* line 36, ../sass/mixins/_styled-panel.scss */
-  .extro-panel-child-inverse-light .x-panel-header-default, .extro-panel-child-inverse-light .x-panel-header-default-framed, .extro-panel-child-inverse-light .x-panel-body-default {
+    padding: 6px 8px 2px !important;
+    border-color: #414141;
+    border-width: 1px;
+    box-shadow: 0 1px 0 0 #8d8d8d inset; }
+    /* line 18, ../sass/mixins/_styled-header.scss */
+    .extro-panel-child-inverse-light .x-panel-header .prefixpanel-header-text,
+    .extro-panel-child-inverse-light .x-panel-header .prefixpanel-header-text-default, .extro-panel-child-inverse-light .x-panel-header-default-top .prefixpanel-header-text, .extro-panel-child-inverse-light .x-panel-header-default-top .prefixpanel-header-text-default, .extro-panel-child-inverse-light .x-panel-header-default .prefixpanel-header-text, .extro-panel-child-inverse-light .x-panel-header-default .prefixpanel-header-text-default, .extro-panel-child-inverse-light .x-panel-header-default-framed .prefixpanel-header-text, .extro-panel-child-inverse-light .x-panel-header-default-framed .prefixpanel-header-text-default, .extro-panel-child-inverse-light .x-panel-header-horizontal .prefixpanel-header-text, .extro-panel-child-inverse-light .x-panel-header-horizontal .prefixpanel-header-text-default {
+      font-size: 12px !important;
+      font-weight: 400 !important; }
+  /* line 40, ../sass/mixins/_styled-panel.scss */
+  .extro-panel-child-inverse-light .x-panel-body-default {
     border-color: #414141;
     border-width: 1px; }
-  /* line 41, ../sass/mixins/_styled-panel.scss */
-  .extro-panel-child-inverse-light .x-panel-header-default-top, .extro-panel-child-inverse-light .x-panel-header-default-framed {
-    box-shadow: 0 1px 0 0 #8d8d8d inset; }
 
-/* line 301, ../sass/extrovert.scss */
+/* line 315, ../sass/extrovert.scss */
 .extro-btn-primary {
   background: #0074CC; }
 
-/* line 304, ../sass/extrovert.scss */
+/* line 318, ../sass/extrovert.scss */
 .extro-btn-primary.x-btn-over {
   background-color: #0055cc; }
 
-/* line 307, ../sass/extrovert.scss */
+/* line 321, ../sass/extrovert.scss */
 .extro-btn-inverse {
   background: #414141; }
 
-/* line 310, ../sass/extrovert.scss */
+/* line 324, ../sass/extrovert.scss */
 .extro-btn-inverse.x-btn-over {
   background-color: #222222; }
 
-/* line 314, ../sass/extrovert.scss */
+/* line 328, ../sass/extrovert.scss */
 .extro-btn-primary,
 .extro-btn-inverse {
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25); }
 
-/* line 318, ../sass/extrovert.scss */
+/* line 332, ../sass/extrovert.scss */
 .extro-btn-primary .x-btn-inner,
 .extro-btn-inverse .x-btn-inner {
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
   color: white; }
 
-/* line 324, ../sass/extrovert.scss */
+/* line 338, ../sass/extrovert.scss */
 .x-boundlist-item-over,
 .x-boundlist-selected {
   color: #fff; }
 
-/* line 327, ../sass/extrovert.scss */
+/* line 341, ../sass/extrovert.scss */
 .x-boundlist-item {
   border-bottom: 1px solid #eee; }
 
-/* line 331, ../sass/extrovert.scss */
+/* line 345, ../sass/extrovert.scss */
 .x-toolbar {
   background-image: none;
   background-color: #dddddd;
@@ -10120,7 +10159,7 @@ textarea {
   background-image: -ms-linear-gradient(top, #ffffff, #f1f1f1 30%, #dddddd 65%, #cecece);
   background-image: linear-gradient(top, #ffffff, #f1f1f1 30%, #dddddd 65%, #cecece); }
 
-/* line 334, ../sass/extrovert.scss */
+/* line 348, ../sass/extrovert.scss */
 .x-toolbar-vertical {
   background-image: none;
   background-color: #dddddd;

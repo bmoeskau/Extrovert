@@ -1,0 +1,22 @@
+
+@mixin styled-header(
+  $border-color: $extro-color-main,
+  $border-width: 1px,
+  $header-lighten: 0,
+  $header-gradient-type: $base-gradient,
+  $header-font-size: $panel-header-font-size,
+  $header-font-weight: $panel-header-font-weight,
+  $header-padding: $panel-header-padding
+) {
+  @include background-gradient(lighten($border-color, $header-lighten), $header-gradient-type);
+  padding: $header-padding !important;
+  border-color: $border-color;
+  border-width: $border-width;
+  box-shadow: 0 1px 0 0 lighten($border-color, 30) inset;
+  
+  .#{prefix}panel-header-text,
+  .#{prefix}panel-header-text-default {
+      font-size: $header-font-size !important;
+      font-weight: $header-font-weight !important;
+  }
+}
