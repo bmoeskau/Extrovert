@@ -26,6 +26,10 @@ Ext.define('Todo.view.List', {
                 },
                 
                 columns: [{
+                    text: 'Due',
+                    width: 120,
+                    dataIndex: 'due'
+                },{
                     text: 'Task',
                     flex: 1,
                     dataIndex: 'text'
