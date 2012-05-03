@@ -42,5 +42,9 @@ Ext.define('Todo.view.List', {
     
     setStore: function(taskStore) {
         this.child('#taskGrid').reconfigure(taskStore);
+    },
+    
+    notifyResize: function(viewportBox) {
+        // resize logic if needed
     }
 });

@@ -19,7 +19,7 @@ Ext.define('Todo.view.Projects', {
             region: 'west',
             collapsible: true,
             split: true,
-            width: 350,
+            width: 400,
             cls: 'todo-main-panel',
             margin: '10 0 10 10',
             
@@ -86,6 +86,16 @@ Ext.define('Todo.view.Projects', {
                 }
             }]
         }
+    },
+    
+    notifyResize: function(viewportBox) {
+        // this.animate({
+            // to: {
+                // width: viewportBox.width < 800 ? 200 : 400
+            // }
+        // });
+        
+        this.setWidth(viewportBox.width < 800 ? 250 : 400);
     },
     
     onItemClick: function(view, rec, domNode) {

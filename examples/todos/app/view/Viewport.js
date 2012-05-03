@@ -8,15 +8,52 @@ Ext.define('Todo.view.Viewport', {
         'Todo.view.List'
     ],
     
+    minWidthCls: 'extro-min-width',
+    minHeightCls: 'extro-min-height',
+    maxWidthCls: 'extro-max-width',
+    maxHeightCls: 'extro-max-height',
+    
     initComponent: function() {
-        Ext.apply(this, {
+        var me = this;
+        
+        me.header = Ext.create('Todo.view.Header');
+        me.projectsPanel = Ext.create('Todo.view.Projects');
+        me.listPanel = Ext.create('Todo.view.List');
+                
+        Ext.apply(me, {
             items: [
-                Ext.create('Todo.view.Header'),
-                Ext.create('Todo.view.Projects'),
-                Ext.create('Todo.view.List')
-            ]
+                me.header,
+                me.projectsPanel,
+                me.listPanel
+            ],
+            
+            listeners: {
+                'resize': me.onResize,
+                scope: me
+            }
         });
                 
-        this.callParent(arguments);
+        me.callParent(arguments);
+    },
+    
+    onResize: function(vp, width, height, oldWidth, oldHeight, e) {
+        var box = {
+                width: width,
+                height: height,
+                oldWidth: oldWidth,
+                oldHeight: oldHeight
+            },
+            min800Cls = this.minWidthCls + '-' + 800;
+        
+        if (box.width < 800) {
+            this.el.addCls(min800Cls);
+        }
+        else {
+            this.el.removeCls(min800Cls);
+        }
+        
+        this.header.notifyResize(box);
+        this.projectsPanel.notifyResize(box);
+        this.listPanel.notifyResize(box);
     }
 });

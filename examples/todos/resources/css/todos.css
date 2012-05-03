@@ -11813,12 +11813,18 @@ textarea {
   background-image: linear-gradient("left", #ffffff, #f1f1f1 30%, #dddddd 65%, #cecece);
 }
 
-/* line 14, ../sass/todos.scss */
+/* line 9, ../sass/mixins/_adaptive.scss */
+.extro-min-width-800 .todo-header {
+  padding: 10px;
+  font-size: 18px;
+}
+
+/* line 17, ../sass/todos.scss */
 .x-border-layout-ct {
   background-color: #444;
 }
 
-/* line 21, ../sass/todos.scss */
+/* line 24, ../sass/todos.scss */
 .todo-header {
   background-image: none;
   background-color: #363f49;
@@ -11837,12 +11843,12 @@ textarea {
   border-bottom: 1px solid #16191d !important;
 }
 
-/* line 32, ../sass/todos.scss */
+/* line 35, ../sass/todos.scss */
 .todo-main-toolbar {
   border: 2px solid #333;
 }
 
-/* line 39, ../sass/todos.scss */
+/* line 42, ../sass/todos.scss */
 .todo-main-panel {
   border-color: #333333;
   border-width: 2px;
@@ -11875,30 +11881,30 @@ textarea {
   border-width: 2px;
 }
 
-/* line 54, ../sass/todos.scss */
+/* line 57, ../sass/todos.scss */
 .todo-project {
   background: #eee;
 }
-/* line 57, ../sass/todos.scss */
+/* line 60, ../sass/todos.scss */
 .todo-project .x-panel-body {
   background: #eee;
 }
-/* line 61, ../sass/todos.scss */
+/* line 64, ../sass/todos.scss */
 .todo-project .x-panel-header-text {
   font-size: 16px !important;
 }
-/* line 65, ../sass/todos.scss */
+/* line 68, ../sass/todos.scss */
 .todo-project .x-accordion-hd {
   padding: 7px 8px !important;
 }
 
-/* line 69, ../sass/todos.scss */
+/* line 72, ../sass/todos.scss */
 .todo-tasklist {
   font-size: 15px;
   border-bottom: 1px solid #ccc;
   position: relative;
 }
-/* line 74, ../sass/todos.scss */
+/* line 77, ../sass/todos.scss */
 .todo-tasklist a, .todo-tasklist a:visited {
   display: block;
   color: #369;
@@ -11907,7 +11913,7 @@ textarea {
   font-weight: 200;
 }
 
-/* line 82, ../sass/todos.scss */
+/* line 85, ../sass/todos.scss */
 .todo-tasklist-hover {
   background-image: none;
   background-color: #ead29c;
@@ -11919,7 +11925,7 @@ textarea {
   background-image: linear-gradient(top, #f7efdb, #f1e1be 30%, #ead29c 65%, #e5c682);
 }
 
-/* line 85, ../sass/todos.scss */
+/* line 88, ../sass/todos.scss */
 .todo-task-count {
   position: absolute;
   right: 3px;
@@ -11937,22 +11943,22 @@ textarea {
   border-radius: 10px;
 }
 
-/* line 102, ../sass/todos.scss */
+/* line 105, ../sass/todos.scss */
 .todo-task-grid .x-column-header-text {
   font-size: 16px;
   line-height: 20px;
 }
-/* line 108, ../sass/todos.scss */
+/* line 111, ../sass/todos.scss */
 .todo-task-grid .x-grid-row .x-grid-cell {
   font-size: 15px;
   font-weight: 200;
 }
-/* line 113, ../sass/todos.scss */
+/* line 116, ../sass/todos.scss */
 .todo-task-grid .x-grid-row .x-grid-cell-inner {
   padding: 10px;
 }
 
-/* line 119, ../sass/todos.scss */
+/* line 122, ../sass/todos.scss */
 .extro-empty-text {
   padding: 20px;
   font-size: 20px;

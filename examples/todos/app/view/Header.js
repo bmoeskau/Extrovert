@@ -12,5 +12,15 @@ Ext.define('Todo.view.Header', {
         });
                 
         this.callParent(arguments);
+    },
+    
+    notifyResize: function(viewportBox) {
+        // this.animate({
+            // to: {
+                // height: viewportBox.width < 800 ? 40 : 60
+            // }
+        // });
+        
+        this.setHeight(viewportBox.width < 800 ? 40 : 60);
     }
 });

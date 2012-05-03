@@ -1,0 +1,13 @@
+//
+// This class gets added/removed from the document body anytime
+// the browser is resized and the 800-pixel threshold is crossed.
+// This is good for style-only changes, but things that affect the
+// component layout (e.g. setting width/height) still have to be
+// done in code.  See Todo.view.Viewport.onResize() for details.
+//
+.extro-min-width-800 {
+  .todo-header {
+    padding: 10px;
+    font-size: 18px;
+  }
+}

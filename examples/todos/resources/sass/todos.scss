@@ -2,6 +2,9 @@
 @import 'compass/css3/border-radius';
 @import '../../../../resources/sass/extrovert.scss';
 
+// Adaptive layout mixin:
+@import 'mixins/adaptive';
+
 
 $highlight-background-color: #7b8b9d;
 $header-background-color: darken($highlight-background-color, 30);
@@ -121,4 +124,3 @@ $header-background-color: darken($highlight-background-color, 30);
   font-size: 20px;
   font-weight: 100;
 }
-
