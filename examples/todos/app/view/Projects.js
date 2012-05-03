@@ -2,6 +2,12 @@ Ext.define('Todo.view.Projects', {
     alias: 'widget.todo-projects',
     extend: 'Ext.panel.Panel',
     
+    newProjectText: 'New Project',
+    newProjectIconCls: 'todo-btn-new-project',
+    
+    newTaskText: 'New Task',
+    newTaskIconCls: 'todo-btn-new-task',
+    
     taskListTpl: [
         '<tpl for=".">',
             '<div class="todo-tasklist">',
@@ -14,7 +20,9 @@ Ext.define('Todo.view.Projects', {
     ],
     
     initComponent: function() {
-        Ext.applyIf(this, {
+        var me = this;
+        
+        Ext.applyIf(me, {
             title: 'Projects',
             region: 'west',
             collapsible: true,
@@ -39,27 +47,33 @@ Ext.define('Todo.view.Projects', {
                 xtype: 'toolbar',
                 dock: 'left',
                 cls: 'todo-main-toolbar',
+                itemId: 'mainToolbar',
+                
                 items: [{
-                    text: 'New Project',
-                    scale: 'medium',
-                    handler: this.onNewProjectClick,
-                    scope: this
+                    text: me.newProjectText,
+                    tooltip: me.newProjectText,
+                    itemId: 'newProjectButton',
+                    scale: 'large',
+                    handler: me.onNewProjectClick,
+                    scope: me
                 },{
-                    text: 'New Task',
-                    scale: 'medium',
-                    handler: this.onNewTaskClick,
-                    scope: this
+                    text: me.newTaskText,
+                    tooltip: me.newTaskText,
+                    itemId: 'newTaskButton',
+                    scale: 'large',
+                    handler: me.onNewTaskClick,
+                    scope: me
                 }]
             }]
         });
         
-        this.addEvents(
+        me.addEvents(
             'tasklistselect',
             'newproject',
             'newtask'
         );
                 
-        this.callParent(arguments);
+        me.callParent(arguments);
     },
     
     setStore: function(projectStore) {
@@ -95,7 +109,24 @@ Ext.define('Todo.view.Projects', {
             // }
         // });
         
-        this.setWidth(viewportBox.width < 800 ? 250 : 400);
+        var me = this,
+            lessThan800 = viewportBox.width < 800;
+        
+        me.setWidth(lessThan800 ? 220 : 400);
+        
+        me.child('#mainToolbar').items.each(function(button) {
+            switch (button.itemId) {
+                case 'newProjectButton':
+                    button.setText(lessThan800 ? '' : me.newProjectText);
+                    button.setIconCls(lessThan800 ? me.newProjectIconCls : '');
+                    break;
+                
+                case 'newTaskButton':
+                    button.setText(lessThan800 ? '' : me.newTaskText);
+                    button.setIconCls(lessThan800 ? me.newTaskIconCls : '');
+                    break;
+            }
+        });
     },
     
     onItemClick: function(view, rec, domNode) {

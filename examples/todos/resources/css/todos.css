@@ -11843,12 +11843,22 @@ textarea {
   border-bottom: 1px solid #16191d !important;
 }
 
-/* line 35, ../sass/todos.scss */
+/* line 38, ../sass/todos.scss */
 .todo-main-toolbar {
   border: 2px solid #333;
 }
 
-/* line 42, ../sass/todos.scss */
+/* line 41, ../sass/todos.scss */
+.todo-btn-new-project {
+  background: url(../images/icons.gif) no-repeat 0 0 !important;
+}
+
+/* line 44, ../sass/todos.scss */
+.todo-btn-new-task {
+  background: url(../images/icons.gif) no-repeat -33px 0 !important;
+}
+
+/* line 51, ../sass/todos.scss */
 .todo-main-panel {
   border-color: #333333;
   border-width: 2px;
@@ -11881,30 +11891,30 @@ textarea {
   border-width: 2px;
 }
 
-/* line 57, ../sass/todos.scss */
+/* line 66, ../sass/todos.scss */
 .todo-project {
   background: #eee;
 }
-/* line 60, ../sass/todos.scss */
+/* line 69, ../sass/todos.scss */
 .todo-project .x-panel-body {
   background: #eee;
 }
-/* line 64, ../sass/todos.scss */
+/* line 73, ../sass/todos.scss */
 .todo-project .x-panel-header-text {
   font-size: 16px !important;
 }
-/* line 68, ../sass/todos.scss */
+/* line 77, ../sass/todos.scss */
 .todo-project .x-accordion-hd {
   padding: 7px 8px !important;
 }
 
-/* line 72, ../sass/todos.scss */
+/* line 88, ../sass/todos.scss */
 .todo-tasklist {
   font-size: 15px;
   border-bottom: 1px solid #ccc;
   position: relative;
 }
-/* line 77, ../sass/todos.scss */
+/* line 93, ../sass/todos.scss */
 .todo-tasklist a, .todo-tasklist a:visited {
   display: block;
   color: #369;
@@ -11913,7 +11923,7 @@ textarea {
   font-weight: 200;
 }
 
-/* line 85, ../sass/todos.scss */
+/* line 101, ../sass/todos.scss */
 .todo-tasklist-hover {
   background-image: none;
   background-color: #ead29c;
@@ -11925,7 +11935,7 @@ textarea {
   background-image: linear-gradient(top, #f7efdb, #f1e1be 30%, #ead29c 65%, #e5c682);
 }
 
-/* line 88, ../sass/todos.scss */
+/* line 104, ../sass/todos.scss */
 .todo-task-count {
   position: absolute;
   right: 3px;
@@ -11943,22 +11953,22 @@ textarea {
   border-radius: 10px;
 }
 
-/* line 105, ../sass/todos.scss */
+/* line 121, ../sass/todos.scss */
 .todo-task-grid .x-column-header-text {
   font-size: 16px;
   line-height: 20px;
 }
-/* line 111, ../sass/todos.scss */
+/* line 127, ../sass/todos.scss */
 .todo-task-grid .x-grid-row .x-grid-cell {
   font-size: 15px;
   font-weight: 200;
 }
-/* line 116, ../sass/todos.scss */
+/* line 132, ../sass/todos.scss */
 .todo-task-grid .x-grid-row .x-grid-cell-inner {
   padding: 10px;
 }
 
-/* line 122, ../sass/todos.scss */
+/* line 138, ../sass/todos.scss */
 .extro-empty-text {
   padding: 20px;
   font-size: 20px;

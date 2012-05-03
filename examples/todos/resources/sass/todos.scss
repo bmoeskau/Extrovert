@@ -18,7 +18,7 @@ $header-background-color: darken($highlight-background-color, 30);
   background-color: #444;
 } 
 
-//
+//=================================================
 // Main application header, just a styled Component
 //
 .todo-header {
@@ -32,11 +32,20 @@ $header-background-color: darken($highlight-background-color, 30);
     border-bottom: 1px solid darken($header-background-color, 15) !important;
 }
 
+//=================================================
+// Main toolbar
+//
 .todo-main-toolbar {
   border: 2px solid #333;
 }
- 
-//
+.todo-btn-new-project {
+  background: url(../images/icons.gif) no-repeat 0 0 !important;
+}
+.todo-btn-new-task {
+  background: url(../images/icons.gif) no-repeat -33px 0 !important;
+}
+
+//=================================================
 // Top-level application panels (Projects, To Do)
 //
 .todo-main-panel {
@@ -51,7 +60,7 @@ $header-background-color: darken($highlight-background-color, 30);
   );
 }
 
-//
+//=================================================
 // Project Panel styles
 //
 .todo-project {
@@ -67,6 +76,13 @@ $header-background-color: darken($highlight-background-color, 30);
   
   .#{$prefix}accordion-hd {
     padding: 7px 8px !important;
+  }
+  
+  .#{$prefix}item-selected {
+    // At the moment each list maintains a selected item by default
+    // instead of only one at a time. I don't feel like fixing that
+    // at the moment, but once it's fixed this will look nice:
+    //@include background-gradient($extro-color-highlight, 'bevel');
   }
 }
 .todo-tasklist {
@@ -98,7 +114,7 @@ $header-background-color: darken($highlight-background-color, 30);
   @include border-radius(10px);
 }
 
-//
+//=================================================
 // Task List styles
 //
 .todo-task-grid {
