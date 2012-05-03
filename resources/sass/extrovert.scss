@@ -226,14 +226,27 @@ textarea {
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
 }
 
+$extro-accordion-color-light: lighten($extro-color-main-light, 20);
+$extro-accordion-color-dark: lighten($extro-color-main, 20);
+$extro-accordion-font-size: $font-size;
+
 .#{$prefix}accordion-hd {
-  background: none;
-  @include styled-header($extro-color-main-light, 10);
-  padding: 4px 5px 3px !important;
+  //background: none;
+  //@include styled-header($extro-color-main-light, 20);
+  padding: 4px 8px 3px !important;
+  
+  // Unfortunately because the default Ext theme defines the accordion-hd background
+  // with an !important, we are forced to override all of these gradient rules manually
+  // so that we can override the !important with our own. Boo!
+  background-image: -webkit-linear-gradient(top, $extro-accordion-color-light, $extro-accordion-color-dark) !important;
+  background-image: -moz-linear-gradient(top, $extro-accordion-color-light, $extro-accordion-color-dark) !important;
+  background-image: -o-linear-gradient(top, $extro-accordion-color-light, $extro-accordion-color-dark) !important;
+  background-image: -ms-linear-gradient(top, $extro-accordion-color-light, $extro-accordion-color-dark) !important;
+  background: linear-gradient(top, $extro-accordion-color-light, $extro-accordion-color-dark) !important;
   
   .#{$prefix}panel-header-text {
-    text-shadow: 0 1px 0 #fff;
-    font-size: $font-size;
+    color: #fff;
+    font-size: $extro-accordion-font-size !important;
   }
 }
 
@@ -298,6 +311,7 @@ textarea {
 }
 //
 // Light versions, best for nesting within the same style of parent
+// (e.g. regions within a border layout look good with these).
 //
 .extro-panel-child-light {
   @include child-panel($extro-color-main-light, 10);
