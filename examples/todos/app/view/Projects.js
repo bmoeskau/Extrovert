@@ -2,24 +2,37 @@ Ext.define('Todo.view.Projects', {
     alias: 'widget.todo-projects',
     extend: 'Ext.panel.Panel',
     
+    taskListTpl: [
+        '<tpl for=".">',
+            '<div class="todo-tasklist">',
+                '<div class="name">',
+                    '<a href="#">{name}</a>',
+                    '<span class="todo-task-count">{[values.tasks.length]}</span>',
+                '</div>',
+            '</div>',
+        '</tpl>'
+    ],
+    
     initComponent: function() {
         Ext.applyIf(this, {
             title: 'Projects',
             region: 'west',
             collapsible: true,
             split: true,
-            width: 200,
+            width: 240,
             cls: 'todo-main-panel',
             margin: '10 0 10 10',
             
             layout: {
-                type: 'accordion'
+                type: 'accordion',
+                multi: true
             },
             
             defaults: {
                 collapsible: true,
                 border: false,
-                cls: 'extro-panel-child'
+                autoScroll: true,
+                cls: 'todo-project'
             },
             
             dockedItems: [{
@@ -40,23 +53,30 @@ Ext.define('Todo.view.Projects', {
         this.store.on('load', this.onStoreLoad, this);
     },
     
+    getProjectConfig: function(project) {
+        return {
+            // This is a panel that contains a data view bound to
+            // this project's set of task lists.
+            title: project.data.name,
+            layout: 'fit',
+            items: [{
+                xtype: 'dataview',
+                store: project.lists(),
+                itemSelector: '.todo-tasklist',
+                overItemCls: 'todo-tasklist-hover',
+                trackOver: true,
+                tpl: this.taskListTpl
+            }]
+        }
+    },
+    
     onStoreLoad: function() {
         var me = this;
         
         me.removeAll();
         
         me.store.each(function(project) {
-            project.lists().each(function(list) {
-                console.log(list.data.name);
-                
-                list.tasks().each(function(task) {
-                    console.log(' - '+task.data.text)
-                })
-            });
-            
-            me.add({
-                title: project.data.name
-            });
+            me.add(me.getProjectConfig(project));
         });
     }
 });

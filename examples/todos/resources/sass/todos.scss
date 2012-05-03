@@ -1,4 +1,5 @@
 @import 'compass';
+@import 'compass/css3/border-radius';
 @import '../../../../resources/sass/extrovert.scss';
 
 
@@ -14,6 +15,9 @@ $header-background-color: darken($highlight-background-color, 30);
   background-color: #444;
 } 
 
+//
+// Main application header, just a styled Component
+//
 .todo-header {
     @include background-gradient($header-background-color, 'bevel');
     padding: 15px;
@@ -24,7 +28,10 @@ $header-background-color: darken($highlight-background-color, 30);
     text-shadow: 0 1px 0 darken($header-background-color, 15);
     border-bottom: 1px solid darken($header-background-color, 15) !important;
 }
-
+ 
+//
+// Top-level application panels (Projects, To Do)
+//
 .todo-main-panel {
   @include styled-panel(
     #333,     // border-color / header-base-color
@@ -35,4 +42,44 @@ $header-background-color: darken($highlight-background-color, 30);
     400,      // header-font-weight
     10px      // header-padding
   );
+}
+
+//
+// Project Panel styles
+//
+.todo-project {
+  .#{$prefix}panel-body {
+    background: #eee;
+  }
+  .#{$prefix}panel-header-text {
+    font-size: ceil($font-size * 1.3) !important;
+  }
+}
+.todo-tasklist {
+  font-size: ceil($font-size * 1.3);
+  border-bottom: 1px solid #ccc;
+  position: relative;
+  
+  a, a:visited {
+    display: block;
+    color: #369;
+    padding: 8px 12px;
+    text-decoration: none;
+    font-weight: 200;
+  }
+}
+.todo-tasklist-hover {
+  @include background-gradient(lighten(#C49429, 30), 'bevel');
+}
+.todo-task-count {
+  position: absolute;
+  right: 3px;
+  top: 8px;
+  background: lighten($extro-color-main-light, 20);
+  color: #fff;
+  font-weight: 400;
+  font-size: 12px;
+  padding: 3px 10px;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+  @include border-radius(10px);
 }

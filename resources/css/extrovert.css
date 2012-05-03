@@ -9721,32 +9721,18 @@ textarea {
 .x-panel-header-text-default-framed {
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5); }
 
-/* line 229, ../sass/extrovert.scss */
+/* line 233, ../sass/extrovert.scss */
 .x-accordion-hd {
-  background: none;
-  background-image: none;
-  background-color: #4c6a7f;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #527289), color-stop(100%, #445f72));
-  background-image: -webkit-linear-gradient(top, #527289, #445f72);
-  background-image: -moz-linear-gradient(top, #527289, #445f72);
-  background-image: -o-linear-gradient(top, #527289, #445f72);
-  background-image: -ms-linear-gradient(top, #527289, #445f72);
-  background-image: linear-gradient(top, #527289, #445f72);
-  padding: 8px 5px 5px 8px !important !important;
-  border-color: #4c6a7f;
-  border-width: 10;
-  box-shadow: 0 1px 0 0 #9fb5c5 inset;
-  padding: 4px 5px 3px !important; }
-  /* line 19, ../sass/mixins/_styled-header.scss */
-  .x-accordion-hd .x-panel-header-text,
-  .x-accordion-hd .x-panel-header-text-default,
-  .x-accordion-hd .x-panel-header-text-default-framed {
-    font-size: 15px !important;
-    font-weight: 400 !important; }
-  /* line 234, ../sass/extrovert.scss */
+  padding: 4px 8px 3px !important;
+  background-image: -webkit-linear-gradient(top, #7f9db2, #587b94) !important;
+  background-image: -moz-linear-gradient(top, #7f9db2, #587b94) !important;
+  background-image: -o-linear-gradient(top, #7f9db2, #587b94) !important;
+  background-image: -ms-linear-gradient(top, #7f9db2, #587b94) !important;
+  background: linear-gradient(top, #7f9db2, #587b94) !important; }
+  /* line 247, ../sass/extrovert.scss */
   .x-accordion-hd .x-panel-header-text {
-    text-shadow: 0 1px 0 #fff;
-    font-size: 12px; }
+    color: #fff;
+    font-size: 12px !important; }
 
 /*
  * Custom panel styles. Note that you can optionally
@@ -9755,16 +9741,16 @@ textarea {
  *   @include styled-panel(#336699, 2px, 'glossy');
  * 
  */
-/* line 247, ../sass/extrovert.scss */
+/* line 260, ../sass/extrovert.scss */
 .extro-panel-danger {
   border-color: #da4f49;
   border-width: 1px; }
   /* line 27, ../sass/mixins/_styled-panel.scss */
-  .extro-panel-danger .x-panel-header,
-  .extro-panel-danger .x-panel-header-default-top,
-  .extro-panel-danger .x-panel-header-default,
-  .extro-panel-danger .x-panel-header-default-framed,
-  .extro-panel-danger .x-panel-header-horizontal {
+  .extro-panel-danger > .x-panel-header,
+  .extro-panel-danger > .x-panel-header-default-top,
+  .extro-panel-danger > .x-panel-header-default,
+  .extro-panel-danger > .x-panel-header-default-framed,
+  .extro-panel-danger > .x-panel-header-horizontal {
     background-image: none;
     background-color: #da4f49;
     background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #dd5b56), color-stop(100%, #d73f38));
@@ -9778,34 +9764,34 @@ textarea {
     border-width: 1px;
     box-shadow: 0 1px 0 0 #f4cac8 inset; }
     /* line 19, ../sass/mixins/_styled-header.scss */
-    .extro-panel-danger .x-panel-header .x-panel-header-text,
-    .extro-panel-danger .x-panel-header .x-panel-header-text-default,
-    .extro-panel-danger .x-panel-header .x-panel-header-text-default-framed,
-    .extro-panel-danger .x-panel-header-default-top .x-panel-header-text,
-    .extro-panel-danger .x-panel-header-default-top .x-panel-header-text-default,
-    .extro-panel-danger .x-panel-header-default-top .x-panel-header-text-default-framed,
-    .extro-panel-danger .x-panel-header-default .x-panel-header-text,
-    .extro-panel-danger .x-panel-header-default .x-panel-header-text-default,
-    .extro-panel-danger .x-panel-header-default .x-panel-header-text-default-framed,
-    .extro-panel-danger .x-panel-header-default-framed .x-panel-header-text,
-    .extro-panel-danger .x-panel-header-default-framed .x-panel-header-text-default,
-    .extro-panel-danger .x-panel-header-default-framed .x-panel-header-text-default-framed,
-    .extro-panel-danger .x-panel-header-horizontal .x-panel-header-text,
-    .extro-panel-danger .x-panel-header-horizontal .x-panel-header-text-default,
-    .extro-panel-danger .x-panel-header-horizontal .x-panel-header-text-default-framed {
+    .extro-panel-danger > .x-panel-header .x-panel-header-text,
+    .extro-panel-danger > .x-panel-header .x-panel-header-text-default,
+    .extro-panel-danger > .x-panel-header .x-panel-header-text-default-framed,
+    .extro-panel-danger > .x-panel-header-default-top .x-panel-header-text,
+    .extro-panel-danger > .x-panel-header-default-top .x-panel-header-text-default,
+    .extro-panel-danger > .x-panel-header-default-top .x-panel-header-text-default-framed,
+    .extro-panel-danger > .x-panel-header-default .x-panel-header-text,
+    .extro-panel-danger > .x-panel-header-default .x-panel-header-text-default,
+    .extro-panel-danger > .x-panel-header-default .x-panel-header-text-default-framed,
+    .extro-panel-danger > .x-panel-header-default-framed .x-panel-header-text,
+    .extro-panel-danger > .x-panel-header-default-framed .x-panel-header-text-default,
+    .extro-panel-danger > .x-panel-header-default-framed .x-panel-header-text-default-framed,
+    .extro-panel-danger > .x-panel-header-horizontal .x-panel-header-text,
+    .extro-panel-danger > .x-panel-header-horizontal .x-panel-header-text-default,
+    .extro-panel-danger > .x-panel-header-horizontal .x-panel-header-text-default-framed {
       font-size: 15px !important;
       font-weight: 400 !important; }
-  /* line 40, ../sass/mixins/_styled-panel.scss */
-  .extro-panel-danger .x-panel-body-default {
+  /* line 39, ../sass/mixins/_styled-panel.scss */
+  .extro-panel-danger > .x-panel-body-default {
     border-color: #da4f49;
     border-width: 1px; }
 
-/* line 250, ../sass/extrovert.scss */
+/* line 263, ../sass/extrovert.scss */
 .extro-panel-warning {
   border-color: #faa732;
   border-width: 1px; }
   /* line 27, ../sass/mixins/_styled-panel.scss */
-  .extro-panel-warning .x-panel-header, .extro-panel-warning .x-panel-header-default-top, .extro-panel-warning .x-panel-header-default, .extro-panel-warning .x-panel-header-default-framed, .extro-panel-warning .x-panel-header-horizontal {
+  .extro-panel-warning > .x-panel-header, .extro-panel-warning > .x-panel-header-default-top, .extro-panel-warning > .x-panel-header-default, .extro-panel-warning > .x-panel-header-default-framed, .extro-panel-warning > .x-panel-header-horizontal {
     background-image: none;
     background-color: #faa732;
     background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #faad41), color-stop(100%, #fa9e1e));
@@ -9819,22 +9805,22 @@ textarea {
     border-width: 1px;
     box-shadow: 0 1px 0 0 #fee7c7 inset; }
     /* line 19, ../sass/mixins/_styled-header.scss */
-    .extro-panel-warning .x-panel-header .x-panel-header-text,
-    .extro-panel-warning .x-panel-header .x-panel-header-text-default,
-    .extro-panel-warning .x-panel-header .x-panel-header-text-default-framed, .extro-panel-warning .x-panel-header-default-top .x-panel-header-text, .extro-panel-warning .x-panel-header-default-top .x-panel-header-text-default, .extro-panel-warning .x-panel-header-default-top .x-panel-header-text-default-framed, .extro-panel-warning .x-panel-header-default .x-panel-header-text, .extro-panel-warning .x-panel-header-default .x-panel-header-text-default, .extro-panel-warning .x-panel-header-default .x-panel-header-text-default-framed, .extro-panel-warning .x-panel-header-default-framed .x-panel-header-text, .extro-panel-warning .x-panel-header-default-framed .x-panel-header-text-default, .extro-panel-warning .x-panel-header-default-framed .x-panel-header-text-default-framed, .extro-panel-warning .x-panel-header-horizontal .x-panel-header-text, .extro-panel-warning .x-panel-header-horizontal .x-panel-header-text-default, .extro-panel-warning .x-panel-header-horizontal .x-panel-header-text-default-framed {
+    .extro-panel-warning > .x-panel-header .x-panel-header-text,
+    .extro-panel-warning > .x-panel-header .x-panel-header-text-default,
+    .extro-panel-warning > .x-panel-header .x-panel-header-text-default-framed, .extro-panel-warning > .x-panel-header-default-top .x-panel-header-text, .extro-panel-warning > .x-panel-header-default-top .x-panel-header-text-default, .extro-panel-warning > .x-panel-header-default-top .x-panel-header-text-default-framed, .extro-panel-warning > .x-panel-header-default .x-panel-header-text, .extro-panel-warning > .x-panel-header-default .x-panel-header-text-default, .extro-panel-warning > .x-panel-header-default .x-panel-header-text-default-framed, .extro-panel-warning > .x-panel-header-default-framed .x-panel-header-text, .extro-panel-warning > .x-panel-header-default-framed .x-panel-header-text-default, .extro-panel-warning > .x-panel-header-default-framed .x-panel-header-text-default-framed, .extro-panel-warning > .x-panel-header-horizontal .x-panel-header-text, .extro-panel-warning > .x-panel-header-horizontal .x-panel-header-text-default, .extro-panel-warning > .x-panel-header-horizontal .x-panel-header-text-default-framed {
       font-size: 15px !important;
       font-weight: 400 !important; }
-  /* line 40, ../sass/mixins/_styled-panel.scss */
-  .extro-panel-warning .x-panel-body-default {
+  /* line 39, ../sass/mixins/_styled-panel.scss */
+  .extro-panel-warning > .x-panel-body-default {
     border-color: #faa732;
     border-width: 1px; }
 
-/* line 253, ../sass/extrovert.scss */
+/* line 266, ../sass/extrovert.scss */
 .extro-panel-inverse {
   border-color: #414141;
   border-width: 1px; }
   /* line 27, ../sass/mixins/_styled-panel.scss */
-  .extro-panel-inverse .x-panel-header, .extro-panel-inverse .x-panel-header-default-top, .extro-panel-inverse .x-panel-header-default, .extro-panel-inverse .x-panel-header-default-framed, .extro-panel-inverse .x-panel-header-horizontal {
+  .extro-panel-inverse > .x-panel-header, .extro-panel-inverse > .x-panel-header-default-top, .extro-panel-inverse > .x-panel-header-default, .extro-panel-inverse > .x-panel-header-default-framed, .extro-panel-inverse > .x-panel-header-horizontal {
     background-image: none;
     background-color: #414141;
     background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #494949), color-stop(100%, #373737));
@@ -9848,22 +9834,22 @@ textarea {
     border-width: 1px;
     box-shadow: 0 1px 0 0 #8d8d8d inset; }
     /* line 19, ../sass/mixins/_styled-header.scss */
-    .extro-panel-inverse .x-panel-header .x-panel-header-text,
-    .extro-panel-inverse .x-panel-header .x-panel-header-text-default,
-    .extro-panel-inverse .x-panel-header .x-panel-header-text-default-framed, .extro-panel-inverse .x-panel-header-default-top .x-panel-header-text, .extro-panel-inverse .x-panel-header-default-top .x-panel-header-text-default, .extro-panel-inverse .x-panel-header-default-top .x-panel-header-text-default-framed, .extro-panel-inverse .x-panel-header-default .x-panel-header-text, .extro-panel-inverse .x-panel-header-default .x-panel-header-text-default, .extro-panel-inverse .x-panel-header-default .x-panel-header-text-default-framed, .extro-panel-inverse .x-panel-header-default-framed .x-panel-header-text, .extro-panel-inverse .x-panel-header-default-framed .x-panel-header-text-default, .extro-panel-inverse .x-panel-header-default-framed .x-panel-header-text-default-framed, .extro-panel-inverse .x-panel-header-horizontal .x-panel-header-text, .extro-panel-inverse .x-panel-header-horizontal .x-panel-header-text-default, .extro-panel-inverse .x-panel-header-horizontal .x-panel-header-text-default-framed {
+    .extro-panel-inverse > .x-panel-header .x-panel-header-text,
+    .extro-panel-inverse > .x-panel-header .x-panel-header-text-default,
+    .extro-panel-inverse > .x-panel-header .x-panel-header-text-default-framed, .extro-panel-inverse > .x-panel-header-default-top .x-panel-header-text, .extro-panel-inverse > .x-panel-header-default-top .x-panel-header-text-default, .extro-panel-inverse > .x-panel-header-default-top .x-panel-header-text-default-framed, .extro-panel-inverse > .x-panel-header-default .x-panel-header-text, .extro-panel-inverse > .x-panel-header-default .x-panel-header-text-default, .extro-panel-inverse > .x-panel-header-default .x-panel-header-text-default-framed, .extro-panel-inverse > .x-panel-header-default-framed .x-panel-header-text, .extro-panel-inverse > .x-panel-header-default-framed .x-panel-header-text-default, .extro-panel-inverse > .x-panel-header-default-framed .x-panel-header-text-default-framed, .extro-panel-inverse > .x-panel-header-horizontal .x-panel-header-text, .extro-panel-inverse > .x-panel-header-horizontal .x-panel-header-text-default, .extro-panel-inverse > .x-panel-header-horizontal .x-panel-header-text-default-framed {
       font-size: 15px !important;
       font-weight: 400 !important; }
-  /* line 40, ../sass/mixins/_styled-panel.scss */
-  .extro-panel-inverse .x-panel-body-default {
+  /* line 39, ../sass/mixins/_styled-panel.scss */
+  .extro-panel-inverse > .x-panel-body-default {
     border-color: #414141;
     border-width: 1px; }
 
-/* line 261, ../sass/extrovert.scss */
+/* line 274, ../sass/extrovert.scss */
 .extro-panel-special {
   border-color: #336699;
   border-width: 3px; }
   /* line 27, ../sass/mixins/_styled-panel.scss */
-  .extro-panel-special .x-panel-header, .extro-panel-special .x-panel-header-default-top, .extro-panel-special .x-panel-header-default, .extro-panel-special .x-panel-header-default-framed, .extro-panel-special .x-panel-header-horizontal {
+  .extro-panel-special > .x-panel-header, .extro-panel-special > .x-panel-header-default-top, .extro-panel-special > .x-panel-header-default, .extro-panel-special > .x-panel-header-default-framed, .extro-panel-special > .x-panel-header-horizontal {
     background-image: none;
     background-color: #407fbf;
     background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #79a6d2), color-stop(50%, #538cc6), color-stop(51%, #407fbf), color-stop(100%, #3973ac));
@@ -9877,16 +9863,16 @@ textarea {
     border-width: 3px;
     box-shadow: 0 1px 0 0 #8cb2d9 inset; }
     /* line 19, ../sass/mixins/_styled-header.scss */
-    .extro-panel-special .x-panel-header .x-panel-header-text,
-    .extro-panel-special .x-panel-header .x-panel-header-text-default,
-    .extro-panel-special .x-panel-header .x-panel-header-text-default-framed, .extro-panel-special .x-panel-header-default-top .x-panel-header-text, .extro-panel-special .x-panel-header-default-top .x-panel-header-text-default, .extro-panel-special .x-panel-header-default-top .x-panel-header-text-default-framed, .extro-panel-special .x-panel-header-default .x-panel-header-text, .extro-panel-special .x-panel-header-default .x-panel-header-text-default, .extro-panel-special .x-panel-header-default .x-panel-header-text-default-framed, .extro-panel-special .x-panel-header-default-framed .x-panel-header-text, .extro-panel-special .x-panel-header-default-framed .x-panel-header-text-default, .extro-panel-special .x-panel-header-default-framed .x-panel-header-text-default-framed, .extro-panel-special .x-panel-header-horizontal .x-panel-header-text, .extro-panel-special .x-panel-header-horizontal .x-panel-header-text-default, .extro-panel-special .x-panel-header-horizontal .x-panel-header-text-default-framed {
+    .extro-panel-special > .x-panel-header .x-panel-header-text,
+    .extro-panel-special > .x-panel-header .x-panel-header-text-default,
+    .extro-panel-special > .x-panel-header .x-panel-header-text-default-framed, .extro-panel-special > .x-panel-header-default-top .x-panel-header-text, .extro-panel-special > .x-panel-header-default-top .x-panel-header-text-default, .extro-panel-special > .x-panel-header-default-top .x-panel-header-text-default-framed, .extro-panel-special > .x-panel-header-default .x-panel-header-text, .extro-panel-special > .x-panel-header-default .x-panel-header-text-default, .extro-panel-special > .x-panel-header-default .x-panel-header-text-default-framed, .extro-panel-special > .x-panel-header-default-framed .x-panel-header-text, .extro-panel-special > .x-panel-header-default-framed .x-panel-header-text-default, .extro-panel-special > .x-panel-header-default-framed .x-panel-header-text-default-framed, .extro-panel-special > .x-panel-header-horizontal .x-panel-header-text, .extro-panel-special > .x-panel-header-horizontal .x-panel-header-text-default, .extro-panel-special > .x-panel-header-horizontal .x-panel-header-text-default-framed {
       font-size: 20px !important;
       font-weight: 400 !important; }
-  /* line 40, ../sass/mixins/_styled-panel.scss */
-  .extro-panel-special .x-panel-body-default {
+  /* line 39, ../sass/mixins/_styled-panel.scss */
+  .extro-panel-special > .x-panel-body-default {
     border-color: #336699;
     border-width: 3px; }
-  /* line 275, ../sass/extrovert.scss */
+  /* line 288, ../sass/extrovert.scss */
   .extro-panel-special .x-panel-header-text-default,
   .extro-panel-special .x-panel-header-text-default-framed {
     line-height: 25px; }
@@ -9897,12 +9883,12 @@ textarea {
  *   @include styled-panel(#336699, 2px, 'glossy');
  * 
  */
-/* line 287, ../sass/extrovert.scss */
+/* line 300, ../sass/extrovert.scss */
 .extro-panel-child {
   border-color: #324654;
   border-width: 1px; }
   /* line 27, ../sass/mixins/_styled-panel.scss */
-  .extro-panel-child .x-panel-header, .extro-panel-child .x-panel-header-default-top, .extro-panel-child .x-panel-header-default, .extro-panel-child .x-panel-header-default-framed, .extro-panel-child .x-panel-header-horizontal {
+  .extro-panel-child > .x-panel-header, .extro-panel-child > .x-panel-header-default-top, .extro-panel-child > .x-panel-header-default, .extro-panel-child > .x-panel-header-default-framed, .extro-panel-child > .x-panel-header-horizontal {
     background-image: none;
     background-color: #324654;
     background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #384e5e), color-stop(100%, #2a3b47));
@@ -9916,22 +9902,22 @@ textarea {
     border-width: 1px;
     box-shadow: 0 1px 0 0 #7394ac inset; }
     /* line 19, ../sass/mixins/_styled-header.scss */
-    .extro-panel-child .x-panel-header .x-panel-header-text,
-    .extro-panel-child .x-panel-header .x-panel-header-text-default,
-    .extro-panel-child .x-panel-header .x-panel-header-text-default-framed, .extro-panel-child .x-panel-header-default-top .x-panel-header-text, .extro-panel-child .x-panel-header-default-top .x-panel-header-text-default, .extro-panel-child .x-panel-header-default-top .x-panel-header-text-default-framed, .extro-panel-child .x-panel-header-default .x-panel-header-text, .extro-panel-child .x-panel-header-default .x-panel-header-text-default, .extro-panel-child .x-panel-header-default .x-panel-header-text-default-framed, .extro-panel-child .x-panel-header-default-framed .x-panel-header-text, .extro-panel-child .x-panel-header-default-framed .x-panel-header-text-default, .extro-panel-child .x-panel-header-default-framed .x-panel-header-text-default-framed, .extro-panel-child .x-panel-header-horizontal .x-panel-header-text, .extro-panel-child .x-panel-header-horizontal .x-panel-header-text-default, .extro-panel-child .x-panel-header-horizontal .x-panel-header-text-default-framed {
+    .extro-panel-child > .x-panel-header .x-panel-header-text,
+    .extro-panel-child > .x-panel-header .x-panel-header-text-default,
+    .extro-panel-child > .x-panel-header .x-panel-header-text-default-framed, .extro-panel-child > .x-panel-header-default-top .x-panel-header-text, .extro-panel-child > .x-panel-header-default-top .x-panel-header-text-default, .extro-panel-child > .x-panel-header-default-top .x-panel-header-text-default-framed, .extro-panel-child > .x-panel-header-default .x-panel-header-text, .extro-panel-child > .x-panel-header-default .x-panel-header-text-default, .extro-panel-child > .x-panel-header-default .x-panel-header-text-default-framed, .extro-panel-child > .x-panel-header-default-framed .x-panel-header-text, .extro-panel-child > .x-panel-header-default-framed .x-panel-header-text-default, .extro-panel-child > .x-panel-header-default-framed .x-panel-header-text-default-framed, .extro-panel-child > .x-panel-header-horizontal .x-panel-header-text, .extro-panel-child > .x-panel-header-horizontal .x-panel-header-text-default, .extro-panel-child > .x-panel-header-horizontal .x-panel-header-text-default-framed {
       font-size: 12px !important;
       font-weight: 400 !important; }
-  /* line 40, ../sass/mixins/_styled-panel.scss */
-  .extro-panel-child .x-panel-body-default {
+  /* line 39, ../sass/mixins/_styled-panel.scss */
+  .extro-panel-child > .x-panel-body-default {
     border-color: #324654;
     border-width: 1px; }
 
-/* line 290, ../sass/extrovert.scss */
+/* line 303, ../sass/extrovert.scss */
 .extro-panel-child-danger {
   border-color: #da4f49;
   border-width: 1px; }
   /* line 27, ../sass/mixins/_styled-panel.scss */
-  .extro-panel-child-danger .x-panel-header, .extro-panel-child-danger .x-panel-header-default-top, .extro-panel-child-danger .x-panel-header-default, .extro-panel-child-danger .x-panel-header-default-framed, .extro-panel-child-danger .x-panel-header-horizontal {
+  .extro-panel-child-danger > .x-panel-header, .extro-panel-child-danger > .x-panel-header-default-top, .extro-panel-child-danger > .x-panel-header-default, .extro-panel-child-danger > .x-panel-header-default-framed, .extro-panel-child-danger > .x-panel-header-horizontal {
     background-image: none;
     background-color: #da4f49;
     background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #dd5b56), color-stop(100%, #d73f38));
@@ -9945,22 +9931,22 @@ textarea {
     border-width: 1px;
     box-shadow: 0 1px 0 0 #f4cac8 inset; }
     /* line 19, ../sass/mixins/_styled-header.scss */
-    .extro-panel-child-danger .x-panel-header .x-panel-header-text,
-    .extro-panel-child-danger .x-panel-header .x-panel-header-text-default,
-    .extro-panel-child-danger .x-panel-header .x-panel-header-text-default-framed, .extro-panel-child-danger .x-panel-header-default-top .x-panel-header-text, .extro-panel-child-danger .x-panel-header-default-top .x-panel-header-text-default, .extro-panel-child-danger .x-panel-header-default-top .x-panel-header-text-default-framed, .extro-panel-child-danger .x-panel-header-default .x-panel-header-text, .extro-panel-child-danger .x-panel-header-default .x-panel-header-text-default, .extro-panel-child-danger .x-panel-header-default .x-panel-header-text-default-framed, .extro-panel-child-danger .x-panel-header-default-framed .x-panel-header-text, .extro-panel-child-danger .x-panel-header-default-framed .x-panel-header-text-default, .extro-panel-child-danger .x-panel-header-default-framed .x-panel-header-text-default-framed, .extro-panel-child-danger .x-panel-header-horizontal .x-panel-header-text, .extro-panel-child-danger .x-panel-header-horizontal .x-panel-header-text-default, .extro-panel-child-danger .x-panel-header-horizontal .x-panel-header-text-default-framed {
+    .extro-panel-child-danger > .x-panel-header .x-panel-header-text,
+    .extro-panel-child-danger > .x-panel-header .x-panel-header-text-default,
+    .extro-panel-child-danger > .x-panel-header .x-panel-header-text-default-framed, .extro-panel-child-danger > .x-panel-header-default-top .x-panel-header-text, .extro-panel-child-danger > .x-panel-header-default-top .x-panel-header-text-default, .extro-panel-child-danger > .x-panel-header-default-top .x-panel-header-text-default-framed, .extro-panel-child-danger > .x-panel-header-default .x-panel-header-text, .extro-panel-child-danger > .x-panel-header-default .x-panel-header-text-default, .extro-panel-child-danger > .x-panel-header-default .x-panel-header-text-default-framed, .extro-panel-child-danger > .x-panel-header-default-framed .x-panel-header-text, .extro-panel-child-danger > .x-panel-header-default-framed .x-panel-header-text-default, .extro-panel-child-danger > .x-panel-header-default-framed .x-panel-header-text-default-framed, .extro-panel-child-danger > .x-panel-header-horizontal .x-panel-header-text, .extro-panel-child-danger > .x-panel-header-horizontal .x-panel-header-text-default, .extro-panel-child-danger > .x-panel-header-horizontal .x-panel-header-text-default-framed {
       font-size: 12px !important;
       font-weight: 400 !important; }
-  /* line 40, ../sass/mixins/_styled-panel.scss */
-  .extro-panel-child-danger .x-panel-body-default {
+  /* line 39, ../sass/mixins/_styled-panel.scss */
+  .extro-panel-child-danger > .x-panel-body-default {
     border-color: #da4f49;
     border-width: 1px; }
 
-/* line 293, ../sass/extrovert.scss */
+/* line 306, ../sass/extrovert.scss */
 .extro-panel-child-warning {
   border-color: #faa732;
   border-width: 1px; }
   /* line 27, ../sass/mixins/_styled-panel.scss */
-  .extro-panel-child-warning .x-panel-header, .extro-panel-child-warning .x-panel-header-default-top, .extro-panel-child-warning .x-panel-header-default, .extro-panel-child-warning .x-panel-header-default-framed, .extro-panel-child-warning .x-panel-header-horizontal {
+  .extro-panel-child-warning > .x-panel-header, .extro-panel-child-warning > .x-panel-header-default-top, .extro-panel-child-warning > .x-panel-header-default, .extro-panel-child-warning > .x-panel-header-default-framed, .extro-panel-child-warning > .x-panel-header-horizontal {
     background-image: none;
     background-color: #faa732;
     background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #faad41), color-stop(100%, #fa9e1e));
@@ -9974,22 +9960,22 @@ textarea {
     border-width: 1px;
     box-shadow: 0 1px 0 0 #fee7c7 inset; }
     /* line 19, ../sass/mixins/_styled-header.scss */
-    .extro-panel-child-warning .x-panel-header .x-panel-header-text,
-    .extro-panel-child-warning .x-panel-header .x-panel-header-text-default,
-    .extro-panel-child-warning .x-panel-header .x-panel-header-text-default-framed, .extro-panel-child-warning .x-panel-header-default-top .x-panel-header-text, .extro-panel-child-warning .x-panel-header-default-top .x-panel-header-text-default, .extro-panel-child-warning .x-panel-header-default-top .x-panel-header-text-default-framed, .extro-panel-child-warning .x-panel-header-default .x-panel-header-text, .extro-panel-child-warning .x-panel-header-default .x-panel-header-text-default, .extro-panel-child-warning .x-panel-header-default .x-panel-header-text-default-framed, .extro-panel-child-warning .x-panel-header-default-framed .x-panel-header-text, .extro-panel-child-warning .x-panel-header-default-framed .x-panel-header-text-default, .extro-panel-child-warning .x-panel-header-default-framed .x-panel-header-text-default-framed, .extro-panel-child-warning .x-panel-header-horizontal .x-panel-header-text, .extro-panel-child-warning .x-panel-header-horizontal .x-panel-header-text-default, .extro-panel-child-warning .x-panel-header-horizontal .x-panel-header-text-default-framed {
+    .extro-panel-child-warning > .x-panel-header .x-panel-header-text,
+    .extro-panel-child-warning > .x-panel-header .x-panel-header-text-default,
+    .extro-panel-child-warning > .x-panel-header .x-panel-header-text-default-framed, .extro-panel-child-warning > .x-panel-header-default-top .x-panel-header-text, .extro-panel-child-warning > .x-panel-header-default-top .x-panel-header-text-default, .extro-panel-child-warning > .x-panel-header-default-top .x-panel-header-text-default-framed, .extro-panel-child-warning > .x-panel-header-default .x-panel-header-text, .extro-panel-child-warning > .x-panel-header-default .x-panel-header-text-default, .extro-panel-child-warning > .x-panel-header-default .x-panel-header-text-default-framed, .extro-panel-child-warning > .x-panel-header-default-framed .x-panel-header-text, .extro-panel-child-warning > .x-panel-header-default-framed .x-panel-header-text-default, .extro-panel-child-warning > .x-panel-header-default-framed .x-panel-header-text-default-framed, .extro-panel-child-warning > .x-panel-header-horizontal .x-panel-header-text, .extro-panel-child-warning > .x-panel-header-horizontal .x-panel-header-text-default, .extro-panel-child-warning > .x-panel-header-horizontal .x-panel-header-text-default-framed {
       font-size: 12px !important;
       font-weight: 400 !important; }
-  /* line 40, ../sass/mixins/_styled-panel.scss */
-  .extro-panel-child-warning .x-panel-body-default {
+  /* line 39, ../sass/mixins/_styled-panel.scss */
+  .extro-panel-child-warning > .x-panel-body-default {
     border-color: #faa732;
     border-width: 1px; }
 
-/* line 296, ../sass/extrovert.scss */
+/* line 309, ../sass/extrovert.scss */
 .extro-panel-child-inverse {
   border-color: #414141;
   border-width: 1px; }
   /* line 27, ../sass/mixins/_styled-panel.scss */
-  .extro-panel-child-inverse .x-panel-header, .extro-panel-child-inverse .x-panel-header-default-top, .extro-panel-child-inverse .x-panel-header-default, .extro-panel-child-inverse .x-panel-header-default-framed, .extro-panel-child-inverse .x-panel-header-horizontal {
+  .extro-panel-child-inverse > .x-panel-header, .extro-panel-child-inverse > .x-panel-header-default-top, .extro-panel-child-inverse > .x-panel-header-default, .extro-panel-child-inverse > .x-panel-header-default-framed, .extro-panel-child-inverse > .x-panel-header-horizontal {
     background-image: none;
     background-color: #414141;
     background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #494949), color-stop(100%, #373737));
@@ -10003,22 +9989,22 @@ textarea {
     border-width: 1px;
     box-shadow: 0 1px 0 0 #8d8d8d inset; }
     /* line 19, ../sass/mixins/_styled-header.scss */
-    .extro-panel-child-inverse .x-panel-header .x-panel-header-text,
-    .extro-panel-child-inverse .x-panel-header .x-panel-header-text-default,
-    .extro-panel-child-inverse .x-panel-header .x-panel-header-text-default-framed, .extro-panel-child-inverse .x-panel-header-default-top .x-panel-header-text, .extro-panel-child-inverse .x-panel-header-default-top .x-panel-header-text-default, .extro-panel-child-inverse .x-panel-header-default-top .x-panel-header-text-default-framed, .extro-panel-child-inverse .x-panel-header-default .x-panel-header-text, .extro-panel-child-inverse .x-panel-header-default .x-panel-header-text-default, .extro-panel-child-inverse .x-panel-header-default .x-panel-header-text-default-framed, .extro-panel-child-inverse .x-panel-header-default-framed .x-panel-header-text, .extro-panel-child-inverse .x-panel-header-default-framed .x-panel-header-text-default, .extro-panel-child-inverse .x-panel-header-default-framed .x-panel-header-text-default-framed, .extro-panel-child-inverse .x-panel-header-horizontal .x-panel-header-text, .extro-panel-child-inverse .x-panel-header-horizontal .x-panel-header-text-default, .extro-panel-child-inverse .x-panel-header-horizontal .x-panel-header-text-default-framed {
+    .extro-panel-child-inverse > .x-panel-header .x-panel-header-text,
+    .extro-panel-child-inverse > .x-panel-header .x-panel-header-text-default,
+    .extro-panel-child-inverse > .x-panel-header .x-panel-header-text-default-framed, .extro-panel-child-inverse > .x-panel-header-default-top .x-panel-header-text, .extro-panel-child-inverse > .x-panel-header-default-top .x-panel-header-text-default, .extro-panel-child-inverse > .x-panel-header-default-top .x-panel-header-text-default-framed, .extro-panel-child-inverse > .x-panel-header-default .x-panel-header-text, .extro-panel-child-inverse > .x-panel-header-default .x-panel-header-text-default, .extro-panel-child-inverse > .x-panel-header-default .x-panel-header-text-default-framed, .extro-panel-child-inverse > .x-panel-header-default-framed .x-panel-header-text, .extro-panel-child-inverse > .x-panel-header-default-framed .x-panel-header-text-default, .extro-panel-child-inverse > .x-panel-header-default-framed .x-panel-header-text-default-framed, .extro-panel-child-inverse > .x-panel-header-horizontal .x-panel-header-text, .extro-panel-child-inverse > .x-panel-header-horizontal .x-panel-header-text-default, .extro-panel-child-inverse > .x-panel-header-horizontal .x-panel-header-text-default-framed {
       font-size: 12px !important;
       font-weight: 400 !important; }
-  /* line 40, ../sass/mixins/_styled-panel.scss */
-  .extro-panel-child-inverse .x-panel-body-default {
+  /* line 39, ../sass/mixins/_styled-panel.scss */
+  .extro-panel-child-inverse > .x-panel-body-default {
     border-color: #414141;
     border-width: 1px; }
 
-/* line 302, ../sass/extrovert.scss */
+/* line 316, ../sass/extrovert.scss */
 .extro-panel-child-light {
   border-color: #4c6a7f;
   border-width: 1px; }
   /* line 27, ../sass/mixins/_styled-panel.scss */
-  .extro-panel-child-light .x-panel-header, .extro-panel-child-light .x-panel-header-default-top, .extro-panel-child-light .x-panel-header-default, .extro-panel-child-light .x-panel-header-default-framed, .extro-panel-child-light .x-panel-header-horizontal {
+  .extro-panel-child-light > .x-panel-header, .extro-panel-child-light > .x-panel-header-default-top, .extro-panel-child-light > .x-panel-header-default, .extro-panel-child-light > .x-panel-header-default-framed, .extro-panel-child-light > .x-panel-header-horizontal {
     background-image: none;
     background-color: #5f859f;
     background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #688ca5), color-stop(100%, #577a92));
@@ -10032,22 +10018,22 @@ textarea {
     border-width: 1px;
     box-shadow: 0 1px 0 0 #9fb5c5 inset; }
     /* line 19, ../sass/mixins/_styled-header.scss */
-    .extro-panel-child-light .x-panel-header .x-panel-header-text,
-    .extro-panel-child-light .x-panel-header .x-panel-header-text-default,
-    .extro-panel-child-light .x-panel-header .x-panel-header-text-default-framed, .extro-panel-child-light .x-panel-header-default-top .x-panel-header-text, .extro-panel-child-light .x-panel-header-default-top .x-panel-header-text-default, .extro-panel-child-light .x-panel-header-default-top .x-panel-header-text-default-framed, .extro-panel-child-light .x-panel-header-default .x-panel-header-text, .extro-panel-child-light .x-panel-header-default .x-panel-header-text-default, .extro-panel-child-light .x-panel-header-default .x-panel-header-text-default-framed, .extro-panel-child-light .x-panel-header-default-framed .x-panel-header-text, .extro-panel-child-light .x-panel-header-default-framed .x-panel-header-text-default, .extro-panel-child-light .x-panel-header-default-framed .x-panel-header-text-default-framed, .extro-panel-child-light .x-panel-header-horizontal .x-panel-header-text, .extro-panel-child-light .x-panel-header-horizontal .x-panel-header-text-default, .extro-panel-child-light .x-panel-header-horizontal .x-panel-header-text-default-framed {
+    .extro-panel-child-light > .x-panel-header .x-panel-header-text,
+    .extro-panel-child-light > .x-panel-header .x-panel-header-text-default,
+    .extro-panel-child-light > .x-panel-header .x-panel-header-text-default-framed, .extro-panel-child-light > .x-panel-header-default-top .x-panel-header-text, .extro-panel-child-light > .x-panel-header-default-top .x-panel-header-text-default, .extro-panel-child-light > .x-panel-header-default-top .x-panel-header-text-default-framed, .extro-panel-child-light > .x-panel-header-default .x-panel-header-text, .extro-panel-child-light > .x-panel-header-default .x-panel-header-text-default, .extro-panel-child-light > .x-panel-header-default .x-panel-header-text-default-framed, .extro-panel-child-light > .x-panel-header-default-framed .x-panel-header-text, .extro-panel-child-light > .x-panel-header-default-framed .x-panel-header-text-default, .extro-panel-child-light > .x-panel-header-default-framed .x-panel-header-text-default-framed, .extro-panel-child-light > .x-panel-header-horizontal .x-panel-header-text, .extro-panel-child-light > .x-panel-header-horizontal .x-panel-header-text-default, .extro-panel-child-light > .x-panel-header-horizontal .x-panel-header-text-default-framed {
       font-size: 12px !important;
       font-weight: 400 !important; }
-  /* line 40, ../sass/mixins/_styled-panel.scss */
-  .extro-panel-child-light .x-panel-body-default {
+  /* line 39, ../sass/mixins/_styled-panel.scss */
+  .extro-panel-child-light > .x-panel-body-default {
     border-color: #4c6a7f;
     border-width: 1px; }
 
-/* line 305, ../sass/extrovert.scss */
+/* line 319, ../sass/extrovert.scss */
 .extro-panel-child-danger-light {
   border-color: #da4f49;
   border-width: 1px; }
   /* line 27, ../sass/mixins/_styled-panel.scss */
-  .extro-panel-child-danger-light .x-panel-header, .extro-panel-child-danger-light .x-panel-header-default-top, .extro-panel-child-danger-light .x-panel-header-default, .extro-panel-child-danger-light .x-panel-header-default-framed, .extro-panel-child-danger-light .x-panel-header-horizontal {
+  .extro-panel-child-danger-light > .x-panel-header, .extro-panel-child-danger-light > .x-panel-header-default-top, .extro-panel-child-danger-light > .x-panel-header-default, .extro-panel-child-danger-light > .x-panel-header-default-framed, .extro-panel-child-danger-light > .x-panel-header-horizontal {
     background-image: none;
     background-color: #e37873;
     background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e58480), color-stop(100%, #df6862));
@@ -10061,22 +10047,22 @@ textarea {
     border-width: 1px;
     box-shadow: 0 1px 0 0 #f4cac8 inset; }
     /* line 19, ../sass/mixins/_styled-header.scss */
-    .extro-panel-child-danger-light .x-panel-header .x-panel-header-text,
-    .extro-panel-child-danger-light .x-panel-header .x-panel-header-text-default,
-    .extro-panel-child-danger-light .x-panel-header .x-panel-header-text-default-framed, .extro-panel-child-danger-light .x-panel-header-default-top .x-panel-header-text, .extro-panel-child-danger-light .x-panel-header-default-top .x-panel-header-text-default, .extro-panel-child-danger-light .x-panel-header-default-top .x-panel-header-text-default-framed, .extro-panel-child-danger-light .x-panel-header-default .x-panel-header-text, .extro-panel-child-danger-light .x-panel-header-default .x-panel-header-text-default, .extro-panel-child-danger-light .x-panel-header-default .x-panel-header-text-default-framed, .extro-panel-child-danger-light .x-panel-header-default-framed .x-panel-header-text, .extro-panel-child-danger-light .x-panel-header-default-framed .x-panel-header-text-default, .extro-panel-child-danger-light .x-panel-header-default-framed .x-panel-header-text-default-framed, .extro-panel-child-danger-light .x-panel-header-horizontal .x-panel-header-text, .extro-panel-child-danger-light .x-panel-header-horizontal .x-panel-header-text-default, .extro-panel-child-danger-light .x-panel-header-horizontal .x-panel-header-text-default-framed {
+    .extro-panel-child-danger-light > .x-panel-header .x-panel-header-text,
+    .extro-panel-child-danger-light > .x-panel-header .x-panel-header-text-default,
+    .extro-panel-child-danger-light > .x-panel-header .x-panel-header-text-default-framed, .extro-panel-child-danger-light > .x-panel-header-default-top .x-panel-header-text, .extro-panel-child-danger-light > .x-panel-header-default-top .x-panel-header-text-default, .extro-panel-child-danger-light > .x-panel-header-default-top .x-panel-header-text-default-framed, .extro-panel-child-danger-light > .x-panel-header-default .x-panel-header-text, .extro-panel-child-danger-light > .x-panel-header-default .x-panel-header-text-default, .extro-panel-child-danger-light > .x-panel-header-default .x-panel-header-text-default-framed, .extro-panel-child-danger-light > .x-panel-header-default-framed .x-panel-header-text, .extro-panel-child-danger-light > .x-panel-header-default-framed .x-panel-header-text-default, .extro-panel-child-danger-light > .x-panel-header-default-framed .x-panel-header-text-default-framed, .extro-panel-child-danger-light > .x-panel-header-horizontal .x-panel-header-text, .extro-panel-child-danger-light > .x-panel-header-horizontal .x-panel-header-text-default, .extro-panel-child-danger-light > .x-panel-header-horizontal .x-panel-header-text-default-framed {
       font-size: 12px !important;
       font-weight: 400 !important; }
-  /* line 40, ../sass/mixins/_styled-panel.scss */
-  .extro-panel-child-danger-light .x-panel-body-default {
+  /* line 39, ../sass/mixins/_styled-panel.scss */
+  .extro-panel-child-danger-light > .x-panel-body-default {
     border-color: #da4f49;
     border-width: 1px; }
 
-/* line 308, ../sass/extrovert.scss */
+/* line 322, ../sass/extrovert.scss */
 .extro-panel-child-warning-light {
   border-color: #faa732;
   border-width: 1px; }
   /* line 27, ../sass/mixins/_styled-panel.scss */
-  .extro-panel-child-warning-light .x-panel-header, .extro-panel-child-warning-light .x-panel-header-default-top, .extro-panel-child-warning-light .x-panel-header-default, .extro-panel-child-warning-light .x-panel-header-default-framed, .extro-panel-child-warning-light .x-panel-header-horizontal {
+  .extro-panel-child-warning-light > .x-panel-header, .extro-panel-child-warning-light > .x-panel-header-default-top, .extro-panel-child-warning-light > .x-panel-header-default, .extro-panel-child-warning-light > .x-panel-header-default-framed, .extro-panel-child-warning-light > .x-panel-header-horizontal {
     background-image: none;
     background-color: #fbbc64;
     background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fcc373), color-stop(100%, #fbb450));
@@ -10090,22 +10076,22 @@ textarea {
     border-width: 1px;
     box-shadow: 0 1px 0 0 #fee7c7 inset; }
     /* line 19, ../sass/mixins/_styled-header.scss */
-    .extro-panel-child-warning-light .x-panel-header .x-panel-header-text,
-    .extro-panel-child-warning-light .x-panel-header .x-panel-header-text-default,
-    .extro-panel-child-warning-light .x-panel-header .x-panel-header-text-default-framed, .extro-panel-child-warning-light .x-panel-header-default-top .x-panel-header-text, .extro-panel-child-warning-light .x-panel-header-default-top .x-panel-header-text-default, .extro-panel-child-warning-light .x-panel-header-default-top .x-panel-header-text-default-framed, .extro-panel-child-warning-light .x-panel-header-default .x-panel-header-text, .extro-panel-child-warning-light .x-panel-header-default .x-panel-header-text-default, .extro-panel-child-warning-light .x-panel-header-default .x-panel-header-text-default-framed, .extro-panel-child-warning-light .x-panel-header-default-framed .x-panel-header-text, .extro-panel-child-warning-light .x-panel-header-default-framed .x-panel-header-text-default, .extro-panel-child-warning-light .x-panel-header-default-framed .x-panel-header-text-default-framed, .extro-panel-child-warning-light .x-panel-header-horizontal .x-panel-header-text, .extro-panel-child-warning-light .x-panel-header-horizontal .x-panel-header-text-default, .extro-panel-child-warning-light .x-panel-header-horizontal .x-panel-header-text-default-framed {
+    .extro-panel-child-warning-light > .x-panel-header .x-panel-header-text,
+    .extro-panel-child-warning-light > .x-panel-header .x-panel-header-text-default,
+    .extro-panel-child-warning-light > .x-panel-header .x-panel-header-text-default-framed, .extro-panel-child-warning-light > .x-panel-header-default-top .x-panel-header-text, .extro-panel-child-warning-light > .x-panel-header-default-top .x-panel-header-text-default, .extro-panel-child-warning-light > .x-panel-header-default-top .x-panel-header-text-default-framed, .extro-panel-child-warning-light > .x-panel-header-default .x-panel-header-text, .extro-panel-child-warning-light > .x-panel-header-default .x-panel-header-text-default, .extro-panel-child-warning-light > .x-panel-header-default .x-panel-header-text-default-framed, .extro-panel-child-warning-light > .x-panel-header-default-framed .x-panel-header-text, .extro-panel-child-warning-light > .x-panel-header-default-framed .x-panel-header-text-default, .extro-panel-child-warning-light > .x-panel-header-default-framed .x-panel-header-text-default-framed, .extro-panel-child-warning-light > .x-panel-header-horizontal .x-panel-header-text, .extro-panel-child-warning-light > .x-panel-header-horizontal .x-panel-header-text-default, .extro-panel-child-warning-light > .x-panel-header-horizontal .x-panel-header-text-default-framed {
       font-size: 12px !important;
       font-weight: 400 !important; }
-  /* line 40, ../sass/mixins/_styled-panel.scss */
-  .extro-panel-child-warning-light .x-panel-body-default {
+  /* line 39, ../sass/mixins/_styled-panel.scss */
+  .extro-panel-child-warning-light > .x-panel-body-default {
     border-color: #faa732;
     border-width: 1px; }
 
-/* line 311, ../sass/extrovert.scss */
+/* line 325, ../sass/extrovert.scss */
 .extro-panel-child-inverse-light {
   border-color: #414141;
   border-width: 1px; }
   /* line 27, ../sass/mixins/_styled-panel.scss */
-  .extro-panel-child-inverse-light .x-panel-header, .extro-panel-child-inverse-light .x-panel-header-default-top, .extro-panel-child-inverse-light .x-panel-header-default, .extro-panel-child-inverse-light .x-panel-header-default-framed, .extro-panel-child-inverse-light .x-panel-header-horizontal {
+  .extro-panel-child-inverse-light > .x-panel-header, .extro-panel-child-inverse-light > .x-panel-header-default-top, .extro-panel-child-inverse-light > .x-panel-header-default, .extro-panel-child-inverse-light > .x-panel-header-default-framed, .extro-panel-child-inverse-light > .x-panel-header-horizontal {
     background-image: none;
     background-color: #5a5a5a;
     background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #626262), color-stop(100%, #505050));
@@ -10119,53 +10105,53 @@ textarea {
     border-width: 1px;
     box-shadow: 0 1px 0 0 #8d8d8d inset; }
     /* line 19, ../sass/mixins/_styled-header.scss */
-    .extro-panel-child-inverse-light .x-panel-header .x-panel-header-text,
-    .extro-panel-child-inverse-light .x-panel-header .x-panel-header-text-default,
-    .extro-panel-child-inverse-light .x-panel-header .x-panel-header-text-default-framed, .extro-panel-child-inverse-light .x-panel-header-default-top .x-panel-header-text, .extro-panel-child-inverse-light .x-panel-header-default-top .x-panel-header-text-default, .extro-panel-child-inverse-light .x-panel-header-default-top .x-panel-header-text-default-framed, .extro-panel-child-inverse-light .x-panel-header-default .x-panel-header-text, .extro-panel-child-inverse-light .x-panel-header-default .x-panel-header-text-default, .extro-panel-child-inverse-light .x-panel-header-default .x-panel-header-text-default-framed, .extro-panel-child-inverse-light .x-panel-header-default-framed .x-panel-header-text, .extro-panel-child-inverse-light .x-panel-header-default-framed .x-panel-header-text-default, .extro-panel-child-inverse-light .x-panel-header-default-framed .x-panel-header-text-default-framed, .extro-panel-child-inverse-light .x-panel-header-horizontal .x-panel-header-text, .extro-panel-child-inverse-light .x-panel-header-horizontal .x-panel-header-text-default, .extro-panel-child-inverse-light .x-panel-header-horizontal .x-panel-header-text-default-framed {
+    .extro-panel-child-inverse-light > .x-panel-header .x-panel-header-text,
+    .extro-panel-child-inverse-light > .x-panel-header .x-panel-header-text-default,
+    .extro-panel-child-inverse-light > .x-panel-header .x-panel-header-text-default-framed, .extro-panel-child-inverse-light > .x-panel-header-default-top .x-panel-header-text, .extro-panel-child-inverse-light > .x-panel-header-default-top .x-panel-header-text-default, .extro-panel-child-inverse-light > .x-panel-header-default-top .x-panel-header-text-default-framed, .extro-panel-child-inverse-light > .x-panel-header-default .x-panel-header-text, .extro-panel-child-inverse-light > .x-panel-header-default .x-panel-header-text-default, .extro-panel-child-inverse-light > .x-panel-header-default .x-panel-header-text-default-framed, .extro-panel-child-inverse-light > .x-panel-header-default-framed .x-panel-header-text, .extro-panel-child-inverse-light > .x-panel-header-default-framed .x-panel-header-text-default, .extro-panel-child-inverse-light > .x-panel-header-default-framed .x-panel-header-text-default-framed, .extro-panel-child-inverse-light > .x-panel-header-horizontal .x-panel-header-text, .extro-panel-child-inverse-light > .x-panel-header-horizontal .x-panel-header-text-default, .extro-panel-child-inverse-light > .x-panel-header-horizontal .x-panel-header-text-default-framed {
       font-size: 12px !important;
       font-weight: 400 !important; }
-  /* line 40, ../sass/mixins/_styled-panel.scss */
-  .extro-panel-child-inverse-light .x-panel-body-default {
+  /* line 39, ../sass/mixins/_styled-panel.scss */
+  .extro-panel-child-inverse-light > .x-panel-body-default {
     border-color: #414141;
     border-width: 1px; }
 
-/* line 315, ../sass/extrovert.scss */
+/* line 329, ../sass/extrovert.scss */
 .extro-btn-primary {
   background: #0074CC; }
 
-/* line 318, ../sass/extrovert.scss */
+/* line 332, ../sass/extrovert.scss */
 .extro-btn-primary.x-btn-over {
   background-color: #0055cc; }
 
-/* line 321, ../sass/extrovert.scss */
+/* line 335, ../sass/extrovert.scss */
 .extro-btn-inverse {
   background: #414141; }
 
-/* line 324, ../sass/extrovert.scss */
+/* line 338, ../sass/extrovert.scss */
 .extro-btn-inverse.x-btn-over {
   background-color: #222222; }
 
-/* line 328, ../sass/extrovert.scss */
+/* line 342, ../sass/extrovert.scss */
 .extro-btn-primary,
 .extro-btn-inverse {
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25); }
 
-/* line 332, ../sass/extrovert.scss */
+/* line 346, ../sass/extrovert.scss */
 .extro-btn-primary .x-btn-inner,
 .extro-btn-inverse .x-btn-inner {
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
   color: white; }
 
-/* line 338, ../sass/extrovert.scss */
+/* line 352, ../sass/extrovert.scss */
 .x-boundlist-item-over,
 .x-boundlist-selected {
   color: #fff; }
 
-/* line 341, ../sass/extrovert.scss */
+/* line 355, ../sass/extrovert.scss */
 .x-boundlist-item {
   border-bottom: 1px solid #eee; }
 
-/* line 345, ../sass/extrovert.scss */
+/* line 359, ../sass/extrovert.scss */
 .x-toolbar {
   background-image: none;
   background-color: #dddddd;
@@ -10176,7 +10162,7 @@ textarea {
   background-image: -ms-linear-gradient(top, #ffffff, #f1f1f1 30%, #dddddd 65%, #cecece);
   background-image: linear-gradient(top, #ffffff, #f1f1f1 30%, #dddddd 65%, #cecece); }
 
-/* line 348, ../sass/extrovert.scss */
+/* line 362, ../sass/extrovert.scss */
 .x-toolbar-vertical {
   background-image: none;
   background-color: #dddddd;

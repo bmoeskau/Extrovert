@@ -20,11 +20,11 @@
   border-color: $border-color;
   border-width: $border-width;
   
-  .x-panel-header,
-  .x-panel-header-default-top,
-  .x-panel-header-default,
-  .x-panel-header-default-framed,
-  .x-panel-header-horizontal {
+  > .x-panel-header,
+  > .x-panel-header-default-top,
+  > .x-panel-header-default,
+  > .x-panel-header-default-framed,
+  > .x-panel-header-horizontal {
     @include styled-header(
       $border-color: $border-color,
       $border-width: $border-width,
@@ -35,14 +35,9 @@
       $header-padding: $header-padding
     );
   }
-  //.x-panel-header-default,
-  //.x-panel-header-default-framed,
-  .x-panel-body-default {
+  
+  > .x-panel-body-default {
     border-color: $border-color;
     border-width: $border-width;
   }
-  // .x-panel-header-default-top,
-  // .x-panel-header-default-framed {
-    // box-shadow: 0 2px 0 0 lighten($border-color, 30) inset;
-  // }
 }
