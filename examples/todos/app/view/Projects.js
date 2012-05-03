@@ -39,13 +39,18 @@ Ext.define('Todo.view.Projects', {
                 xtype: 'toolbar',
                 dock: 'top',
                 items: [{
-                    text: 'Foo',
-                    scale: 'medium'
+                    text: 'New Project',
+                    scale: 'medium',
+                    handler: this.onNewProjectClick,
+                    scope: this
                 }]
             }]
         });
         
-        this.addEvents('tasklistselected');
+        this.addEvents(
+            'tasklistselect',
+            'newproject'
+        );
                 
         this.callParent(arguments);
     },
@@ -77,7 +82,11 @@ Ext.define('Todo.view.Projects', {
     },
     
     onItemClick: function(view, rec, domNode) {
-        this.fireEvent('tasklistselected', this, view, rec, domNode);
+        this.fireEvent('tasklistselect', this, view, rec, domNode);
+    },
+    
+    onNewProjectClick: function(btn, e) {
+        this.fireEvent('newproject', this);
     },
     
     onStoreLoad: function() {

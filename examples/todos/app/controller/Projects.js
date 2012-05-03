@@ -11,56 +11,20 @@ Ext.define('Todo.controller.Projects', {
         ref: 'projectsPanel',
         selector: 'todo-projects'
     }],
-
-    init: function() {
-        var me = this;
-        
-        // me.control({
-            // 'projectsPanel': {
-                // tasklistselected: me.onTaskListSelected
-            // }
-        // });
-        
-        // me.getBooksStore().on({
-            // scope: me,
-            // load : me.onBooksStoreLoad
-        // });
-    },
     
     onLaunch: function() {
         var projectsPanel = this.getProjectsPanel();
         
         projectsPanel.setStore(this.getProjectsStore());
-        projectsPanel.on('tasklistselected', this.onTaskListSelected);
+        projectsPanel.on('tasklistselect', this.onTaskListSelected);
+        projectsPanel.on('newproject', this.onNewProject);
     },
     
     onTaskListSelected: function(panel, view, rec, domNode) {
         Ext.Msg.alert('Task List', 'You selected ' + rec.data.name);
+    },
+    
+    onNewProject: function(panel) {
+        Ext.Msg.alert('New Project', 'Create a new project');
     }
-  
-    // /**
-     // * Called when the books store is loaded.
-     // * Checks if there are any records, and if there are, it delegates to show the first record
-     // * as well as selecting that record in the sidebar
-     // */
-    // onBooksStoreLoad: function(store, records) {
-        // Ext.defer(function() {
-            // if (records.length) {
-                // var record = records[0],
-                    // me = this;
-//                 
-                // me.getBookSideBar().getSelectionModel().select(record);
-            // }
-        // }, 500, this);
-    // },
-//     
-    // /**
-     // * Shows a specified record by binding it to
-     // */
-    // showBook: function(record) {
-        // var me = this;
-//         
-        // me.getBookView().bind(record);
-        // me.getReviewList().bind(record, me.getReviewsStore());
-    // }
 });
