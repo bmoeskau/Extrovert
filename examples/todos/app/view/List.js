@@ -2,11 +2,12 @@ Ext.define('Todo.view.List', {
     alias: 'widget.todo-list',
     extend: 'Ext.panel.Panel',
     
+    titleDefaultText: 'To Do',
     noTasksText: 'No tasks',
     
     initComponent: function() {
         Ext.applyIf(this, {
-            title: 'To Do',
+            title: this.titleDefaultText,
             region: 'center',
             cls: 'todo-main-panel',
             border: false,
@@ -40,7 +41,8 @@ Ext.define('Todo.view.List', {
         this.callParent(arguments);
     },
     
-    setStore: function(taskStore) {
+    setTaskList: function(name, taskStore) {
+        this.setTitle(name);
         this.child('#taskGrid').reconfigure(taskStore);
     },
     

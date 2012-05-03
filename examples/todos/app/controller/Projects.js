@@ -29,7 +29,7 @@ Ext.define('Todo.controller.Projects', {
     },
     
     onTaskListSelected: function(panel, view, rec, domNode) {
-        this.getTaskListPanel().setStore(rec.tasks());
+        this.getTaskListPanel().setTaskList(rec.data.name, rec.tasks());
     },
     
     onNewProject: function(panel) {
