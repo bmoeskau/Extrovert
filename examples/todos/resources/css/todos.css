@@ -11804,7 +11804,12 @@ textarea {
   border-bottom: 1px solid #16191d !important;
 }
 
-/* line 35, ../sass/todos.scss */
+/* line 32, ../sass/todos.scss */
+.todo-main-toolbar {
+  border: 2px solid #333;
+}
+
+/* line 39, ../sass/todos.scss */
 .todo-main-panel {
   border-color: #333333;
   border-width: 2px;
@@ -11837,22 +11842,22 @@ textarea {
   border-width: 2px;
 }
 
-/* line 51, ../sass/todos.scss */
+/* line 55, ../sass/todos.scss */
 .todo-project .x-panel-body {
   background: #eee;
 }
-/* line 54, ../sass/todos.scss */
+/* line 58, ../sass/todos.scss */
 .todo-project .x-panel-header-text {
   font-size: 16px !important;
 }
 
-/* line 58, ../sass/todos.scss */
+/* line 62, ../sass/todos.scss */
 .todo-tasklist {
   font-size: 16px;
   border-bottom: 1px solid #ccc;
   position: relative;
 }
-/* line 63, ../sass/todos.scss */
+/* line 67, ../sass/todos.scss */
 .todo-tasklist a, .todo-tasklist a:visited {
   display: block;
   color: #369;
@@ -11861,7 +11866,7 @@ textarea {
   font-weight: 200;
 }
 
-/* line 71, ../sass/todos.scss */
+/* line 75, ../sass/todos.scss */
 .todo-tasklist-hover {
   background-image: none;
   background-color: #ead29c;
@@ -11873,7 +11878,7 @@ textarea {
   background-image: linear-gradient(top, #f7efdb, #f1e1be 30%, #ead29c 65%, #e5c682);
 }
 
-/* line 74, ../sass/todos.scss */
+/* line 78, ../sass/todos.scss */
 .todo-task-count {
   position: absolute;
   right: 3px;

@@ -3,28 +3,40 @@ Ext.define('Todo.controller.Projects', {
     
     requires: ['Ext.window.MessageBox'],
     
-    models: ['Project'],
+    models: ['Project', 'TaskList', 'Task'],
     
     stores: ['Projects'],
     
     refs: [{
         ref: 'projectsPanel',
         selector: 'todo-projects'
+    },{
+        ref: 'taskListPanel',
+        selector: 'todo-list'
     }],
     
     onLaunch: function() {
         var projectsPanel = this.getProjectsPanel();
         
         projectsPanel.setStore(this.getProjectsStore());
-        projectsPanel.on('tasklistselect', this.onTaskListSelected);
-        projectsPanel.on('newproject', this.onNewProject);
+        
+        projectsPanel.on({
+            'tasklistselect': this.onTaskListSelected,
+            'newproject': this.onNewProject,
+            'newtask': this.onNewTask,
+            scope: this
+        });
     },
     
     onTaskListSelected: function(panel, view, rec, domNode) {
-        Ext.Msg.alert('Task List', 'You selected ' + rec.data.name);
+        this.getTaskListPanel().setStore(rec.tasks());
     },
     
     onNewProject: function(panel) {
         Ext.Msg.alert('New Project', 'Create a new project');
+    },
+    
+    onNewTask: function(panel) {
+        Ext.Msg.alert('New Task', 'Add a new task');
     }
 });

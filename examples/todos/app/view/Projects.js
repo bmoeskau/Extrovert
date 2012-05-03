@@ -19,7 +19,7 @@ Ext.define('Todo.view.Projects', {
             region: 'west',
             collapsible: true,
             split: true,
-            width: 240,
+            width: 350,
             cls: 'todo-main-panel',
             margin: '10 0 10 10',
             
@@ -37,11 +37,17 @@ Ext.define('Todo.view.Projects', {
             
             dockedItems: [{
                 xtype: 'toolbar',
-                dock: 'top',
+                dock: 'left',
+                cls: 'todo-main-toolbar',
                 items: [{
                     text: 'New Project',
                     scale: 'medium',
                     handler: this.onNewProjectClick,
+                    scope: this
+                },{
+                    text: 'New Task',
+                    scale: 'medium',
+                    handler: this.onNewTaskClick,
                     scope: this
                 }]
             }]
@@ -49,14 +55,15 @@ Ext.define('Todo.view.Projects', {
         
         this.addEvents(
             'tasklistselect',
-            'newproject'
+            'newproject',
+            'newtask'
         );
                 
         this.callParent(arguments);
     },
     
-    setStore: function(store) {
-        this.store = store;
+    setStore: function(projectStore) {
+        this.store = projectStore;
         this.store.on('load', this.onStoreLoad, this);
     },
     
@@ -87,6 +94,10 @@ Ext.define('Todo.view.Projects', {
     
     onNewProjectClick: function(btn, e) {
         this.fireEvent('newproject', this);
+    },
+    
+    onNewTaskClick: function(btn, e) {
+        this.fireEvent('newtask', this);
     },
     
     onStoreLoad: function() {
