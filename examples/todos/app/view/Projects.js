@@ -44,6 +44,8 @@ Ext.define('Todo.view.Projects', {
                 }]
             }]
         });
+        
+        this.addEvents('tasklistselected');
                 
         this.callParent(arguments);
     },
@@ -65,9 +67,17 @@ Ext.define('Todo.view.Projects', {
                 itemSelector: '.todo-tasklist',
                 overItemCls: 'todo-tasklist-hover',
                 trackOver: true,
-                tpl: this.taskListTpl
+                tpl: this.taskListTpl,
+                listeners: {
+                    'itemclick': this.onItemClick,
+                    scope: this
+                }
             }]
         }
+    },
+    
+    onItemClick: function(view, rec, domNode) {
+        this.fireEvent('tasklistselected', this, view, rec, domNode);
     },
     
     onStoreLoad: function() {

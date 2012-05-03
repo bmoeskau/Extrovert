@@ -1,6 +1,8 @@
 Ext.define('Todo.controller.Projects', {
     extend: 'Ext.app.Controller',
     
+    requires: ['Ext.window.MessageBox'],
+    
     models: ['Project'],
     
     stores: ['Projects'],
@@ -10,31 +12,32 @@ Ext.define('Todo.controller.Projects', {
         selector: 'todo-projects'
     }],
 
-    // init: function() {
-        // var me = this;
-//         
+    init: function() {
+        var me = this;
+        
         // me.control({
-            // 'booksidebar': {
-                // selectionchange: me.onSideBarSelectionChange
+            // 'projectsPanel': {
+                // tasklistselected: me.onTaskListSelected
             // }
         // });
-//         
+        
         // me.getBooksStore().on({
             // scope: me,
             // load : me.onBooksStoreLoad
         // });
-    // },
-    
-    onLaunch: function() {
-        this.getProjectsPanel().setStore(this.getProjectsStore());
     },
     
-    // onSideBarSelectionChange: function(view, records) {
-        // if (records.length) {
-            // this.showBook(records[0]);
-        // }
-    // },
-//     
+    onLaunch: function() {
+        var projectsPanel = this.getProjectsPanel();
+        
+        projectsPanel.setStore(this.getProjectsStore());
+        projectsPanel.on('tasklistselected', this.onTaskListSelected);
+    },
+    
+    onTaskListSelected: function(panel, view, rec, domNode) {
+        Ext.Msg.alert('Task List', 'You selected ' + rec.data.name);
+    }
+  
     // /**
      // * Called when the books store is loaded.
      // * Checks if there are any records, and if there are, it delegates to show the first record
