@@ -62,7 +62,10 @@ $progress-background-color: #f1f1f1;
 $progress-bar-background-color: #ababab;
 
 //tips
-$tip-base-color: $base-color;
+$tip-base-color: #555;
+$tip-body-color: #fff;
+$tip-body-font-size: $font-size;
+$tip-body-padding: 3px 5px;
 
 //grid
 $grid-header-padding: 6px;

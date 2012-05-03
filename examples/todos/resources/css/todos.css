@@ -6989,7 +6989,7 @@ textarea.x-form-invalid-field {
   position: absolute;
   overflow: visible;
   /*pointer needs to be able to stick out*/
-  border-color: #3a3a3a;
+  border-color: #0f0f0f;
 }
 /* line 8, ../../../../lib/extjs/resources/themes/stylesheets/ext4/default/widgets/_qtip.scss */
 .x-tip .x-tip-header .x-box-item {
@@ -7010,12 +7010,12 @@ textarea.x-form-invalid-field {
   padding: 2px 2px 2px 2px;
   border-width: 1px;
   border-style: solid;
-  background-color: #6086a1;
+  background-color: #555555;
 }
 
 /* line 102, ../../../../lib/extjs/resources/themes/stylesheets/ext4/default/mixins/_frame.scss */
 .x-nlg .x-tip-mc {
-  background-color: #6086a1;
+  background-color: #555555;
 }
 
 /* line 115, ../../../../lib/extjs/resources/themes/stylesheets/ext4/default/mixins/_frame.scss */
@@ -7070,8 +7070,8 @@ textarea.x-form-invalid-field {
   -moz-user-select: -moz-none;
   -webkit-user-select: none;
   cursor: default;
-  color: #444444;
-  font-size: 11px;
+  color: white;
+  font-size: 12px;
   font-weight: bold;
 }
 
@@ -7085,22 +7085,22 @@ textarea.x-form-invalid-field {
 .x-form-invalid-tip-body {
   overflow: hidden;
   position: relative;
-  padding: 3px;
+  padding: 3px 5px;
 }
 
 /* line 51, ../../../../lib/extjs/resources/themes/stylesheets/ext4/default/widgets/_qtip.scss */
 .x-tip-header,
 .x-tip-body,
 .x-form-invalid-tip-body {
-  color: #444444;
-  font-size: 11px;
+  color: white;
+  font-size: 12px;
   font-weight: normal;
 }
 /* line 55, ../../../../lib/extjs/resources/themes/stylesheets/ext4/default/widgets/_qtip.scss */
 .x-tip-header a,
 .x-tip-body a,
 .x-form-invalid-tip-body a {
-  color: #2a2a2a;
+  color: #e6e6e6;
 }
 
 /* line 60, ../../../../lib/extjs/resources/themes/stylesheets/ext4/default/widgets/_qtip.scss */
@@ -7111,7 +7111,7 @@ textarea.x-form-invalid-field {
   width: 0;
   border-style: solid;
   border-width: 5px;
-  border-color: #3a3a3a;
+  border-color: #0f0f0f;
   zoom: 1;
 }
 
@@ -11211,7 +11211,7 @@ svg, vml {
  * Extrovert child Panel mixin
  * @mixin child-panel
  */
-/* line 182, ../../../../resources/sass/extrovert.scss */
+/* line 185, ../../../../resources/sass/extrovert.scss */
 .x-mask {
   background: -moz-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0) 0%, rgba(37, 37, 37, 0.2) 39%, rgba(85, 85, 85, 0.75) 90%, #5e5e5e 100%);
   /* FF3.6+ */
@@ -11229,7 +11229,7 @@ svg, vml {
   /* IE6-9 fallback on horizontal gradient */
 }
 
-/* line 193, ../../../../resources/sass/extrovert.scss */
+/* line 196, ../../../../resources/sass/extrovert.scss */
 input,
 textarea {
   -moz-box-shadow: inset 0 1px 3px #e0e0e0,0 1px #fafbfb;
@@ -11237,7 +11237,7 @@ textarea {
   box-shadow: inset 0 1px 3px #e0e0e0,0 1px #fafbfb;
 }
 
-/* line 208, ../../../../resources/sass/extrovert.scss */
+/* line 211, ../../../../resources/sass/extrovert.scss */
 .x-form-focus {
   border-color: #6086a1 !important;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
@@ -11247,13 +11247,13 @@ textarea {
   outline: thin dotted \9;
 }
 
-/* line 218, ../../../../resources/sass/extrovert.scss */
+/* line 221, ../../../../resources/sass/extrovert.scss */
 .x-grid-row-selected .x-grid-cell,
 .x-grid-row-selected .x-grid-rowwrap-div {
   color: #fff;
 }
 
-/* line 224, ../../../../resources/sass/extrovert.scss */
+/* line 227, ../../../../resources/sass/extrovert.scss */
 .x-column-header-over,
 .x-column-header-sort-ASC,
 .x-column-header-sort-DESC {
@@ -11267,20 +11267,20 @@ textarea {
   background-image: linear-gradient(top, #f7efdb, #f1e1be 30%, #ead29c 65%, #e5c682);
 }
 
-/* line 229, ../../../../resources/sass/extrovert.scss */
+/* line 232, ../../../../resources/sass/extrovert.scss */
 .x-column-header-text {
   font-size: 14px;
   line-height: 18px;
 }
 
-/* line 233, ../../../../resources/sass/extrovert.scss */
+/* line 236, ../../../../resources/sass/extrovert.scss */
 .x-grid-empty {
   padding: 30px;
   color: gray;
   font-size: 13px;
 }
 
-/* line 241, ../../../../resources/sass/extrovert.scss */
+/* line 244, ../../../../resources/sass/extrovert.scss */
 .x-tab-default-top-active {
   -webkit-box-shadow: rgba(255, 255, 255, 0.6) 0 1px 0px 0 inset, #6086a1 -1px 0 0px 0 inset, #6086a1 1px 0 0px 0 inset;
   -moz-box-shadow: rgba(255, 255, 255, 0.6) 0 1px 0px 0 inset, #6086a1 -1px 0 0px 0 inset, #6086a1 1px 0 0px 0 inset;
@@ -11288,19 +11288,19 @@ textarea {
   border-bottom: 1px solid #4c6a7f !important;
 }
 
-/* line 247, ../../../../resources/sass/extrovert.scss */
+/* line 250, ../../../../resources/sass/extrovert.scss */
 .x-tab button {
   padding: 2px;
   font-size: 12px;
 }
 
-/* line 253, ../../../../resources/sass/extrovert.scss */
+/* line 256, ../../../../resources/sass/extrovert.scss */
 .x-panel-header-text-default,
 .x-panel-header-text-default-framed {
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
 }
 
-/* line 261, ../../../../resources/sass/extrovert.scss */
+/* line 264, ../../../../resources/sass/extrovert.scss */
 .x-accordion-hd {
   padding: 4px 8px 3px !important;
   background-image: -webkit-linear-gradient(top, #7f9db2, #587b94) !important;
@@ -11309,7 +11309,7 @@ textarea {
   background-image: -ms-linear-gradient(top, #7f9db2, #587b94) !important;
   background: linear-gradient(top, #7f9db2, #587b94) !important;
 }
-/* line 275, ../../../../resources/sass/extrovert.scss */
+/* line 278, ../../../../resources/sass/extrovert.scss */
 .x-accordion-hd .x-panel-header-text {
   color: #fff;
   font-size: 12px !important;
@@ -11322,7 +11322,7 @@ textarea {
  *   @include styled-panel(#336699, 2px, 'glossy');
  * 
  */
-/* line 288, ../../../../resources/sass/extrovert.scss */
+/* line 291, ../../../../resources/sass/extrovert.scss */
 .extro-panel-danger {
   border-color: #da4f49;
   border-width: 1px;
@@ -11371,7 +11371,7 @@ textarea {
   border-width: 1px;
 }
 
-/* line 291, ../../../../resources/sass/extrovert.scss */
+/* line 294, ../../../../resources/sass/extrovert.scss */
 .extro-panel-warning {
   border-color: #faa732;
   border-width: 1px;
@@ -11404,7 +11404,7 @@ textarea {
   border-width: 1px;
 }
 
-/* line 294, ../../../../resources/sass/extrovert.scss */
+/* line 297, ../../../../resources/sass/extrovert.scss */
 .extro-panel-inverse {
   border-color: #414141;
   border-width: 1px;
@@ -11437,7 +11437,7 @@ textarea {
   border-width: 1px;
 }
 
-/* line 302, ../../../../resources/sass/extrovert.scss */
+/* line 305, ../../../../resources/sass/extrovert.scss */
 .extro-panel-special {
   border-color: #336699;
   border-width: 3px;
@@ -11469,7 +11469,7 @@ textarea {
   border-color: #336699;
   border-width: 3px;
 }
-/* line 316, ../../../../resources/sass/extrovert.scss */
+/* line 319, ../../../../resources/sass/extrovert.scss */
 .extro-panel-special .x-panel-header-text-default,
 .extro-panel-special .x-panel-header-text-default-framed {
   line-height: 25px;
@@ -11481,7 +11481,7 @@ textarea {
  *   @include styled-panel(#336699, 2px, 'glossy');
  * 
  */
-/* line 328, ../../../../resources/sass/extrovert.scss */
+/* line 331, ../../../../resources/sass/extrovert.scss */
 .extro-panel-child {
   border-color: #324654;
   border-width: 1px;
@@ -11514,7 +11514,7 @@ textarea {
   border-width: 1px;
 }
 
-/* line 331, ../../../../resources/sass/extrovert.scss */
+/* line 334, ../../../../resources/sass/extrovert.scss */
 .extro-panel-child-danger {
   border-color: #da4f49;
   border-width: 1px;
@@ -11547,7 +11547,7 @@ textarea {
   border-width: 1px;
 }
 
-/* line 334, ../../../../resources/sass/extrovert.scss */
+/* line 337, ../../../../resources/sass/extrovert.scss */
 .extro-panel-child-warning {
   border-color: #faa732;
   border-width: 1px;
@@ -11580,7 +11580,7 @@ textarea {
   border-width: 1px;
 }
 
-/* line 337, ../../../../resources/sass/extrovert.scss */
+/* line 340, ../../../../resources/sass/extrovert.scss */
 .extro-panel-child-inverse {
   border-color: #414141;
   border-width: 1px;
@@ -11613,7 +11613,7 @@ textarea {
   border-width: 1px;
 }
 
-/* line 344, ../../../../resources/sass/extrovert.scss */
+/* line 347, ../../../../resources/sass/extrovert.scss */
 .extro-panel-child-light {
   border-color: #4c6a7f;
   border-width: 1px;
@@ -11646,7 +11646,7 @@ textarea {
   border-width: 1px;
 }
 
-/* line 347, ../../../../resources/sass/extrovert.scss */
+/* line 350, ../../../../resources/sass/extrovert.scss */
 .extro-panel-child-danger-light {
   border-color: #da4f49;
   border-width: 1px;
@@ -11679,7 +11679,7 @@ textarea {
   border-width: 1px;
 }
 
-/* line 350, ../../../../resources/sass/extrovert.scss */
+/* line 353, ../../../../resources/sass/extrovert.scss */
 .extro-panel-child-warning-light {
   border-color: #faa732;
   border-width: 1px;
@@ -11712,7 +11712,7 @@ textarea {
   border-width: 1px;
 }
 
-/* line 353, ../../../../resources/sass/extrovert.scss */
+/* line 356, ../../../../resources/sass/extrovert.scss */
 .extro-panel-child-inverse-light {
   border-color: #414141;
   border-width: 1px;
@@ -11745,51 +11745,51 @@ textarea {
   border-width: 1px;
 }
 
-/* line 357, ../../../../resources/sass/extrovert.scss */
+/* line 360, ../../../../resources/sass/extrovert.scss */
 .extro-btn-primary {
   background: #0074CC;
 }
 
-/* line 360, ../../../../resources/sass/extrovert.scss */
+/* line 363, ../../../../resources/sass/extrovert.scss */
 .extro-btn-primary.x-btn-over {
   background-color: #0055cc;
 }
 
-/* line 363, ../../../../resources/sass/extrovert.scss */
+/* line 366, ../../../../resources/sass/extrovert.scss */
 .extro-btn-inverse {
   background: #414141;
 }
 
-/* line 366, ../../../../resources/sass/extrovert.scss */
+/* line 369, ../../../../resources/sass/extrovert.scss */
 .extro-btn-inverse.x-btn-over {
   background-color: #222222;
 }
 
-/* line 370, ../../../../resources/sass/extrovert.scss */
+/* line 373, ../../../../resources/sass/extrovert.scss */
 .extro-btn-primary,
 .extro-btn-inverse {
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
 }
 
-/* line 374, ../../../../resources/sass/extrovert.scss */
+/* line 377, ../../../../resources/sass/extrovert.scss */
 .extro-btn-primary .x-btn-inner,
 .extro-btn-inverse .x-btn-inner {
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
   color: white;
 }
 
-/* line 380, ../../../../resources/sass/extrovert.scss */
+/* line 383, ../../../../resources/sass/extrovert.scss */
 .x-boundlist-item-over,
 .x-boundlist-selected {
   color: #fff;
 }
 
-/* line 383, ../../../../resources/sass/extrovert.scss */
+/* line 386, ../../../../resources/sass/extrovert.scss */
 .x-boundlist-item {
   border-bottom: 1px solid #eee;
 }
 
-/* line 387, ../../../../resources/sass/extrovert.scss */
+/* line 390, ../../../../resources/sass/extrovert.scss */
 .x-toolbar {
   background-image: none;
   background-color: #dddddd;
@@ -11801,7 +11801,7 @@ textarea {
   background-image: linear-gradient(top, #ffffff, #f1f1f1 30%, #dddddd 65%, #cecece);
 }
 
-/* line 390, ../../../../resources/sass/extrovert.scss */
+/* line 393, ../../../../resources/sass/extrovert.scss */
 .x-toolbar-vertical {
   background-image: none;
   background-color: #dddddd;
