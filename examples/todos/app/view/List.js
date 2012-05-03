@@ -17,10 +17,11 @@ Ext.define('Todo.view.List', {
             items: [{
                 xtype: 'grid',
                 itemId: 'taskGrid',
+                cls: 'todo-task-grid',
                 store: [],
                 
                 viewConfig: {
-                    emptyText: this.noTasksText,
+                    emptyText: '<div class="extro-empty-text">' + this.noTasksText + '</div>',
                     deferEmptyText: false
                 },
                 

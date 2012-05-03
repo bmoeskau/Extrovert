@@ -14,6 +14,8 @@ $font-size  : 12px !default;
 // Colors!
 $extro-color-main: #324654;
 $extro-color-main-light: #4C6A7F;
+$extro-color-highlight: lighten(#C49429, 30);
+
 // Inspired from Twitter Bootstrap:
 $extro-color-inverse: #414141;
 $extro-color-warning: #FAA732;
@@ -63,7 +65,12 @@ $progress-bar-background-color: #ababab;
 $tip-base-color: $base-color;
 
 //grid
+$grid-header-padding: 6px;
 $grid-header-over-border-color: darken($base-color, 3);
+$grid-row-cell-font-size: 13px;
+$grid-cell-inner-padding-top: 8px;
+$grid-cell-inner-padding-horizontal: 5px;
+$grid-cell-inner-padding-bottom: 5px;
 
 //toolbar
 $toolbar-background-gradient: color-stops(#e6e6e6, #efefef);
@@ -207,6 +214,27 @@ textarea {
   outline: thin dotted \9;
 }
 
+.#{$prefix}grid-row-selected .#{$prefix}grid-cell,
+.#{$prefix}grid-row-selected .#{$prefix}grid-rowwrap-div {
+  color: #fff;
+}
+
+.#{$prefix}column-header-over,
+.#{$prefix}column-header-sort-ASC,
+.#{$prefix}column-header-sort-DESC {
+    @include background-gradient($extro-color-highlight, 'bevel');
+}
+
+// These rules are hard-coded inside the grid SASS, so must be overridden explicitly
+.#{$prefix}column-header-text {
+    font-size: 14px;
+    line-height: 18px;
+}
+.#{$prefix}grid-empty {
+  padding: 30px;
+  color: gray;
+  font-size: 13px;
+}
 
 // The SASS doesn't provide a variable that allows overriding this inner shadow
 // ONLY for active tabs so we have to default to a CSS override:

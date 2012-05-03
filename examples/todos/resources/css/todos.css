@@ -4027,7 +4027,7 @@ table.x-datepicker-inner .x-datepicker-disabled a {
   position: relative;
   white-space: nowrap;
   line-height: 15px;
-  padding: 3px 6px 4px;
+  padding: 6px;
 }
 /* line 112, ../../../../lib/extjs/resources/themes/stylesheets/ext4/default/widgets/_grid.scss */
 .x-column-header-inner .x-column-header-text {
@@ -4125,7 +4125,7 @@ table.x-datepicker-inner .x-datepicker-disabled a {
 /* line 195, ../../../../lib/extjs/resources/themes/stylesheets/ext4/default/widgets/_grid.scss */
 .x-grid-row .x-grid-cell {
   color: null;
-  font: normal 11px/15px "Helvetica Neue", Helvetica, Tahoma, Arial, sans-serif;
+  font: normal 13px/17px "Helvetica Neue", Helvetica, Tahoma, Arial, sans-serif;
   background-color: white;
   border-color: #ededed;
   border-style: solid;
@@ -4207,14 +4207,14 @@ table.x-datepicker-inner .x-datepicker-disabled a {
   overflow: hidden;
   -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
-  padding: 2px 6px 3px;
+  padding: 8px 5px 5px;
   white-space: nowrap;
 }
 
 /* line 287, ../../../../lib/extjs/resources/themes/stylesheets/ext4/default/widgets/_grid.scss */
 .x-grid-with-row-lines .x-grid-cell-inner {
-  line-height: 13px;
-  padding-bottom: 4px;
+  line-height: 15px;
+  padding-bottom: 6px;
 }
 
 /* line 293, ../../../../lib/extjs/resources/themes/stylesheets/ext4/default/widgets/_grid.scss */
@@ -4683,7 +4683,7 @@ browsers will do whacky things with it.
 }
 /* line 727, ../../../../lib/extjs/resources/themes/stylesheets/ext4/default/widgets/_grid.scss */
 .x-grid-row-editor .x-form-display-field {
-  font: normal 11px/15px "Helvetica Neue", Helvetica, Tahoma, Arial, sans-serif;
+  font: normal 13px/15px "Helvetica Neue", Helvetica, Tahoma, Arial, sans-serif;
   padding-top: 0;
   padding-left: 2px;
 }
@@ -4710,7 +4710,7 @@ browsers will do whacky things with it.
 
 /* line 757, ../../../../lib/extjs/resources/themes/stylesheets/ext4/default/widgets/_grid.scss */
 .x-grid-editor .x-form-text, .x-grid-row-editor .x-form-text {
-  font: normal 11px/15px "Helvetica Neue", Helvetica, Tahoma, Arial, sans-serif;
+  font: normal 13px/15px "Helvetica Neue", Helvetica, Tahoma, Arial, sans-serif;
   height: 18px;
 }
 
@@ -11211,7 +11211,7 @@ svg, vml {
  * Extrovert child Panel mixin
  * @mixin child-panel
  */
-/* line 175, ../../../../resources/sass/extrovert.scss */
+/* line 182, ../../../../resources/sass/extrovert.scss */
 .x-mask {
   background: -moz-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0) 0%, rgba(37, 37, 37, 0.2) 39%, rgba(85, 85, 85, 0.75) 90%, #5e5e5e 100%);
   /* FF3.6+ */
@@ -11229,7 +11229,7 @@ svg, vml {
   /* IE6-9 fallback on horizontal gradient */
 }
 
-/* line 186, ../../../../resources/sass/extrovert.scss */
+/* line 193, ../../../../resources/sass/extrovert.scss */
 input,
 textarea {
   -moz-box-shadow: inset 0 1px 3px #e0e0e0,0 1px #fafbfb;
@@ -11237,7 +11237,7 @@ textarea {
   box-shadow: inset 0 1px 3px #e0e0e0,0 1px #fafbfb;
 }
 
-/* line 201, ../../../../resources/sass/extrovert.scss */
+/* line 208, ../../../../resources/sass/extrovert.scss */
 .x-form-focus {
   border-color: #6086a1 !important;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
@@ -11247,7 +11247,40 @@ textarea {
   outline: thin dotted \9;
 }
 
-/* line 213, ../../../../resources/sass/extrovert.scss */
+/* line 218, ../../../../resources/sass/extrovert.scss */
+.x-grid-row-selected .x-grid-cell,
+.x-grid-row-selected .x-grid-rowwrap-div {
+  color: #fff;
+}
+
+/* line 224, ../../../../resources/sass/extrovert.scss */
+.x-column-header-over,
+.x-column-header-sort-ASC,
+.x-column-header-sort-DESC {
+  background-image: none;
+  background-color: #ead29c;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f7efdb), color-stop(30%, #f1e1be), color-stop(65%, #ead29c), color-stop(100%, #e5c682));
+  background-image: -webkit-linear-gradient(top, #f7efdb, #f1e1be 30%, #ead29c 65%, #e5c682);
+  background-image: -moz-linear-gradient(top, #f7efdb, #f1e1be 30%, #ead29c 65%, #e5c682);
+  background-image: -o-linear-gradient(top, #f7efdb, #f1e1be 30%, #ead29c 65%, #e5c682);
+  background-image: -ms-linear-gradient(top, #f7efdb, #f1e1be 30%, #ead29c 65%, #e5c682);
+  background-image: linear-gradient(top, #f7efdb, #f1e1be 30%, #ead29c 65%, #e5c682);
+}
+
+/* line 229, ../../../../resources/sass/extrovert.scss */
+.x-column-header-text {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+/* line 233, ../../../../resources/sass/extrovert.scss */
+.x-grid-empty {
+  padding: 30px;
+  color: gray;
+  font-size: 13px;
+}
+
+/* line 241, ../../../../resources/sass/extrovert.scss */
 .x-tab-default-top-active {
   -webkit-box-shadow: rgba(255, 255, 255, 0.6) 0 1px 0px 0 inset, #6086a1 -1px 0 0px 0 inset, #6086a1 1px 0 0px 0 inset;
   -moz-box-shadow: rgba(255, 255, 255, 0.6) 0 1px 0px 0 inset, #6086a1 -1px 0 0px 0 inset, #6086a1 1px 0 0px 0 inset;
@@ -11255,19 +11288,19 @@ textarea {
   border-bottom: 1px solid #4c6a7f !important;
 }
 
-/* line 219, ../../../../resources/sass/extrovert.scss */
+/* line 247, ../../../../resources/sass/extrovert.scss */
 .x-tab button {
   padding: 2px;
   font-size: 12px;
 }
 
-/* line 225, ../../../../resources/sass/extrovert.scss */
+/* line 253, ../../../../resources/sass/extrovert.scss */
 .x-panel-header-text-default,
 .x-panel-header-text-default-framed {
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
 }
 
-/* line 233, ../../../../resources/sass/extrovert.scss */
+/* line 261, ../../../../resources/sass/extrovert.scss */
 .x-accordion-hd {
   padding: 4px 8px 3px !important;
   background-image: -webkit-linear-gradient(top, #7f9db2, #587b94) !important;
@@ -11276,7 +11309,7 @@ textarea {
   background-image: -ms-linear-gradient(top, #7f9db2, #587b94) !important;
   background: linear-gradient(top, #7f9db2, #587b94) !important;
 }
-/* line 247, ../../../../resources/sass/extrovert.scss */
+/* line 275, ../../../../resources/sass/extrovert.scss */
 .x-accordion-hd .x-panel-header-text {
   color: #fff;
   font-size: 12px !important;
@@ -11289,7 +11322,7 @@ textarea {
  *   @include styled-panel(#336699, 2px, 'glossy');
  * 
  */
-/* line 260, ../../../../resources/sass/extrovert.scss */
+/* line 288, ../../../../resources/sass/extrovert.scss */
 .extro-panel-danger {
   border-color: #da4f49;
   border-width: 1px;
@@ -11338,7 +11371,7 @@ textarea {
   border-width: 1px;
 }
 
-/* line 263, ../../../../resources/sass/extrovert.scss */
+/* line 291, ../../../../resources/sass/extrovert.scss */
 .extro-panel-warning {
   border-color: #faa732;
   border-width: 1px;
@@ -11371,7 +11404,7 @@ textarea {
   border-width: 1px;
 }
 
-/* line 266, ../../../../resources/sass/extrovert.scss */
+/* line 294, ../../../../resources/sass/extrovert.scss */
 .extro-panel-inverse {
   border-color: #414141;
   border-width: 1px;
@@ -11404,7 +11437,7 @@ textarea {
   border-width: 1px;
 }
 
-/* line 274, ../../../../resources/sass/extrovert.scss */
+/* line 302, ../../../../resources/sass/extrovert.scss */
 .extro-panel-special {
   border-color: #336699;
   border-width: 3px;
@@ -11436,7 +11469,7 @@ textarea {
   border-color: #336699;
   border-width: 3px;
 }
-/* line 288, ../../../../resources/sass/extrovert.scss */
+/* line 316, ../../../../resources/sass/extrovert.scss */
 .extro-panel-special .x-panel-header-text-default,
 .extro-panel-special .x-panel-header-text-default-framed {
   line-height: 25px;
@@ -11448,7 +11481,7 @@ textarea {
  *   @include styled-panel(#336699, 2px, 'glossy');
  * 
  */
-/* line 300, ../../../../resources/sass/extrovert.scss */
+/* line 328, ../../../../resources/sass/extrovert.scss */
 .extro-panel-child {
   border-color: #324654;
   border-width: 1px;
@@ -11481,7 +11514,7 @@ textarea {
   border-width: 1px;
 }
 
-/* line 303, ../../../../resources/sass/extrovert.scss */
+/* line 331, ../../../../resources/sass/extrovert.scss */
 .extro-panel-child-danger {
   border-color: #da4f49;
   border-width: 1px;
@@ -11514,7 +11547,7 @@ textarea {
   border-width: 1px;
 }
 
-/* line 306, ../../../../resources/sass/extrovert.scss */
+/* line 334, ../../../../resources/sass/extrovert.scss */
 .extro-panel-child-warning {
   border-color: #faa732;
   border-width: 1px;
@@ -11547,7 +11580,7 @@ textarea {
   border-width: 1px;
 }
 
-/* line 309, ../../../../resources/sass/extrovert.scss */
+/* line 337, ../../../../resources/sass/extrovert.scss */
 .extro-panel-child-inverse {
   border-color: #414141;
   border-width: 1px;
@@ -11580,7 +11613,7 @@ textarea {
   border-width: 1px;
 }
 
-/* line 316, ../../../../resources/sass/extrovert.scss */
+/* line 344, ../../../../resources/sass/extrovert.scss */
 .extro-panel-child-light {
   border-color: #4c6a7f;
   border-width: 1px;
@@ -11613,7 +11646,7 @@ textarea {
   border-width: 1px;
 }
 
-/* line 319, ../../../../resources/sass/extrovert.scss */
+/* line 347, ../../../../resources/sass/extrovert.scss */
 .extro-panel-child-danger-light {
   border-color: #da4f49;
   border-width: 1px;
@@ -11646,7 +11679,7 @@ textarea {
   border-width: 1px;
 }
 
-/* line 322, ../../../../resources/sass/extrovert.scss */
+/* line 350, ../../../../resources/sass/extrovert.scss */
 .extro-panel-child-warning-light {
   border-color: #faa732;
   border-width: 1px;
@@ -11679,7 +11712,7 @@ textarea {
   border-width: 1px;
 }
 
-/* line 325, ../../../../resources/sass/extrovert.scss */
+/* line 353, ../../../../resources/sass/extrovert.scss */
 .extro-panel-child-inverse-light {
   border-color: #414141;
   border-width: 1px;
@@ -11712,51 +11745,51 @@ textarea {
   border-width: 1px;
 }
 
-/* line 329, ../../../../resources/sass/extrovert.scss */
+/* line 357, ../../../../resources/sass/extrovert.scss */
 .extro-btn-primary {
   background: #0074CC;
 }
 
-/* line 332, ../../../../resources/sass/extrovert.scss */
+/* line 360, ../../../../resources/sass/extrovert.scss */
 .extro-btn-primary.x-btn-over {
   background-color: #0055cc;
 }
 
-/* line 335, ../../../../resources/sass/extrovert.scss */
+/* line 363, ../../../../resources/sass/extrovert.scss */
 .extro-btn-inverse {
   background: #414141;
 }
 
-/* line 338, ../../../../resources/sass/extrovert.scss */
+/* line 366, ../../../../resources/sass/extrovert.scss */
 .extro-btn-inverse.x-btn-over {
   background-color: #222222;
 }
 
-/* line 342, ../../../../resources/sass/extrovert.scss */
+/* line 370, ../../../../resources/sass/extrovert.scss */
 .extro-btn-primary,
 .extro-btn-inverse {
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
 }
 
-/* line 346, ../../../../resources/sass/extrovert.scss */
+/* line 374, ../../../../resources/sass/extrovert.scss */
 .extro-btn-primary .x-btn-inner,
 .extro-btn-inverse .x-btn-inner {
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
   color: white;
 }
 
-/* line 352, ../../../../resources/sass/extrovert.scss */
+/* line 380, ../../../../resources/sass/extrovert.scss */
 .x-boundlist-item-over,
 .x-boundlist-selected {
   color: #fff;
 }
 
-/* line 355, ../../../../resources/sass/extrovert.scss */
+/* line 383, ../../../../resources/sass/extrovert.scss */
 .x-boundlist-item {
   border-bottom: 1px solid #eee;
 }
 
-/* line 359, ../../../../resources/sass/extrovert.scss */
+/* line 387, ../../../../resources/sass/extrovert.scss */
 .x-toolbar {
   background-image: none;
   background-color: #dddddd;
@@ -11768,7 +11801,7 @@ textarea {
   background-image: linear-gradient(top, #ffffff, #f1f1f1 30%, #dddddd 65%, #cecece);
 }
 
-/* line 362, ../../../../resources/sass/extrovert.scss */
+/* line 390, ../../../../resources/sass/extrovert.scss */
 .x-toolbar-vertical {
   background-image: none;
   background-color: #dddddd;
@@ -11842,22 +11875,30 @@ textarea {
   border-width: 2px;
 }
 
-/* line 55, ../sass/todos.scss */
+/* line 54, ../sass/todos.scss */
+.todo-project {
+  background: #eee;
+}
+/* line 57, ../sass/todos.scss */
 .todo-project .x-panel-body {
   background: #eee;
 }
-/* line 58, ../sass/todos.scss */
+/* line 61, ../sass/todos.scss */
 .todo-project .x-panel-header-text {
   font-size: 16px !important;
 }
+/* line 65, ../sass/todos.scss */
+.todo-project .x-accordion-hd {
+  padding: 7px 8px !important;
+}
 
-/* line 62, ../sass/todos.scss */
+/* line 69, ../sass/todos.scss */
 .todo-tasklist {
-  font-size: 16px;
+  font-size: 15px;
   border-bottom: 1px solid #ccc;
   position: relative;
 }
-/* line 67, ../sass/todos.scss */
+/* line 74, ../sass/todos.scss */
 .todo-tasklist a, .todo-tasklist a:visited {
   display: block;
   color: #369;
@@ -11866,7 +11907,7 @@ textarea {
   font-weight: 200;
 }
 
-/* line 75, ../sass/todos.scss */
+/* line 82, ../sass/todos.scss */
 .todo-tasklist-hover {
   background-image: none;
   background-color: #ead29c;
@@ -11878,7 +11919,7 @@ textarea {
   background-image: linear-gradient(top, #f7efdb, #f1e1be 30%, #ead29c 65%, #e5c682);
 }
 
-/* line 78, ../sass/todos.scss */
+/* line 85, ../sass/todos.scss */
 .todo-task-count {
   position: absolute;
   right: 3px;
@@ -11894,4 +11935,26 @@ textarea {
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
   border-radius: 10px;
+}
+
+/* line 102, ../sass/todos.scss */
+.todo-task-grid .x-column-header-text {
+  font-size: 16px;
+  line-height: 20px;
+}
+/* line 108, ../sass/todos.scss */
+.todo-task-grid .x-grid-row .x-grid-cell {
+  font-size: 15px;
+  font-weight: 200;
+}
+/* line 113, ../sass/todos.scss */
+.todo-task-grid .x-grid-row .x-grid-cell-inner {
+  padding: 10px;
+}
+
+/* line 119, ../sass/todos.scss */
+.extro-empty-text {
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 100;
 }

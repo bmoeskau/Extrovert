@@ -52,15 +52,22 @@ $header-background-color: darken($highlight-background-color, 30);
 // Project Panel styles
 //
 .todo-project {
+  background: #eee;
+  
   .#{$prefix}panel-body {
     background: #eee;
   }
+  
   .#{$prefix}panel-header-text {
-    font-size: ceil($font-size * 1.3) !important;
+    font-size: 16px !important;
+  }
+  
+  .#{$prefix}accordion-hd {
+    padding: 7px 8px !important;
   }
 }
 .todo-tasklist {
-  font-size: ceil($font-size * 1.3);
+  font-size: 15px;
   border-bottom: 1px solid #ccc;
   position: relative;
   
@@ -73,7 +80,7 @@ $header-background-color: darken($highlight-background-color, 30);
   }
 }
 .todo-tasklist-hover {
-  @include background-gradient(lighten(#C49429, 30), 'bevel');
+  @include background-gradient($extro-color-highlight, 'bevel');
 }
 .todo-task-count {
   position: absolute;
@@ -87,3 +94,31 @@ $header-background-color: darken($highlight-background-color, 30);
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
   @include border-radius(10px);
 }
+
+//
+// Task List styles
+//
+.todo-task-grid {
+  .#{$prefix}column-header-text {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  
+  .#{$prefix}grid-row {
+    .#{$prefix}grid-cell {
+      font-size: 15px;
+      font-weight: 200;
+    }
+    
+    .#{$prefix}grid-cell-inner {
+      padding: 10px;
+    }
+  }
+}
+
+.extro-empty-text {
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 100;
+}
+
