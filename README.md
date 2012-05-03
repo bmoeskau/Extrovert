@@ -17,8 +17,8 @@ Patches are welcome. Fork and pull request to your heart's content!
 
 ## About
 
-Extrovert is a project of [Extensible]("http://ext.ensible.com/") and 
-[Brian Moeskau]("http://moeskau.com/") ([@bmoeskau]("https://twitter.com/#!/bmoeskau")).
+Extrovert is a project of [Extensible](http://ext.ensible.com/) and 
+[Brian Moeskau](http://moeskau.com/) ([@bmoeskau](https://twitter.com/#!/bmoeskau)).
 
 Extrovert is provided free of charge and without support. It is licensed under the 
-[MIT license]("https://github.com/bmoeskau/Extrovert/blob/master/MIT_license.txt").
+[MIT license](https://github.com/bmoeskau/Extrovert/blob/master/MIT_license.txt).
