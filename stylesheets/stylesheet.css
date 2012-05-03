@@ -374,6 +374,24 @@ Full-Width Styles
   background: #212121;
 }
 
+#extro-screenshot {
+    padding: 0;
+    border: 1px solid #ddd;
+    -webkit-box-shadow: 0 2px 8px #ccc;
+    -moz-box-shadow: 0 2px 8px #ccc;
+    -o-box-shadow: 0 2px 8px #ccc;
+    -ms-box-shadow: 0 2px 8px #ccc;
+}
+
+p.warning {
+    border: 2px solid #FF9C33;
+    background: #FFD76E;
+    padding: 5px 15px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+}
 
 
 /*******************************************************************************
