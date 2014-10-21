@@ -1,24 +1,7 @@
 # Extrovert
 
-Ext with a modern personality
+**Ext with a modern personality**
 
-## Welcome to Extrovert
+This was originally developed as a demo for my SourceDevCon 2011 presentation, with the grandest of intentions to become a full-fledged Ext theme framework. Unfortunately I never really got around to all that. It was developed for Ext JS 4, and by now is hoplessly out of date. Theming has changed a lot in Ext 5, and Sencha has, over time, addressed (some of) the issues I wanted to deal with here.
 
-Extrovert is a custom theme for Ext JS 4.0 that looks nice and includes some useful goodies.
-It makes styling individual panels quite easy compared to the standard Ext theming approach.
-The examples also demonstrate how to extend Extrovert, how to implement adaptive application
-layouts in Ext and more.
-    
-**Extrovert is still a work-in-progress, and certainly should not be used in production.**
-
-There will be improvements and more documentation to come, but for now feel free to play around.
-
-Patches are welcome. Fork and pull request to your heart's content!
-
-## About
-
-Extrovert is a project of [Extensible](http://ext.ensible.com/) and 
-[Brian Moeskau](http://moeskau.com/) ([@bmoeskau](https://twitter.com/#!/bmoeskau)).
-
-Extrovert is provided free of charge and without support. It is licensed under the 
-[MIT license](https://github.com/bmoeskau/Extrovert/blob/master/MIT_license.txt).
+The code might still be interesting as a reference, but will never be developed beyond the point where it ended up, which was a very rough proof of concept.
