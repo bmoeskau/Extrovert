@@ -12,7 +12,7 @@ In case you're curious:
 
 The things Ext still does not have, even in 5+, that Extrovert was trying to address way back in 2011:
 
-- Proper paretn/child panel visual contrast
+- Proper parent/child panel visual contrast
 - Proper header/body visual contrast
 - More flexible panel styling options (those custom colors are one-liners in the Extrovert SASS)
 
